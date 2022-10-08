@@ -34,6 +34,14 @@
     right: 0;
   }
 
+  nav.navbar {
+    width: 80vw;
+  }
+
+  ul.navbar-nav {
+    justify-content: space-around !important;
+  }
+
   .padding-top {
     padding-top: 9rem !important;
   }
@@ -54,6 +62,16 @@
     }
     .flex-menu {
         justify-content: center;
+    }
+    ul.navbar-nav {
+        height: 100%;
+        gap: 4rem;
+        justify-content: flex-start !important;
+        background-color: #fef8f2;
+
+    }
+    .navbar-expand-lg .navbar-nav {
+        padding: 4rem 4rem;
     }
 }
 
