@@ -46,6 +46,10 @@
     padding-top: 9rem !important;
   }
 
+  .max-height-set {
+    max-height: 60vh;
+  }
+
   @media only screen and (min-width: 992px) {
     div.w-lg-75 {
         width: 85% !important;
@@ -86,3 +90,8 @@
     }
 }
 
+@media only screen and (min-width: 576px) and (max-width:810px) {
+    .max-height-set {
+        max-height: 55vh;
+    }
+}
