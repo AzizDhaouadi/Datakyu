@@ -58,6 +58,14 @@
   
   
   @media only screen and (max-width:810px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+    
     #header-content {
         min-height: 65vh;
     }
