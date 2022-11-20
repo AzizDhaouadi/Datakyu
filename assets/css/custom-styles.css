@@ -1,7 +1,23 @@
 @charset "UTF-8";
 
+:root {
+    --override-color: var(--bs-yellow);
+}
+
 #header-content {
     min-height: 100vh;
+}
+
+.highlight {
+    color: var(--bs-green);
+}
+
+.override-color {
+    color: var(--override-color) !important;
+}
+
+.highlight-yellow {
+    color: var(--bs-yellow);
 }
 
 .justify-center {
