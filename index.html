@@ -22,51 +22,37 @@
         font-family: var(--bs-font-monospace);
       }
 
-      nav.align-center {
+      nav.home {
         margin: 0 auto;
-      }
-
-      nav.align-padding {
         padding-top: 1rem;
-      }
-
-      nav.inherit-background {
         background-color: inherit !important;
       }
-      div#offcanvasNavbar {
-        background-color: #fef8f2;
-      }
+
+      div.navbar-nav {
+        justify-content: space-around;
+      } 
+
     </style>
 </head>
 <body id="body">
     <header class="flex-menu navbar-absolute-top">
-        <nav class="navbar bg-light navbar-expand-lg align-center align-padding inherit-background">
+        <nav class="navbar navbar-expand-lg bg-light home">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="https://htmlstream.com/preview/space-v2.3/assets/svg/logos/logo.svg"/>
+            <a class="navbar-brand" href="/">
+              <img src="https://htmlstream.com/preview/space-v2.3/assets/svg/logos/logo.svg" alt="Logo" class="d-inline-block align-text-top">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="static">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Jump Links</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#ourProcess">Why work with us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#packages">Pricing</a>
-                  </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <!-- <a class="nav-link active" aria-current="page" href="/">Home</a> -->
+                <a class="nav-link" href="#services">Our Services</a>
+                <a class="nav-link" href="#ourProcess">Our Process</a>
+                <a class="nav-link" href="#packages">Packages</a>
               </div>
             </div>
+          </div>        
           </div>
         </nav>
     </header>
