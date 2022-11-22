@@ -94,21 +94,15 @@
     #header-content {
         min-height: 65vh;
     }
-    .navbar {
-        min-width: 80%;
-    }
     .flex-menu {
         justify-content: center;
     }
-    ul.navbar-nav {
-        height: 100%;
-        gap: 4rem;
-        justify-content: flex-start !important;
-        background-color: #fef8f2;
-
-    }
     .navbar-expand-lg .navbar-nav {
         padding: 4rem 4rem;
+    }
+    #navbarNavAltMarkup {
+        border-radius: 25px;
+        margin-top: 0.35rem;
     }
 }
 
@@ -118,8 +112,8 @@
         flex-direction: column !important;
         gap: 10px;
     }
-    .offcanvas {
-        max-width: 60%;
+    .navbar {
+        min-width: 100vw;
     }
 }
 
