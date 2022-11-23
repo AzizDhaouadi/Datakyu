@@ -71,6 +71,11 @@
     color: var(--bs-yellow);
   }
 
+  .align-size {
+    width: 100%;
+    height: 100%;
+  }
+
   @media only screen and (min-width: 992px) {
     div.w-lg-75 {
         width: 85% !important;
@@ -79,6 +84,11 @@
 
   .button-17 {
     font-weight: 900;
+  }
+
+  .asterix {
+    font-size: 2rem;
+    font-weight: bold;
   }
 
   
