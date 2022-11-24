@@ -4,6 +4,10 @@
     --override-color: var(--bs-yellow);
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 #header-content {
     min-height: 100vh;
     padding-top: 2.5rem;
