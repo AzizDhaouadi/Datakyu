@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google Tag Manager -->
+     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MP972DZ');
+      </script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+      (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+      ;r.type="text/javascript"
+      ;r.integrity="sha384-+EO59vL/X7v6VE2s6/F4HxfHlK0nDUVWKVg8K9oUlvffAeeaShVBmbORTC2D3UF+"
+      ;r.crossOrigin="anonymous";r.async=true
+      ;r.src="https://cdn.amplitude.com/libs/amplitude-8.17.0-min.gz.js"
+      ;r.onload=function(){if(!e.amplitude.runQueuedFunctions){
+      console.log("[Amplitude] Error: could not load SDK")}}
+      ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+      ;function s(e,t){e.prototype[t]=function(){
+      this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+      var o=function(){this._q=[];return this}
+      ;var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove"]
+      ;for(var c=0;c<a.length;c++){s(o,a[c])}n.Identify=o;var u=function(){this._q=[]
+      ;return this}
+      ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+      ;for(var p=0;p<l.length;p++){s(u,l[p])}n.Revenue=u
+      ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","enableTracking","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
+      ;function v(e){function t(t){e[t]=function(){
+      e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+      for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+      e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+      ;if(!Object.prototype.hasOwnProperty.call(n._iq,e)){n._iq[e]={_q:[]};v(n._iq[e])
+      }return n._iq[e]};e.amplitude=n})(window,document);
+    
+      amplitude.getInstance().init("85afb94b73b944816d698760e6089033");
+      amplitude.getInstance().logEvent('page_load');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Analytics 4 Sample Code Generator | Datakyu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/theme-styles.css">
+    <link rel="stylesheet" href="assets/css/custom-styles.css">
+    <link rel="stylesheet" href="assets/css/custom-codeGenerator-styes.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+      :root {
+        --bs-body-text-font: 'Quicksand', sans-serif;
+        --bs-nav-link-font-size: 1.225rem;
+      }
+      body {
+        font-family: var(--bs-body-text-font);
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--bs-font-monospace);
+      }
+
+      nav.home {
+        margin: 0 auto;
+        padding-top: 1rem;
+        background-color: inherit !important;
+      }
+
+      .nav-link {
+        font-weight: bold;
+      }
+
+      div.navbar-nav {
+        justify-content: space-around;
+      }
+    </style>
+</head>
+<body>
+    <header class="flex-menu navbar-absolute-top">
+        <nav class="navbar navbar-expand-lg bg-light home">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img src="/assets/logo/logo-transparent.svg" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#services">Our Services</a>
+                <a class="nav-link" href="#ourProcess">Our Process</a>
+                <a class="nav-link" href="#packages">Packages</a>
+              </div>
+            </div>
+          </div>        
+          </div>
+        </nav>
+    </header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP972DZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <section id="generatorContainer" class="display-flex">
+        <div id="generatorSection" class="container content-space-1 content-space-md-3">
+            <!-- Heading -->
+            <div class="w-lg-65 text-center mx-lg-auto mb-7">
+            <h3>Ready to work together?</h3>
+            <p>Tell us your story and we'll be in touch.</p>
+            </div>
+            <!-- End Heading -->
+        
+            <!-- Form -->
+            <div class="mx-auto" style="max-width: 35rem;">
+            <form data-form-type="other">
+                <div class="row">
+                <div class="col-sm-6">
+                    <!-- Form -->
+                    <div class="mb-4">
+                    <label class="form-label visually-hidden" for="hireUsFormFirstName">First name</label>
+                    <input type="text" class="form-control" name="hireUsFormNameFirstName" id="hireUsFormFirstName" placeholder="First name" aria-label="First name" data-form-type="name,first">
+                    </div>
+                    <!-- End Form -->
+                </div>
+        
+                <div class="col-sm-6">
+                    <!-- Form -->
+                    <div class="mb-4">
+                    <label class="form-label visually-hidden" for="hireUsFormLasttName">Last name</label>
+                    <input type="text" class="form-control" name="hireUsFormNameLastName" id="hireUsFormLasttName" placeholder="Last name" aria-label="Last name" data-form-type="name,last">
+                    </div>
+                    <!-- End Form -->
+                </div>
+                </div>
+                <!-- End Form -->
+        
+                <!-- Form -->
+                <div class="mb-4">
+                <label class="form-label visually-hidden" for="hireUsFormWorkEmail">Email address</label>
+                <input type="text" class="form-control" name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail" placeholder="email@site.com" aria-label="email@site.com" data-form-type="email">
+                </div>
+                <!-- End Form -->
+        
+                <!-- Form -->
+                <div class="mb-4">
+                <label class="form-label visually-hidden" for="hireUsFormCompanyName">Company name <span class="form-label-secondary">(Optional)</span></label>
+                <input type="text" class="form-control" name="hireUsFormNameCompanyName" id="hireUsFormCompanyName" placeholder="Htmlstream" aria-label="Htmlstream" data-form-type="company,company_name">
+                <span id="1665276791972-3" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; background-color: initial; background-image: url(&quot;moz-extension://1c12f2cb-8821-a548-86a5-56e3626140bf/content/injected/logo-autofill-unknown.svg&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: initial; background-clip: initial; background-origin: initial; background-size: contain; background-blend-mode: initial; border: medium none; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: inline; position: absolute; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; scroll-snap-stop: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; scrollbar-gutter: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: 1; box-shadow: initial; clip: initial; filter: initial; backdrop-filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; -moz-osx-font-smoothing: initial; visibility: visible; writing-mode: initial; text-orientation: initial; print-color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; hyphenate-character: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; color-scheme: initial; scrollbar-color: initial; list-style: initial; quotes: initial; -moz-image-region: initial; margin: initial; overflow-clip-margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; size: initial; padding: initial; scroll-padding: initial; top: 1787.35px; right: initial; bottom: initial; left: 798px; z-index: auto; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: 16px; min-width: 16px; max-width: initial; height: 16px; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; d: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; transition: initial; animation: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"></span></div>
+                <!-- End Form -->
+        
+                <!-- Select -->
+                <div class="mb-4">
+                <label class="form-label visually-hidden" for="hireUsFormBudget">Budget</label>
+                <select name="hireUsFormNameBudget" id="hireUsFormBudget" class="form-select" aria-label="Tell us about your budget" data-form-type="other">
+                    <option selected="">Tell us about your budget</option>
+                    <option value="1">$1,000 - $10,000</option>
+                    <option value="2">$10,000 - $20,000</option>
+                    <option value="3">$20,000 - $30,000</option>
+                    <option value="4">$30,000 - $40,000</option>
+                    <option value="5">$40,000 - $50,000</option>
+                    <option value="6">$50,000 - and more</option>
+                </select>
+                </div>
+                <!-- End Select -->
+        
+                <!-- Form -->
+                <div class="mb-4">
+                <label class="form-label visually-hidden" for="hireUsFormDetails">Details</label>
+                <textarea class="form-control" name="hireUsFormNameDetails" id="hireUsFormDetails" placeholder="Tell us about your project" aria-label="Tell us about your project" rows="4" data-form-type="other"></textarea>
+                </div>
+                <!-- End Form -->
+        
+                <!-- Checkbox -->
+                <div class="form-check mb-4">
+                <input type="checkbox" class="form-check-input" id="signupFormPrivacyCheck" name="signupFormPrivacyCheck" required="" data-msg="Please accept our Privacy Policy." data-form-type="consent,privacy_policy">
+                <label class="form-check-label" for="signupFormPrivacyCheck"> By submitting this form I have read and acknowledged the <a href="./page-privacy.html">Privacy Policy</a></label>
+                </div>
+                <!-- End Checkbox -->
+        
+                <div class="d-grid mb-2">
+                <button type="submit" class="btn btn-primary btn-lg" data-form-type="action">Send inquiry</button>
+                </div>
+        
+                <div class="text-center">
+                <span class="form-text">We'll get back to you in 1-2 business days.</span>
+                </div>
+            </form>
+            </div>
+            <!-- End Form -->
+        </div>
+        <div id="codeSection"></div>
+    </section>
+    <script type="text/javascript" src="assets/js/codeGenerator.js"></script>
+</body>
+</html>

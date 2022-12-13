@@ -1,0 +1,34 @@
+/* This styling applies for the code generator page */
+
+:root {
+    --bs-body-background-color: #fef8f2;
+}
+
+body {
+    background-color: var(--bs-body-background-color);
+    overflow-y: hidden;
+}
+
+.display-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+}
+
+#generatorContainer {
+    padding-top: 8rem;
+}
+
+#generatorSection, #codeSection {
+    width: 45%;
+    max-width: 45%;
+}
+
+#codeSection {
+    font-weight: bold;
+}
+
+.indent{
+    margin-left: 0.5rem;
+}
+
