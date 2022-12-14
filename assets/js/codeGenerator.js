@@ -1,6 +1,9 @@
 const radioButtonsList = document.querySelectorAll('input[type="radio"]');
 let codeConatainer = document.getElementById('codeSection');
+let eventNameDropDownContainer = document.getElementById("event_name_selector_div");
 let eventNameDropDown = document.getElementById("event_name");
+let customEventNameInputField = document.getElementById("custom_event_name_div");
+
 const placeholderSampleCode = `
 window.dataLayer = window.dataLayer || [];
 <br>
@@ -46,6 +49,13 @@ radioButtonsList.forEach((radioButton) => {
                  <option value="update_subscription">update_subscription</option>
                  <option value="cancel_subscription">cancel_subscription</option>
                  <option value="renew_subscription">renew_subscription</option>`
+
+                 if(customEventNameInputField.classList.contains("visually-hidden")) {
+                    break;
+                 } else {
+                    eventNameDropDownContainer.classList.toggle("visually-hidden");
+                    customEventNameInputField.classList.toggle("visually-hidden");
+                 }
                  break;
             
             case "ecommerce":
@@ -60,6 +70,12 @@ radioButtonsList.forEach((radioButton) => {
                  <option value="view_item">view_item</option>
                  <option value="add_shipping_info">add_shipping_info</option>
                  <option value="refund">refund</option>`
+                 if(customEventNameInputField.classList.contains("visually-hidden")) {
+                    break;
+                 } else {
+                    eventNameDropDownContainer.classList.toggle("visually-hidden");
+                    customEventNameInputField.classList.toggle("visually-hidden");
+                 }
                  break;
 
             case "all_properties":
@@ -71,10 +87,17 @@ radioButtonsList.forEach((radioButton) => {
                     <option value="select_content">select_content</option>
                     <option value="share">share</option>
                     <option value="sign_up">sign_up</option>`
+                    if(customEventNameInputField.classList.contains("visually-hidden")) {
+                        break;
+                     } else {
+                        eventNameDropDownContainer.classList.toggle("visually-hidden");
+                        customEventNameInputField.classList.toggle("visually-hidden");
+                     }
                      break;
             
             case "custom_event":
-                eventNameDropDown.innerHTML = ""
+                eventNameDropDownContainer.classList.toggle("visually-hidden");
+                customEventNameInputField.classList.toggle("visually-hidden");
         }        
 
     })
