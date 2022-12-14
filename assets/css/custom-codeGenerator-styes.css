@@ -32,3 +32,12 @@ body {
     margin-left: 0.5rem;
 }
 
+.flex_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio_align{
+    display: table-cell;
+    vertical-align: middle;
+}
