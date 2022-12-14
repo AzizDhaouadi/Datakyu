@@ -149,11 +149,10 @@
                   </div>                 
                 </div>
         
-                <div class="mb-4">
+                <div class="mb-4" id="event_name_selector_div">
                 <p>Which event do you need help with?</p>  
                 <label class="form-label" for="hireUsFormBudget">Please select the event</label>
-                <select name="event_name" id="event_name" class="form-select" aria-label="event_name" data-form-type="other">
-                    <option selected="">event_name</option>
+                <select name="event_name" id="event_name" class="form-select" aria-label="event_name">
                     <option value="login">login</option>
                     <option value="purchase">purchase</option>
                     <option value="search">search</option>
@@ -161,6 +160,12 @@
                     <option value="share">share</option>
                     <option value="sign_up">sign_up</option>
                 </select>
+                </div>
+
+                <div class="mb-4 visually-hidden" id="custom_event_name_div">
+                  <p>Please indicate the custom event name</p>
+                  <label class="form-label visually-hidden" for="custom_event_name">Custom event name</label>
+                  <input type="text" class="form-control" name="custom_event_name" id="custom_event_name" placeholder="Custom event name" aria-label="custom_event_name">
                 </div>
         
                 <!-- <div class="mb-4">
