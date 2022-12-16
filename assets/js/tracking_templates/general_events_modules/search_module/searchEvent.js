@@ -28,11 +28,17 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
     client_id: 'XXXXXXXXXX.YYYYYYYYYY',
     <br>
     events: [{
+      <br>
       <span class="indent">name: 'search'</span>,
+      <br>
       <span class="indent">params: {
+        <br>
         <span class="indent">'search_term': 'Datakyu'</span>,
+        <br>
       }
-    }]  
+      <br>
+    }]
+    <br>  
 });`
 
 export {dataLayerSearchEvent, gtagSearchEvent, apiSearchEvent};

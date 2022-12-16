@@ -22,17 +22,17 @@ let apiLoginEvent = `
 'const api_secret' = 'secret_value';
 <br>
 
-fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measurement_id}&api_secret=\${api_secret}\`, {
-  method: "POST",
-  body: JSON.stringify({
-    client_id: 'XXXXXXXXXX.YYYYYYYYYY',
-    events: [{
-      name: 'login',
-      params: {
-        'method': 'google'
-      },
-    }]
-  })
+fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measurement_id}&api_secret=\${api_secret}\`, {<br>
+  method: "POST", <br>
+  body: JSON.stringify({ <br>
+    client_id: 'XXXXXXXXXX.YYYYYYYYYY', <br>
+    events: [{ <br>
+      name: 'login', <br>
+      params: { <br>
+        'method': 'google' <br>
+      } <br>
+    }] <br>
+  }) <br>
 });`;
 
 export {dataLayerLoginEvent, gtagLoginEvent, apiLoginEvent};

@@ -28,11 +28,17 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
     client_id: 'XXXXXXXXXX.YYYYYYYYYY',
     <br>
     events: [{
+      <br>
       <span class="indent">name: 'sign_yp'</span>,
+      <br>
       <span class="indent">params: {
+        <br>
         <span class="indent">'method': 'Apple'</span>,
+        <br>
       }
-    }]  
+      <br>
+    }]
+    <br>  
 });`
 
 export {dataLayerSignUpEvent, gtagSignUpEvent, apiSignUpEvent};

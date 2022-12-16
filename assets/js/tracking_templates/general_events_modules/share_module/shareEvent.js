@@ -32,14 +32,19 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
     <br>
     client_id: 'XXXXXXXXXX.YYYYYYYYYY',
     <br>
-    events: [{
+    events: [{ <br>
       <span class="indent">name: 'select_item'</span>,
+      <br>
       <span class="indent">params: {
+        <br>
         <span class="indent">'content_type': 'article'</span>,
+        <br>
         <span class="indent">'item_id': 'CT_001'</span>,
+        <br>
         <span class="indent">'method':'facebook_link'</span>
-      }
-    }]  
+        <br>
+      } <br>
+    }] <br>
 });`
 
 export {dataLayerShareEvent, gtagShareEvent, apiShareEvent};
