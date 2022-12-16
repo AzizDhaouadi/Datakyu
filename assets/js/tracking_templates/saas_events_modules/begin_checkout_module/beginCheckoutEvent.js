@@ -114,7 +114,7 @@ let apiBeginCheckoutEvent = `
 fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measurement_id}&api_secret=\${api_secret}\`, {
   <br>
   method: "POST",
-  <br>
+  <br>g
   body: JSON.stringify({
     <br>
     client_id: 'XXXXXXXXXX.YYYYYYYYYY',
