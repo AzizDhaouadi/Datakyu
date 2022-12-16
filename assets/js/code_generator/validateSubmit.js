@@ -35,6 +35,12 @@ import * as saasTutorialBeginEvents from '../tracking_templates/saas_events_modu
 
 import * as saasTutorialCompleteEvents from '../tracking_templates/saas_events_modules/tutorial_complete_module/tutorialCompleteEvent.js'
 
+import * as saasUpdateSubscriptionEvents from '../tracking_templates/saas_events_modules/update_subscription_module/updateSubscriptionEvent.js'
+
+import * as saasCancelSubscriptionEvents from '../tracking_templates/saas_events_modules/cancel_subscription_module/cancelSubscriptionEvent.js'
+
+import * as saasRenewSubscriptionEvents from '../tracking_templates/saas_events_modules/renew_subscription_module/renewSubscriptionEvent.js'
+
 const codeGeneratorForm = document.getElementById('codeGeneratorForm');
 console.log("found the form");
 
@@ -306,6 +312,48 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                             break;
                         case "API":
                             codeConatainerSection.innerHTML = saasSubscribeEvents.apiSubscribeEvent;
+                            break;
+                    }
+                break;
+
+                case "update_subscription":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = saasUpdateSubscriptionEvents.dataLayerUpdateSubscriptionEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = saasUpdateSubscriptionEvents.gtagUpdateSubscriptionEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = saasUpdateSubscriptionEvents.apiUpdateSubscriptionEvent;
+                            break;
+                    }
+                break;
+
+                case "cancel_subscription":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = saasCancelSubscriptionEvents.dataLayerCancelSubscriptionEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = saasCancelSubscriptionEvents.gtagCancelSubscriptionEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = saasCancelSubscriptionEvents.apiCancelSubscriptionEvent;
+                            break;
+                    }
+                break;
+
+                case "renew_subscription":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = saasRenewSubscriptionEvents.dataLayerRenewSubscriptionEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = saasRenewSubscriptionEvents.gtagRenewSubscriptionEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = saasRenewSubscriptionEvents.apiRenewSubscriptionEvent;
                             break;
                     }
                 break;
