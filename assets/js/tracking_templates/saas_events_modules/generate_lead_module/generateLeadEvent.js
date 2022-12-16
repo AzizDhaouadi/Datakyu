@@ -49,4 +49,4 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
   }) <br>
 });`;
 
-export {dataLayerDeleteAccountEvent, gtagDeleteAccountEvent, apiDeleteAccountEvent};
+export {dataLayerGenerateLeadEvent, gtagGenerateLeadEvent, apiGenerateLeadEvent};
