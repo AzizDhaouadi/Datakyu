@@ -20,7 +20,12 @@ body {
     padding-top: 8rem;
 }
 
-#generatorSection, #codeSection {
+#generatorSection{
+    width: 45%;
+    max-width: 45%;
+}
+
+#codeSection {
     width: 45%;
     max-width: 45%;
 }
