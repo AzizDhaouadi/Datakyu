@@ -9,38 +9,10 @@
         })(window,document,'script','dataLayer','GTM-MP972DZ');
       </script>
     <!-- End Google Tag Manager -->
-    <script type="text/javascript">
-      (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
-      ;r.type="text/javascript"
-      ;r.integrity="sha384-+EO59vL/X7v6VE2s6/F4HxfHlK0nDUVWKVg8K9oUlvffAeeaShVBmbORTC2D3UF+"
-      ;r.crossOrigin="anonymous";r.async=true
-      ;r.src="https://cdn.amplitude.com/libs/amplitude-8.17.0-min.gz.js"
-      ;r.onload=function(){if(!e.amplitude.runQueuedFunctions){
-      console.log("[Amplitude] Error: could not load SDK")}}
-      ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
-      ;function s(e,t){e.prototype[t]=function(){
-      this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
-      var o=function(){this._q=[];return this}
-      ;var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove"]
-      ;for(var c=0;c<a.length;c++){s(o,a[c])}n.Identify=o;var u=function(){this._q=[]
-      ;return this}
-      ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
-      ;for(var p=0;p<l.length;p++){s(u,l[p])}n.Revenue=u
-      ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","enableTracking","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
-      ;function v(e){function t(t){e[t]=function(){
-      e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
-      for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
-      e=(!e||e.length===0?"$default_instance":e).toLowerCase()
-      ;if(!Object.prototype.hasOwnProperty.call(n._iq,e)){n._iq[e]={_q:[]};v(n._iq[e])
-      }return n._iq[e]};e.amplitude=n})(window,document);
-    
-      amplitude.getInstance().init("85afb94b73b944816d698760e6089033");
-      amplitude.getInstance().logEvent('page_load');
-    </script>
     <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Analytics 4 Sample Code Generator | Datakyu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -167,6 +139,24 @@
                   <label class="form-label visually-hidden" for="custom_event_name">Custom event name</label>
                   <input type="text" class="form-control" name="custom_event_name" id="custom_event_name" placeholder="Custom event name" aria-label="custom_event_name">
                 </div>
+
+                <div class="mb-4">
+                  <p>Please select the tracking medium</p>
+                  <div class="flex_row">
+                    <div class="radio_align">
+                      <input type="radio" id="dataLayer" name="tracking_medium" value="dataLayer" checked>
+                      <label class="form-label" for="dataLayer">dataLayer</label>
+                    </div>
+                    <div class="radio_align" >
+                      <input type="radio" id="gtag" name="tracking_medium" value="gtag">
+                      <label class="form-label inline_block" for="css">gtag.js</label>
+                    </div>
+                    <div class="radio_align">
+                      <input type="radio" id="API" name="tracking_medium" value="API">
+                      <label class="form-label" for="ecommerce">Measurement Protocol</label>
+                    </div>
+                  </div>                 
+                </div>
         
                 <!-- <div class="mb-4">
                 <label class="form-label visually-hidden" for="hireUsFormDetails">Details</label>
@@ -176,21 +166,21 @@
                 <div class="form-check mb-4">
                 <input type="checkbox" class="form-check-input" id="signupFormPrivacyCheck" name="signupFormPrivacyCheck" required="" data-msg="Please accept our Privacy Policy." data-form-type="consent,privacy_policy">
                 <label class="form-check-label" for="signupFormPrivacyCheck"> By submitting this form I have read and acknowledged the <a href="./page-privacy.html">Privacy Policy</a></label>
-                </div>
+                </div> -->
         
                 <div class="d-grid mb-2">
                 <button type="submit" class="btn btn-primary btn-lg" data-form-type="action">Send inquiry</button>
                 </div>
         
-                <div class="text-center">
+                <!-- <div class="text-center">
                 <span class="form-text">We'll get back to you in 1-2 business days.</span>
                 </div> -->
             </form>
             </div>
             <!-- End Form -->
         </div>
-        <div id="codeSection"></div>
+        <div id="codeSection" class="container content-space-1 content-space-md-3"></div>
     </section>
-    <script type="text/javascript" src="assets/js/codeGenerator.js"></script>
+    <script src="assets/js/code_generator/codeGenerator.js" type="module"></script>
 </body>
 </html>
