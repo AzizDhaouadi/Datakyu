@@ -1,3 +1,16 @@
+import * as loginEvents from '../tracking_templates/general_events_modules/login_module/loginEvent.js'
+
+import * as purchaseEvents from '../tracking_templates/general_events_modules/purchase_module/purchaseEvent.js'
+
+import * as SeachEvents from '../tracking_templates/general_events_modules/search_module/searchEvent.js'
+
+import * as SelectContentEvents from '../tracking_templates/general_events_modules/select_content_module/selectContentEvent.js'
+
+import * as ShareEvents from '../tracking_templates/general_events_modules/share_module/shareEvent.js'
+
+import * as SignUpEvents from '../tracking_templates/general_events_modules/sign_up_module/signUpEvent.js'
+
+
 const radioButtonsList = document.querySelectorAll('input[type="radio"]');
 let codeConatainer = document.getElementById('codeSection');
 let eventNameDropDownContainer = document.getElementById("event_name_selector_div");
@@ -18,7 +31,8 @@ window.dataLayer.push({
  });
  </div>`
 
- window.onload = () => {
+
+window.onload = () => {
     codeConatainer.innerHTML = placeholderSampleCode;
 }
 
