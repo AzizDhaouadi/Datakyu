@@ -6,7 +6,7 @@ let dataLayerAddPaymentInfoEvent = `
         <br>
         <span class="indent">'currency': 'USD'</span>,
         <br>
-        <span class="indent">'value': 22.3</span>,
+        <span class="indent">'value': 9.99</span>,
         <br>
         <span class="indent">'payment_type': 'Credit Card'</span>,
         <br>
@@ -57,9 +57,7 @@ let dataLayerAddPaymentInfoEvent = `
       });`
 
 let gtagAddPaymentInfoEvent = `
-    gtag('event', 'sign_up', {
-        <br>
-        <span class="indent">'event': 'add_payment_info'</span>,
+    gtag('event', 'add_payment_info', {
         <br>
         <span class="indent">'currency': 'USD'</span>,
         <br>
@@ -127,7 +125,7 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
     <br>
     events: [{
       <br>
-      <span class="indent">name: 'sign_yp'</span>,
+      <span class="indent">name: 'add_payment_info'</span>,
       <br>
       <span class="indent">params: {
         <br>
