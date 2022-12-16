@@ -29,7 +29,7 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
     <br>
     events: [{
       <br>
-      <span class="indent">name: 'sign_yp'</span>,
+      <span class="indent">name: 'sign_up'</span>,
       <br>
       <span class="indent">params: {
         <br>
