@@ -4,22 +4,22 @@ let dataLayerTrialEndEvent = `
         <br>
         <span class="indent">'event': 'trial_end'</span>,
         <br>
-        <span class="indent">'start_date': '1970-01-01'</span>
+        <span class="indent">'start_date': '1970-01-01'</span>,
         <br>
         <span class="indent">'end_date': '1970-01-02'</span>,
         <br>
-        <span class="indent">'plan_name': 'Premium'</span>,
+        <span class="indent">'plan_name': 'Premium'</span>
         <br>
       });`
 
 let gtagTrialEndEvent = `
     gtag('event', 'trial_end', {
         <br>
-        <span class="indent">'start_date': '1970-01-01'</span>
+        <span class="indent">'start_date': '1970-01-01'</span>,
         <br>
         <span class="indent">'end_date': '1970-01-02'</span>,
         <br>
-        <span class="indent">'plan_name': 'Premium'</span>,
+        <span class="indent">'plan_name': 'Premium'</span>
         <br>
     });`
 
@@ -42,11 +42,11 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
       <br>
       <span class="indent">params: {
         <br>
-        <span class="indent">'start_date': '1970-01-01'</span>
+        <span class="indent">'start_date': '1970-01-01'</span>,
         <br>
         <span class="indent">'end_date': '1970-01-02'</span>,
         <br>
-        <span class="indent">'plan_name': 'Premium'</span>,
+        <span class="indent">'plan_name': 'Premium'</span>
         <br>
       }
       <br>

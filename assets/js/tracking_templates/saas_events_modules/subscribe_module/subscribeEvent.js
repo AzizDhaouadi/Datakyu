@@ -8,13 +8,13 @@ let dataLayerSubscribeEvent = `
         <br>
         <span class="indent">'value': 22</span>,
         <br>
-        <span class="indent">'date': '1970-01-01'</span>
+        <span class="indent">'date': '1970-01-01'</span>,
         <br>
         <span class="indent">'next_bill_date': '1971-01-01'</span>,
         <br>
         <span class="indent">'payment_type': 'Credit Card'</span>,
         <br>
-        <span class="indent">'organization_id': 'orgNum1'</span>,
+        <span class="indent">'organization_id': 'orgNum1'</span>
         <br>
       });`
 
@@ -25,13 +25,13 @@ let gtagSubscribeEvent = `
         <br>
         <span class="indent">'value': 22</span>,
         <br>
-        <span class="indent">'date': '1970-01-01'</span>
+        <span class="indent">'date': '1970-01-01'</span>,
         <br>
         <span class="indent">'next_bill_date': '1971-01-01'</span>,
         <br>
         <span class="indent">'payment_type': 'Credit Card'</span>,
         <br>
-        <span class="indent">'organization_id': 'orgNum1'</span>,
+        <span class="indent">'organization_id': 'orgNum1'</span>
         <br>
     });`
 
@@ -58,13 +58,13 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
         <br>
         <span class="indent">'value': 22</span>,
         <br>
-        <span class="indent">'date': '1970-01-01'</span>
+        <span class="indent">'date': '1970-01-01'</span>,
         <br>
         <span class="indent">'next_bill_date': '1971-01-01'</span>,
         <br>
         <span class="indent">'payment_type': 'Credit Card'</span>,
         <br>
-        <span class="indent">'organization_id': 'orgNum1'</span>,
+        <span class="indent">'organization_id': 'orgNum1'</span>
         <br>
       }
       <br>
