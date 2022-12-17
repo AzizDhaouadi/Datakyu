@@ -137,7 +137,7 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
     client_id: 'XXXXXXXXXX.YYYYYYYYYY',
     <br>
     events: [{
-      <span class="indent">name: 'login'</span>,
+      <span class="indent">name: 'purchase'</span>,
       <span class="indent">params: {
         <span class="indent">'transaction_id': 'L_12345'</span>,
         <br>
@@ -198,4 +198,4 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
   })
 });`
 
-export {dataLayerPurchaseEvent, gtagPurchaseEvent, apiPurchaseEvent};
+export {dataLayerRefundEvent, gtagRefundEvent, apiRefundEvent};
