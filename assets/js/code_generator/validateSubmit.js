@@ -41,6 +41,28 @@ import * as saasCancelSubscriptionEvents from '../tracking_templates/saas_events
 
 import * as saasRenewSubscriptionEvents from '../tracking_templates/saas_events_modules/renew_subscription_module/renewSubscriptionEvent.js'
 
+import * as ecommerceAddPaymentInfoEvents from '../tracking_templates/ecommerce_events_modules/add_payment_info_module/addPaymentInfoEvent.js'
+
+import * as ecommerceAddShippingInfoEvents from '../tracking_templates/ecommerce_events_modules/add_shipping_info_module/addShippingInfoEvent.js'
+
+import * as ecommerceAddToCartEvents from '../tracking_templates/ecommerce_events_modules/add_to_cart_module/addToCartEvent.js'
+
+import * as ecommerceBeginCheckoutEvents from '../tracking_templates/ecommerce_events_modules/begin_checkout_module/beginCheckoutEvent.js'
+
+import * as ecommercePurhcaseEvents from '../tracking_templates/ecommerce_events_modules/begin_checkout_module/beginCheckoutEvent.js'
+
+import * as ecommerceRefundEvents from '../tracking_templates/ecommerce_events_modules/refund_module/refundEvent.js'
+
+import * as ecommerceRemoveFromCartEvents from '../tracking_templates/ecommerce_events_modules/remove_from_cart_module/removeFromCart.js'
+
+import * as ecommerceSelectItemEvents from '../tracking_templates/ecommerce_events_modules/select_item_module/selectItemEvent.js'
+
+import * as ecommerceViewCartEvents from '../tracking_templates/ecommerce_events_modules/view_cart_module/viewCartEvent.js'
+
+import * as ecommerceViewItemEvents from '../tracking_templates/ecommerce_events_modules/view_item_module/viewItemEvent.js'
+
+import * as ecommerceViewItemListEvents from '../tracking_templates/ecommerce_events_modules/view_list_item_module/viewItemListEvent.js'
+
 const codeGeneratorForm = document.getElementById('codeGeneratorForm');
 console.log("found the form");
 
@@ -360,6 +382,151 @@ codeGeneratorForm.addEventListener("submit", (event) => {
 
 
             }
-        break;     
+        break;
+        
+        case "ecommerce":
+            switch(chosenEventName) {
+                case "add_payment_info":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceAddPaymentInfoEvents.dataLayerAddPaymentInfoEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceAddPaymentInfoEvents.gtagAddPaymentInfoEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceAddPaymentInfoEvents.apiAddPaymentInfoEvent;
+                            break;
+                        }
+                break;
+                
+                case "begin_checkout":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceBeginCheckoutEvents.dataLayerBeginCheckoutEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceBeginCheckoutEvents.gtagBeginCheckoutEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceBeginCheckoutEvents.apiBeginCheckoutEvent;
+                            break;
+                    }
+                break;
+
+                case "view_list_item":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceViewItemListEvents.dataLayerViewItemListEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceViewItemListEvents.gtagViewItemListEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceViewItemListEvents.apiViewItemListEvent;
+                            break;
+                        }
+                break;
+
+                case "add_to_cart":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceAddToCartEvents.dataLayerAddToCartEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceAddToCartEvents.gtagAddToCartEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceAddToCartEvents.apiAddToCartEvent;
+                            break;
+                    }
+                break;
+                
+                case "purchase":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommercePurhcaseEvents.dataLayerPurchaseEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommercePurhcaseEvents.gtagPurchaseEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommercePurhcaseEvents.apiPurchaseEvent;
+                            break;
+                    }
+                break;
+
+                case "select_item":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceSelectItemEvents.dataLayerSelectItemEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceSelectItemEvents.gtagSelectItemEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceSelectItemEvents.apiSelectItemEvent;
+                            break;
+                    }
+                break;
+
+                case "view_cart":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceViewCartEvents.dataLayerViewCartEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceViewCartEvents.gtagViewCartEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceViewCartEvents.apiViewCartEvent;
+                            break;
+                    }
+                break;
+
+                case "remove_from_cart":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceRemoveFromCartEvents.dataLayerRemoveFromCartEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceRemoveFromCartEvents.gtagRemoveFromCartEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceRemoveFromCartEvents.apiRemoveFromCartEvent;
+                            break;
+                    }
+                break;
+
+                case "add_shipping_info":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceAddShippingInfoEvents.dataLayerAddShippingInfoEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceAddShippingInfoEvents.gtagAddShippingInfoEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceAddShippingInfoEvents.apiAddShippingInfoEvent;
+                            break;
+                    }
+                break;
+
+                case "refund":
+                    switch(chosenTrackingMedium) {
+                        case "dataLayer":
+                            codeConatainerSection.innerHTML = ecommerceRefundEvents.dataLayerRefundEvent;
+                            break;
+                        case "gtag":
+                            codeConatainerSection.innerHTML = ecommerceRefundEvents.gtagRefundEvent;
+                            break;
+                        case "API":
+                            codeConatainerSection.innerHTML = ecommerceRefundEvents.apiRefundEvent;
+                            break;
+                    }
+                break;
+
+            }
+        break;
     }
 });
