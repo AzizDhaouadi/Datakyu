@@ -3,14 +3,14 @@ let dataLayerDeleteAccountEvent = `
     <br>
     window.dataLayer.push({
         <br>
-        <span class="indent">'event': 'delete_user'</span>,
+        <span class="indent">'event': 'delete_account'</span>,
         <br>
         <span class="indent">'organization_id': 'orgNum1'</span>
         <br>
     });`;
 
 let gtagDeleteAccountEvent = `
-    gtag('event', 'delete_user', {
+    gtag('event', 'delete_account', {
         <br>
         <span class="indent">'organization_id': 'orgNum1'</span>
         <br>
@@ -26,7 +26,7 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
   body: JSON.stringify({ <br>
     client_id: 'XXXXXXXXXX.YYYYYYYYYY', <br>
     events: [{ <br>
-      name: 'delete_user', <br>
+      name: 'delete_account', <br>
       params: { <br>
         'organization_id': 'orgNum1' <br>
       } <br>

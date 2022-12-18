@@ -3,14 +3,14 @@ let dataLayerCreateAccountEvent = `
     <br>
     window.dataLayer.push({
         <br>
-        <span class="indent">'event': 'add_user'</span>,
+        <span class="indent">'event': 'create_account'</span>,
         <br>
         <span class="indent">'organization_id': 'orgNum1'</span>
         <br>
     });`;
 
 let gtagCreateAccountEvent = `
-    gtag('event', 'add_user', {
+    gtag('event', 'create_account', {
         <br>
         <span class="indent">'organization_id': 'orgNum1'</span>
         <br>
@@ -27,7 +27,7 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
   body: JSON.stringify({ <br>
     client_id: 'XXXXXXXXXX.YYYYYYYYYY', <br>
     events: [{ <br>
-      name: 'add_user', <br>
+      name: 'create_account', <br>
       params: { <br>
         'organization_id': 'orgNum1' <br>
       } <br>
