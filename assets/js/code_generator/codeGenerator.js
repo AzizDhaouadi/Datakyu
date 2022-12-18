@@ -21,7 +21,7 @@ window.dataLayer.push({
 
 
 window.onload = () => {
-    codeConatainer.innerHTML = placeholderSampleCode;
+    codeConatainer.innerHTML = placeholderSampleCode;   
 }
 
 let dropDownElement = document.getElementById('event_name');
