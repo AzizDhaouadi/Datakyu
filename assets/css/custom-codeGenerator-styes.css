@@ -2,6 +2,8 @@
 
 :root {
     --bs-body-background-color: #fef8f2;
+    --window-border-radius: 0.25rem;
+    --lower-code-window-background-color: #f1f2f2;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
 .display-flex {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 #generatorContainer {
@@ -22,16 +25,44 @@ body {
 
 #generatorSection{
     width: 45%;
-    max-width: 45%;
+    max-width: max-content;
 }
 
-#codeSection {
+#codeSectionContainer {
     width: 45%;
     max-width: 45%;
+    max-height: max-content;
 }
 
 #codeSection {
     font-weight: bold;
+}
+
+.upper_window {
+    border: 1px solid gray;
+}
+
+.lower_window {
+    border: 1px solid gray;
+    border-top: 0px;
+}
+
+.upper_window {
+    border-top-left-radius: var(--window-border-radius);
+    border-top-right-radius: var(--window-border-radius);
+    background-color: var(--lower-code-window-background-color);
+}
+
+.lower_window {
+    border-bottom-left-radius: var(--window-border-radius);
+    border-bottom-right-radius: var(--window-border-radius);
+    padding: 1rem;
+    background-color: var(--lower-code-window-background-color);
+}
+
+.upper_window p {
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 .indent{
