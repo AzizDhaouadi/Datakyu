@@ -26,14 +26,14 @@ window.dataLayer.push({
  <div class="col-sm-4">
  <div class="mb-4">
    <label class="form-label added_label_name">Event paramater</label>
-   <input type="text" class="form-control added name" placeholder="name">
+   <input type="text" autocomplete="off" class="form-control added name" placeholder="name">
    </div>
 </div>
  
 <div class="col-sm-4">
  <div class="mb-4">
    <label class="form-label added_label_value">Value</label>
-   <input type="text" class="form-control added value" placeholder="value">
+   <input type="text" autocomplete="off" class="form-control added value" placeholder="value">
    </div>
 </div>
 
