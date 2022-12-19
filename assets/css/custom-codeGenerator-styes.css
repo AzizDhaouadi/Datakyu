@@ -94,3 +94,49 @@ body {
     position: relative;
     top: 0.3rem;
 }
+
+/* Begin responsiveness */
+
+@media only screen and (max-width: 810px) {
+    #generatorSection, #codeSectionContainer {
+        width: 80%;
+    }
+
+    #codeSectionContainer {
+        max-width: 80%;
+    }
+
+    .display-flex {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flex_row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: max-content;
+    }
+
+    div.d-grid.mb-2 button{
+        max-width: 100% !important;
+    }
+
+    div.content-space-1{
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
+
+    div.content-space-1.code_window{
+        padding-bottom: 4rem !important;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .code_window {
+        position: relative;
+        right: 5rem;
+    }
+}
