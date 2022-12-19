@@ -174,29 +174,21 @@
                     </div>
                   </div>                 
                 </div>
-        
-                <!-- <div class="mb-4">
-                <label class="form-label visually-hidden" for="hireUsFormDetails">Details</label>
-                <textarea class="form-control" name="hireUsFormNameDetails" id="hireUsFormDetails" placeholder="Tell us about your project" aria-label="Tell us about your project" rows="4" data-form-type="other"></textarea>
-                </div>
-        
-                <div class="form-check mb-4">
-                <input type="checkbox" class="form-check-input" id="signupFormPrivacyCheck" name="signupFormPrivacyCheck" required="" data-msg="Please accept our Privacy Policy." data-form-type="consent,privacy_policy">
-                <label class="form-check-label" for="signupFormPrivacyCheck"> By submitting this form I have read and acknowledged the <a href="./page-privacy.html">Privacy Policy</a></label>
-                </div> -->
-        
+      
                 <div class="d-grid mb-2">
-                <button type="submit" class="btn btn-primary btn-lg" data-form-type="action">Send inquiry</button>
+                <button type="submit" class="btn btn-primary btn-lg" data-form-type="action" style="max-width: 45%;">Generate event</button>
                 </div>
-        
-                <!-- <div class="text-center">
-                <span class="form-text">We'll get back to you in 1-2 business days.</span>
-                </div> -->
             </form>
             </div>
             <!-- End Form -->
         </div>
-        <div id="codeSection" class="container content-space-1 content-space-md-3"></div>
+        <div class="container content-space-1 content-space-md-3 code_window" id="codeSectionContainer">
+          <div class="upper_window">
+            <p>Event name</p>
+          </div>
+          <div id="codeSection" class="lower_window"></div>
+        </div>
+        
     </section>
     <script src="assets/js/code_generator/codeGenerator.js" type="text/javascript"></script>
     <script src="assets/js/code_generator/validateSubmit.js" type="module"></script>
