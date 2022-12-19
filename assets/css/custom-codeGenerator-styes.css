@@ -51,3 +51,15 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+
+#custom_event_name_parameters_div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.remove{
+    display: block;
+    position: relative;
+    top: 0.3rem;
+}
