@@ -89,6 +89,7 @@ radioButtonsList.forEach((radioButton) => {
                  } else {
                     eventNameDropDownContainer.classList.toggle("visually-hidden");
                     customEventNameInputField.classList.toggle("visually-hidden");
+                    customEventParametersDiv.classList.toggle("visually-hidden");
                  }
                  break;
             
@@ -109,6 +110,7 @@ radioButtonsList.forEach((radioButton) => {
                  } else {
                     eventNameDropDownContainer.classList.toggle("visually-hidden");
                     customEventNameInputField.classList.toggle("visually-hidden");
+                    customEventParametersDiv.classList.toggle("visually-hidden");
                  }
                  break;
 
@@ -125,6 +127,7 @@ radioButtonsList.forEach((radioButton) => {
                      } else {
                         eventNameDropDownContainer.classList.toggle("visually-hidden");
                         customEventNameInputField.classList.toggle("visually-hidden");
+                        customEventParametersDiv.classList.toggle("visually-hidden");
                      }
                      break;
             
@@ -132,16 +135,17 @@ radioButtonsList.forEach((radioButton) => {
                 eventNameDropDownContainer.classList.toggle("visually-hidden");
                 customEventNameInputField.classList.toggle("visually-hidden");
                 customEventParametersDiv.classList.toggle("visually-hidden");
-                addCustomEventParameterButton.addEventListener("click", (e) => {
-                    let rowToAppend = document.createElement("div");
-                    rowToAppend.setAttribute("class", "row");
-                    rowToAppend.innerHTML = customEventParameterRow;
-                    customEventParametersDiv.insertBefore(rowToAppend, button_row);
-                    
-                });
         }        
 
     });
+});
+
+addCustomEventParameterButton.addEventListener("click", (e) => {
+  let rowToAppend = document.createElement("div");
+  rowToAppend.setAttribute("class", "row");
+  rowToAppend.innerHTML = customEventParameterRow;
+  customEventParametersDiv.insertBefore(rowToAppend, button_row);
+  
 });
 
 // Select the node that will be observed for mutations
