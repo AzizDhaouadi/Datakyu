@@ -64,7 +64,6 @@ import * as ecommerceViewItemEvents from '../tracking_templates/ecommerce_events
 import * as ecommerceViewItemListEvents from '../tracking_templates/ecommerce_events_modules/view_list_item_module/viewItemListEvent.js'
 
 const codeGeneratorForm = document.getElementById('codeGeneratorForm');
-console.log("found the form");
 
 let codeContainerSection = document.getElementById('codeSection');
 
@@ -725,5 +724,25 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                 break;
             }
         break;
+    }
+
+    if(chosentEventType == "all_properties" || chosentEventType == "SaaS" || chosentEventType == "ecommerce") {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'generate_code_sample',
+            'custom_code_type': chosentEventType,
+            'custom_code_name': chosenEventName,
+            'tracking_medium': chosenTrackingMedium
+        });
+    }
+    else {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'generate_code_sample',
+            'custom_code_type': chosentEventType,
+            'custom_code_name': codeGeneratorForm.elements["custom_event_name"].value,
+            'tracking_medium': chosenTrackingMedium,
+            'custom_event_parameters': document.querySelectorAll("input.added.name").length
+        });
     }
 });
