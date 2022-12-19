@@ -68,16 +68,23 @@ console.log("found the form");
 
 let codeContainerSection = document.getElementById('codeSection');
 
-
 let chosentEventType;
 let chosenEventName;
 let chosenTrackingMedium;
 
+let addedCustomEventName;
+let addedEventParameterNames = [];
+let addedEventParameterValues = [];
+
+
 codeGeneratorForm.addEventListener("submit", (event) => {
+
     event.preventDefault();
     chosentEventType = codeGeneratorForm.elements["event_type"].value;
     chosenEventName = codeGeneratorForm.elements["event_name"].value;
     chosenTrackingMedium = codeGeneratorForm.elements["tracking_medium"].value;
+    addedCustomEventName = codeGeneratorForm.elements["custom_event_name"].value;
+
     switch(chosentEventType) {
         case "all_properties":
             switch(chosenEventName) {
@@ -540,6 +547,182 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     }
                 break;
 
+            }
+        break;
+
+        case "custom_event":
+            switch(chosenTrackingMedium) {
+                case "dataLayer":
+                    for(let eventParameterName = 0; eventParameterName < codeGeneratorForm.querySelectorAll(".added.name").length; eventParameterName++) {
+                        addedEventParameterNames.push(codeGeneratorForm.querySelectorAll(".added.name")[eventParameterName].value);
+                    }
+                    for(let eventParameterValue = 0; eventParameterValue < codeGeneratorForm.querySelectorAll(".added.value").length; eventParameterValue++) {
+                        addedEventParameterValues.push(codeGeneratorForm.querySelectorAll(".added.value")[eventParameterValue].value);
+                    }
+
+                    let addSectionArray = [];
+                    let addSection = '';
+
+                    if(addedEventParameterNames.length == 1) {
+                        for(let addedEventParameterName = 0; addedEventParameterName < addedEventParameterNames.length; addedEventParameterName++) {
+                            for(let addedEventParameterValue = 0; addedEventParameterValue < addedEventParameterValues.length; addedEventParameterValue++) {
+                                addSectionArray.push(`<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterValue]}'</span>
+                                <br>
+                                `
+                            )};
+                        }
+                        addSection = addSectionArray.join("");
+
+                    } else {
+                        for(let addedEventParameterName = 0; addedEventParameterName < addedEventParameterNames.length; addedEventParameterName++) {
+                            addSectionArray.push(`<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterName]}',</span>
+                            <br>
+                            `);
+
+                            if(addedEventParameterName == addedEventParameterNames.length-1) {
+                                addSectionArray[addSectionArray.length - 1] = `<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterName]}'</span>
+                                <br>
+                                `
+                            }
+                        }
+                        addSection = addSectionArray.join("");
+                    }
+
+                    let generatedCode = `
+                    window.dataLayer = window.dataLayer || [];
+                    <br>
+                    window.dataLayer.push({
+                        <br>
+                        <span class="indent">'event': '${addedCustomEventName}'</span>,
+                        <br>
+                        ${addSection}
+                    });
+                    `;
+
+                    codeContainerSection.innerHTML = generatedCode;
+
+                    addedCustomEventName= '';
+                    addedEventParameterNames = [];
+                    addedEventParameterValues = [];
+
+                break;
+
+                case "gtag":
+                    for(let eventParameterName = 0; eventParameterName < codeGeneratorForm.querySelectorAll(".added.name").length; eventParameterName++) {
+                        addedEventParameterNames.push(codeGeneratorForm.querySelectorAll(".added.name")[eventParameterName].value);
+                    }
+                    for(let eventParameterValue = 0; eventParameterValue < codeGeneratorForm.querySelectorAll(".added.value").length; eventParameterValue++) {
+                        addedEventParameterValues.push(codeGeneratorForm.querySelectorAll(".added.value")[eventParameterValue].value);
+                    }
+
+                    let addSectionArrayGtag = [];
+                    let addSectionGtag = '';
+
+                    if(addedEventParameterNames.length == 1) {
+                        for(let addedEventParameterName = 0; addedEventParameterName < addedEventParameterNames.length; addedEventParameterName++) {
+                            for(let addedEventParameterValue = 0; addedEventParameterValue < addedEventParameterValues.length; addedEventParameterValue++) {
+                                addSectionArrayGtag.push(`<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterValue]}'</span>
+                                <br>
+                                `
+                            )};
+                        }
+                        addSectionGtag = addSectionArrayGtag.join("");
+
+                    } else {
+                        for(let addedEventParameterName = 0; addedEventParameterName < addedEventParameterNames.length; addedEventParameterName++) {
+                            addSectionArrayGtag.push(`<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterName]}',</span>
+                            <br>
+                            `);
+
+                            if(addedEventParameterName == addedEventParameterNames.length-1) {
+                                addSectionArrayGtag[addSectionArrayGtag.length - 1] = `<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterName]}'</span>
+                                <br>
+                                `
+                            }
+                        }
+                        addSectionGtag = addSectionArrayGtag.join("");
+                    }
+
+                    let generatedCodeGtag = `
+                    gtag({'event': '${addedCustomEventName}', {
+                        <br>
+                        ${addSectionGtag}
+                      }
+                      <br>
+                    });
+                    `;
+
+                    codeContainerSection.innerHTML = generatedCodeGtag;
+
+                    addedCustomEventName= '';
+                    addedEventParameterNames = [];
+                    addedEventParameterValues = [];
+
+                break;
+
+                case "API":
+                    for(let eventParameterName = 0; eventParameterName < codeGeneratorForm.querySelectorAll(".added.name").length; eventParameterName++) {
+                        addedEventParameterNames.push(codeGeneratorForm.querySelectorAll(".added.name")[eventParameterName].value);
+                    }
+                    for(let eventParameterValue = 0; eventParameterValue < codeGeneratorForm.querySelectorAll(".added.value").length; eventParameterValue++) {
+                        addedEventParameterValues.push(codeGeneratorForm.querySelectorAll(".added.value")[eventParameterValue].value);
+                    }
+
+                    let addSectionArrayApi = [];
+                    let addSectionApi = '';
+
+                    if(addedEventParameterNames.length == 1) {
+                        for(let addedEventParameterName = 0; addedEventParameterName < addedEventParameterNames.length; addedEventParameterName++) {
+                            for(let addedEventParameterValue = 0; addedEventParameterValue < addedEventParameterValues.length; addedEventParameterValue++) {
+                                addSectionArrayApi.push(`<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterValue]}'</span>
+                                <br>
+                                `
+                            )};
+                        }
+                        addSectionApi = addSectionArrayApi.join("");
+
+                    } else {
+                        for(let addedEventParameterName = 0; addedEventParameterName < addedEventParameterNames.length; addedEventParameterName++) {
+                            addSectionArrayApi.push(`<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterName]}',</span>
+                            <br>
+                            `);
+
+                            if(addedEventParameterName == addedEventParameterNames.length-1) {
+                                addSectionArrayApi[addSectionArrayApi.length - 1] = `<span class="indent">'${addedEventParameterNames[addedEventParameterName]}': '${addedEventParameterValues[addedEventParameterName]}'</span>
+                                <br>
+                                `
+                            }
+                        }
+                        addSectionApi = addSectionArrayApi.join("");
+                    }
+
+                    let generatedCodeApi = `
+                    'const measurement_id' = 'G-XXXXXXXXXX';
+                    <br>
+                    'const api_secret' = 'secret_value';
+                    <br>
+
+                    fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measurement_id}&api_secret=\${api_secret}\`, {<br>
+                    method: "POST", <br>
+                    body: JSON.stringify({ <br>
+                        client_id: 'XXXXXXXXXX.YYYYYYYYYY', <br>
+                        events: [{ <br>
+                        name: '${addedCustomEventName}', <br>
+                        params: { <br>
+                            ${addSectionApi}
+                        } <br>
+                        }] <br>
+                    }) <br>
+                    });
+                    `;
+
+                    codeContainerSection.innerHTML = generatedCodeApi;
+
+                    addedCustomEventName= '';
+                    addedEventParameterNames = [];
+                    addedEventParameterValues = [];
+
+                break;
             }
         break;
     }
