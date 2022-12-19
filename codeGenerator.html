@@ -83,22 +83,6 @@
             <!-- Form -->
             <div class="mx-auto" style="max-width: 35rem;">
             <form id="codeGeneratorForm" method="get">
-                <!-- <div class="row">
-                <div class="col-sm-6">
-                    <div class="mb-4">
-                    <label class="form-label visually-hidden" for="hireUsFormFirstName">First name</label>
-                    <input type="text" class="form-control" name="hireUsFormNameFirstName" id="hireUsFormFirstName" placeholder="First name" aria-label="First name" data-form-type="name,first">
-                    </div>
-                </div>
-        
-                <div class="col-sm-6">
-                    <div class="mb-4">
-                    <label class="form-label visually-hidden" for="hireUsFormLasttName">Last name</label>
-                    <input type="text" class="form-control" name="hireUsFormNameLastName" id="hireUsFormLasttName" placeholder="Last name" aria-label="Last name" data-form-type="name,last">
-                    </div>
-                </div>
-                </div> -->
-        
                 <div class="mb-4">
                   <p>Please select the event type</p>
                   <div class="flex_row">
@@ -138,6 +122,39 @@
                   <p>Please indicate the custom event name</p>
                   <label class="form-label visually-hidden" for="custom_event_name">Custom event name</label>
                   <input type="text" class="form-control" name="custom_event_name" id="custom_event_name" placeholder="Custom event name" aria-label="custom_event_name">
+                </div>
+
+                <div class="mb-4 visually-hidden" id="custom_event_name_parameters_div">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="mb-4">
+                        <label class="form-label" for="initial_custom_event_parameter_name">Event paramater</label>
+                        <input type="text" class="form-control added name" name="initial_custom_event_parameter_name" id="initial_custom_event_parameter_name" placeholder="name" aria-label="initial_custom_event_parameter_name">
+                        </div>
+                    </div>
+                      
+                    <div class="col-sm-4">
+                      <div class="mb-4">
+                        <label class="form-label" for="initial_custom_event_parameter_value">Value</label>
+                        <input type="text" class="form-control added value" name="initial_custom_event_parameter_value" id="initial_custom_event_parameter_value" placeholder="value" aria-label="initial_custom_event_parameter_value">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="mb-4">
+                        <label class="form-label">Remove paramater</label>
+                        <button class="btn btn-sm btn-secondary remove" type="button"> - </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row" id="button_row">
+                    <div class="col-sm-6">
+                      <div class="mb-4">
+                        <button class="btn btn-secondary btn-sm" id="add_custom_event_parameter">Add row</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="mb-4">
