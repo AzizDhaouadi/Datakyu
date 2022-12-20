@@ -198,4 +198,4 @@ fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measuremen
   })
 });`
 
-export {dataLayerRefundEvent, gtagRefundEvent, apiRefundEvent};
+export {dataLayerPurchaseEvent, gtagPurchaseEvent, apiPurchaseEvent};
