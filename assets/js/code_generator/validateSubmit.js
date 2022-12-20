@@ -49,7 +49,7 @@ import * as ecommerceAddToCartEvents from '../tracking_templates/ecommerce_event
 
 import * as ecommerceBeginCheckoutEvents from '../tracking_templates/ecommerce_events_modules/begin_checkout_module/beginCheckoutEvent.js'
 
-import * as ecommercePurhcaseEvents from '../tracking_templates/ecommerce_events_modules/begin_checkout_module/beginCheckoutEvent.js'
+import * as ecommercePurhcaseEvents from '../tracking_templates/ecommerce_events_modules/purchase_module/purchaseEvent.js'
 
 import * as ecommerceRefundEvents from '../tracking_templates/ecommerce_events_modules/refund_module/refundEvent.js'
 
