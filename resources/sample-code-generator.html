@@ -15,6 +15,7 @@
     <meta charset="utf-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Analytics 4 Sample Code Generator | Datakyu</title>
+    <meta name="description" content="Use Datakyu's Google Analytics 4 code sample generator to create tracking code for your website and save time for you and your developers.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/theme-styles.css">
     <link rel="stylesheet" href="/assets/css/custom-styles.css">
@@ -59,8 +60,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                  Link with href
+                <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasDocs" role="button" aria-controls="offcanvasDocs">
+                  How it works
                 </a>
                 <a class="nav-link" href="#">Submit feature request</a>
                 <a class="nav-link" href="#">Contact us</a>
@@ -77,14 +78,14 @@
         <div id="generatorSection" class="container content-space-1 content-space-md-3">
             <!-- Heading -->
             <div class="w-lg-65 text-center mx-lg-auto mb-7">
-            <h3>Google Analytics Sample Code Generator</h3>
+            <h1 class="h3">Google Analytics 4 Sample Code Generator</h1>
             <p>Use this tool to generate sample code for your web analytics tracking.</p>
             </div>
             <!-- End Heading -->
         
             <!-- Form -->
             <div class="mx-auto" style="max-width: 35rem;">
-            <form id="codeGeneratorForm" method="get">
+            <form id="codeGeneratorForm" method="POST">
                 <div class="mb-4">
                   <p>Please select the event type</p>
                   <div class="flex_row">
@@ -193,14 +194,23 @@
         
     </section>
     <!-- Begin Offcanvas Body -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDocs" aria-labelledby="offcanvasLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvasLabel">How it works</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <div>
-          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          <p>Something feels unclear? No worries. Here's how our tool works.</p>
+        </div>
+        <div>
+          <p>Using our tool is straightforward, pick an event type (general, SaaS or ecommerce), select the event you are interested in, choose the tracking method and hit generate.</p>
+        </div>
+        <div>
+          <p>Do you want to build your own event? That's okay.</p>
+        </div>
+        <div>
+          <p>Choose custom, add your own event name, add event parameters, if any, choose the tracking method and voila!</p>
         </div>
       </div>
     </div>
