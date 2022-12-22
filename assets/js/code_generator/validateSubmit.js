@@ -587,7 +587,16 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                         addSection = addSectionArray.join("");
                     }
 
-                    let generatedCode = `
+                    let generatedCodeZeroParameter = `
+                    window.dataLayer = window.dataLayer || [];
+                    <br>
+                    window.dataLayer.push({
+                        <br>
+                        <span class="indent">'event': '${addedCustomEventName}'</span>
+                    });
+                    `;
+
+                    let generatedCodeOnePlusParameter = `
                     window.dataLayer = window.dataLayer || [];
                     <br>
                     window.dataLayer.push({
@@ -598,11 +607,17 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     });
                     `;
 
-                    codeContainerSection.innerHTML = generatedCode;
-
-                    addedCustomEventName= '';
-                    addedEventParameterNames = [];
-                    addedEventParameterValues = [];
+                    if(codeGeneratorForm.querySelectorAll(".added.name").length == 0){
+                            codeContainerSection.innerHTML = generatedCodeZeroParameter;
+                            addedCustomEventName= '';
+                            addedEventParameterNames = [];
+                            addedEventParameterValues = [];
+                    } else {
+                            codeContainerSection.innerHTML = generatedCodeOnePlusParameter;
+                            addedCustomEventName= '';
+                            addedEventParameterNames = [];
+                            addedEventParameterValues = [];
+                    }
 
                 break;
 
@@ -642,7 +657,12 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                         addSectionGtag = addSectionArrayGtag.join("");
                     }
 
-                    let generatedCodeGtag = `
+                    let generatedCodeZeroParameterGtag = `
+                    gtag({'event': '${addedCustomEventName}'
+                    });
+                    `;
+                    
+                    let generatedCodeOnePlusParameterGtag = `
                     gtag({'event': '${addedCustomEventName}', {
                         <br>
                         ${addSectionGtag}
@@ -651,11 +671,17 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     });
                     `;
 
-                    codeContainerSection.innerHTML = generatedCodeGtag;
-
-                    addedCustomEventName= '';
-                    addedEventParameterNames = [];
-                    addedEventParameterValues = [];
+                    if(codeGeneratorForm.querySelectorAll(".added.name").length == 0){
+                        codeContainerSection.innerHTML = generatedCodeZeroParameterGtag;
+                        addedCustomEventName= '';
+                        addedEventParameterNames = [];
+                        addedEventParameterValues = [];
+                    } else {
+                        codeContainerSection.innerHTML = generatedCodeOnePlusParameterGtag;
+                        addedCustomEventName= '';
+                        addedEventParameterNames = [];
+                        addedEventParameterValues = [];
+                    }
 
                 break;
 
@@ -695,7 +721,25 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                         addSectionApi = addSectionArrayApi.join("");
                     }
 
-                    let generatedCodeApi = `
+                    let generatedCodeZeroParameterApi = `
+                    'const measurement_id' = 'G-XXXXXXXXXX';
+                    <br>
+                    'const api_secret' = 'secret_value';
+                    <br>
+
+                    fetch(\`https://www.google-analytics.com/mp/collect?measurement_id=\${measurement_id}&api_secret=\${api_secret}\`, {<br>
+                    method: "POST", <br>
+                    body: JSON.stringify({ <br>
+                        client_id: 'XXXXXXXXXX.YYYYYYYYYY', <br>
+                        events: [{ <br>
+                        name: '${addedCustomEventName}'
+                        <br>
+                        }] <br>
+                    }) <br>
+                    });
+                    `;
+
+                    let generatedCodeOnePlusParameterApi = `
                     'const measurement_id' = 'G-XXXXXXXXXX';
                     <br>
                     'const api_secret' = 'secret_value';
@@ -715,12 +759,18 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     });
                     `;
 
-                    codeContainerSection.innerHTML = generatedCodeApi;
-
-                    addedCustomEventName= '';
-                    addedEventParameterNames = [];
-                    addedEventParameterValues = [];
-
+                    if(codeGeneratorForm.querySelectorAll(".added.name").length == 0) {
+                        codeContainerSection.innerHTML = generatedCodeZeroParameterApi;
+                        addedCustomEventName= '';
+                        addedEventParameterNames = [];
+                        addedEventParameterValues = [];
+                    } else {
+                        codeContainerSection.innerHTML = generatedCodeOnePlusParameterApi;
+                        addedCustomEventName= '';
+                        addedEventParameterNames = [];
+                        addedEventParameterValues = [];
+                    }
+                    
                 break;
             }
         break;
