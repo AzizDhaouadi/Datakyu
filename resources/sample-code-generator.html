@@ -270,6 +270,21 @@
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                How do I fire the event?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                If you are working with the dataLayer, then you will have to add the generate inside a function to be called when the user takes the specific action.<br>
+                Then you will need to create an <code>Google Analytics: GA4 Event</code> tag inside Google Tag Manager which will fire based on a <code>Custom Event</code> trigger where the event name is the same as the generate event name.<br>
+                If you are working with gtag.js then you will need to insert the code inside a function which will be called when the user takes the specific action you need them to take.<br>
+                In case you are using the Measurement Protocol, then you will need to send the event using the<code> fetch API</code> which will be used with gtag.js. The event can be sent through and <code>HTTP POST</code> request if you are sending it with any other method.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
