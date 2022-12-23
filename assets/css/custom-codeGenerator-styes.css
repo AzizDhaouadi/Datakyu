@@ -95,6 +95,10 @@ body {
     top: 0.3rem;
 }
 
+.lower_window{
+    word-wrap: break-word;
+}
+
 /* Begin responsiveness */
 
 @media only screen and (max-width: 810px) {
@@ -138,5 +142,11 @@ body {
     .code_window {
         position: relative;
         right: 5rem;
+    }
+}
+
+@media only screen and (min-width: 820px) and (max-width:1080px) {
+    button[type="submit"] {
+        max-width: 55% !important;
     }
 }
