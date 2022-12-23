@@ -79,6 +79,12 @@
       .text-bold {
         font-weight: bold
       }
+      a#navbarDropdown:hover{
+        color: var(--bs-nav-link-hover-color)
+      }
+      a.dropdown-item:hover{
+        background-color: #e5f8f3;
+      }
 
       @media only screen and (max-width: 810px) {
         .device-mobile {
@@ -93,6 +99,9 @@
       @media only screen and (min-width: 810px) {
         .device-mobile {
           width: 25rem;
+        }
+        .max-height-set{
+          max-height: 55vh;
         }
       }
 
@@ -124,6 +133,16 @@
                 <a class="nav-link" href="#services">Our Services</a>
                 <a class="nav-link" href="#ourProcess">Our Process</a>
                 <a class="nav-link" href="#packages">Packages</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Resources
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/resources/sample-code-generator.html">GA4 Sample Code Generator</a></li>
+                    <li><hr class="dropdown-divider">Coming Soon</li>
+                    <li><a class="dropdown-item" href="#">Google Tag Manager Container Templates</a></li>
+                  </ul>
+                </li>
               </div>
             </div>
           </div>        
@@ -143,8 +162,7 @@
                 </div>
     
                 <div class="text-center">
-                    <!-- <img class="img-fluid" src="https://htmlstream.com/preview/space-v2.3/assets/svg/illustrations/oc-chatting-and-payment.svg" alt="Image Description"> -->
-                    <img class="img-fluid max-height-set" src="https://htmlstream.com/preview/space-v2.3/assets/svg/illustrations/oc-chatting-and-payment.svg" alt="Image Description">
+                    <img class="img-fluid max-height-set" src="https://miro.medium.com/max/1100/1*c1RCTH91LGEatDAEHcCibw.png" alt="Image Description">
                 </div>
             </section>
         </div>
