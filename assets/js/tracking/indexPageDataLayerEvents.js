@@ -23,6 +23,18 @@ navLinks.forEach((navLink) => {
     })
 });
 
+//Fire an event when a user clicks a nav item dropdown link
+const navDropdownLinks = document.querySelectorAll('ul.dropdown-menu a.dropdown-item');
+navDropdownLinks.forEach((navDropdownLink) => {
+    navDropdownLink.addEventListener('click', (e) => {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'clicked_nav_dropdown_link',
+            'nav_item': e.target.textContent
+        });
+    });
+});
+
 //Fire event when user clicks on the drop a message button
 const dropMessageButton = document.querySelector('a.btn-primary[href="#contactSection"]');
 dropMessageButton.addEventListener('click', () => {
