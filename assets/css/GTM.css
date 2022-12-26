@@ -1,0 +1,22 @@
+#faq {
+    max-width: 1140px;
+    margin: 4rem auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.accordion-body {
+    line-height: 2rem;
+}
+.accordion-body, .accordion-button{
+    background-color: white !important;
+}
+.accordion-button:focus {
+    z-index:3;
+    outline:0;
+    box-shadow: 0 0 0 0.1rem #e5e8e8;
+}
+
+#faq > h2{
+    text-align: center;
+    margin: 3rem auto;
+}
