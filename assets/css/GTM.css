@@ -31,3 +31,13 @@
 .emoji{
     font-size: 1rem;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .align-items-md-center {
+        justify-content: center;
+        gap: 1.5em;
+    
+    }
+}
+
