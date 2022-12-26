@@ -150,3 +150,17 @@ body {
         max-width: 55% !important;
     }
 }
+
+@media only screen and (min-width: 1280px) {
+    .code_window {
+        position: relative;
+        right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .code_window {
+        position: relative;
+        right: 4rem;
+    }
+}
