@@ -112,11 +112,14 @@ html {
         justify-content: center;
     }
     .navbar-expand-lg .navbar-nav {
-        padding: 4rem 4rem;
+        padding: 1rem 1rem;
     }
     #navbarNavAltMarkup {
         border-radius: 25px;
         margin-top: 0.35rem;
+    }
+    ul.dropdown-menu{
+        padding-left: 0;
     }
 }
 
@@ -134,5 +137,11 @@ html {
 @media only screen and (min-width: 576px) and (max-width:810px) {
     .max-height-set {
         max-height: 55vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    ul.dropdown-menu {
+        left: -4.5rem !important; 
     }
 }
