@@ -54,7 +54,7 @@ navLinks.forEach((navLink) => {
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
              'event': 'clicked_nav_link',
-             'link': `${e.target.textContent}`
+             'nav_item': `${e.target.textContent}`
         });
     });
 });
