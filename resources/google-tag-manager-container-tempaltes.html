@@ -176,6 +176,89 @@
           ]
         }
       </script>
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to use the Google Tag Manager Container Tempaltes",
+          "tool": [
+            {
+              "@type": "HowToTool",
+              "name": "Your Google Tag Manager Workspace"
+            }, {
+              "@type": "HowToTool",
+              "name": "Your Google Tag Manager Container"
+            },{
+              "@type": "HowToTool",
+              "name": "Datakyu's Template Google Tag Manager Container"
+            }
+          ],
+          "step": [
+            {
+              "@type": "HowToStep",
+              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step1",
+              "name": "Download Datakyu's Template Container",
+              "itemListElement": [{
+                "@type": "HowToDirection",
+                "text": "Select of the container templates that you would like to use."
+              }, {
+                "@type": "HowToDirection",
+                "text": "Next, download the container of your choice."
+              }]
+            }, {
+              "@type": "HowToStep",
+              "name": "Import Container",
+              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step2",
+              "itemListElement": [{
+                "@type": "HowToTip",
+                "text": "Create a Google Tag Manager container in your current workspace. If you don't have an account, create a Google Tag Manager account and container."
+              }, {
+                "@type": "HowToDirection",
+                "text": "Next, head to the Admin section, and choose import container."
+              }
+              ]
+            }, {
+              "@type": "HowToStep",
+              "name": "Configure Imported Container",
+              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step3",
+              "itemListElement": [{
+                "@type": "HowToDirection",
+                "text": "For Choose container file, select the file you just downloaded."
+              }, {
+                "@type": "HowToDirection",
+                "text": "Then choose Existing."
+              }, {
+                "@type": "HowToDirection",
+                "text": "Next, select Merge"
+              }, {
+                "@type": "HowToTip",
+                "text": "Finally, click confirm"
+              }]
+            }, {
+              "@type": "HowToStep",
+              "name": "Change Measurement ID & Publish",
+              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step4",
+              "itemListElement": [{
+                "@type": "HowToDirection",
+                "text": "Change the Google Analytics 4 Measurement ID variable's value to that of your property."
+              }, {
+                "@type": "HowToDirection",
+                "text": "Review the imported tags, triggers and variables."
+              }, {
+                "@type": "HowToDirection",
+                "text": "Preview and test the current workspace configuration."
+              }, {
+                "@type": "HowToDirection",
+                "text": "Once your are done testing, publish your workspace."
+              }
+              ]
+            }
+          ],
+          "totalTime": "PT30M"
+       }
+    </script>
+    
    </head>
 <body>
     <header class="flex-menu navbar-absolute-top">
@@ -454,7 +537,7 @@
                       </svg>
                     </div>
                     <div>
-                      <h3 class="fs-3">Step One</h3>
+                      <h3 class="fs-3" id="step1">Step One</h3>
                       <p>Select of the container templates that you would like to use. Next, download the container of your choice, and, if necessary, go over the provided json file.</p>
                     </div>
                   </div>
@@ -466,7 +549,7 @@
                       </svg>
                     </div>
                     <div>
-                      <h3 class="fs-3">Step Two</h3>
+                      <h3 class="fs-3" id="step2">Step Two</h3>
                       <p>If you didn't already, create a Google Tag Manager account or create a new container for your existing account. Next, head to the <code>Admin</code> section, and choose import container.</p>
                     </div>
                   </div>
@@ -478,7 +561,7 @@
                       </svg>
                     </div>
                     <div>
-                      <h3 class="fs-3">Step Three</h3>
+                      <h3 class="fs-3" id="step3">Step Three</h3>
                       <p>For <code>Choose container file</code>, select the file you just downloaded. Then choose <code>Existing</code>, followed by selecting <code>Merge</code>. Finally, click on confirm.</p>
                     </div>
                   </div>
@@ -490,7 +573,7 @@
                       </svg>
                     </div>
                     <div>
-                      <h3 class="fs-3">Step Four</h3>
+                      <h3 class="fs-3" id="step4">Step Four</h3>
                       <p>Last but not least, change the <code>Google Analytics 4 Measurement ID</code> variable's value to that of your property and review the other tags, triggers and variables. Once you are done reviewing, it's time to preview and test the workspace changes. Once you have confirmed everything is working correctly, publish your container and you are done.</p>
                     </div>
                   </div>
@@ -514,7 +597,7 @@
                       <li class="list-group-item">Open Tag Manager.</li>
                       <li class="list-group-item">In the Accounts tab, next to the account name, click More Actions<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                         <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                      </svg> > Create Container.</li>
+                      </svg>Create Container.</li>
                       <li class="list-group-item">Enter a descriptive Container name and select the container type.</li>
                       <li class="list-group-item">To create your container, click Create</li>
                     </ul>
