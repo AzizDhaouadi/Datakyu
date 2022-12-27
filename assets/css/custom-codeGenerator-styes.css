@@ -7,10 +7,13 @@
 }
 
 body {
-    height: 100vh;
     background-color: var(--bs-body-background-color);
-    overflow-y: auto;
-    
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+}
+
+nav.navbar {
+    width: 90vw;
 }
 
 .display-flex {
@@ -26,6 +29,7 @@ body {
 #generatorSection{
     width: 45%;
     max-width: max-content;
+    padding-bottom: 1rem !important;
 }
 
 #codeSectionContainer {
@@ -138,10 +142,10 @@ body {
     }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1080px) and (max-width: 1112px){
     .code_window {
         position: relative;
-        right: 5rem;
+        right: 1rem;
     }
 }
 
@@ -162,5 +166,26 @@ body {
     .code_window {
         position: relative;
         right: 4rem;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    footer {
+        position: relative;
+        top: 5rem;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    footer {
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 1024px) {
+    body {
+        overflow: hidden;
+        box-sizing: border-box !important;
     }
 }
