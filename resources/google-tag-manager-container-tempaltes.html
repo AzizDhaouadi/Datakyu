@@ -453,7 +453,9 @@
                 </h2>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    We recommend <strong>merging</strong> the imported container with your current one. This way, you avoid overwriting any existing configuration which may lead to errors later. Any duplicate settings wll be renamed which avoid issues.
+                    <br>
+                    If you want to merge, make sure to inspect your current configuration and the new tags, triggers and variables to make sure nothing is causing any conflicts; only then do you proceed with the merge.
                   </div>
                 </div>
               </div>
@@ -465,7 +467,12 @@
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <ul class="list-group list-group-numbered list-group-flush">
+                      <li class="list-group-item">Open Tag Manager.</li>
+                      <li class="list-group-item">In the <strong>Variables</strong> tab, locate the variable <code>Google Analytics 4 Measurement ID</code>.</li>
+                      <li class="list-group-item">Paste the new value. The new value should be the Measurement ID of your Google Analytics 4 property.</li>
+                      <li class="list-group-item">To confirm the change, click save.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -477,7 +484,13 @@
                 </h2>
                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <ul class="list-group list-group-numbered list-group-flush">
+                      <li class="list-group-item">Open Tag Manager.</li>
+                      <li class="list-group-item">In the <strong>Triggers</strong> tab, locate the trigger you want to change.</li>
+                      <li class="list-group-item">If you are looking to fire the event using the <strong>Custom Event</strong> trigger but using a different name, simply paste your the new event name in the <code>Event name</code> input field.</li>
+                      <li class="list-group-item">If you are looking to change the trigger type, click on the <code>Trigger Type</code> field and proceed to select the new event trigger.</li>
+                    </ul>
+                    <p class="text-muted">Please note that changing the event trigger can cause some issues if not done properly. If you run into issues, you can reach out to us.</p>
                   </div>
                 </div>
               </div>
@@ -489,7 +502,21 @@
                 </h2>
                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <ul class="list-group list-group-numbered list-group-flush">
+                      <li class="list-group-item">Open Tag Manager.</li>
+                      <li class="list-group-item">In the <strong>Tags</strong> tab, locate the event you want to change.</li>
+                      <li class="list-group-item">If you are looking to change the name of the parameter, then locate the parameter and simply enter the new name in the <code>Parameter Name</code> field.</li>
+                      <li class="list-group-item">If you are looking to change the value of the parameter, then locate the parameter and simply enter the new value in the <code>Value</code> field.</li>
+                      <li class="list-group-item">If you are looking to remove an event parameter, then locate the parameter and click on the 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                          <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                        </svg>
+                        button.
+                      </li>
+                      <li class="list-group-item">If you are looking to add a new parameter, then on the <code>Add row</code> button and enter the event parameter name along with its corresponding value.</li>
+                      <p class="text-muted">Any value following the format of <code>{{Variable Name}}</code> refers to a variable's value.</p>
+                    </ul>
                   </div>
                 </div>
               </div>
