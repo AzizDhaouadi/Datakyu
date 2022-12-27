@@ -100,6 +100,82 @@
             color: #7fbca9;
          }
        </style>
+       <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity":[{
+            "@type": "Question",
+            "name": "How do I create a new container for my Google Tag Manager workspace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<ul>
+                <li>Open Tag Manager.</li>
+                <li>In the Accounts tab, next to the account name, click More Actions &#8942; Create Container.</li>
+                <li>Enter a descriptive Container name and select the container type.</li>
+                <li>To create your container, click Create</li>
+              </ul>"
+            }
+          },
+  
+          {
+            "@type": "Question",
+            "name": "Do I merge or overwite when importing the container?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We recommend <strong>merging</strong> the imported container with your current one. This way, you avoid overwriting any existing configuration which may lead to errors later. Any duplicate settings wll be renamed which avoid issues.
+              <br>
+              If you want to merge, make sure to inspect your current configuration and the new tags, triggers and variables to make sure nothing is causing any conflicts; only then do you proceed with the merge."
+            }
+          },
+  
+          {
+            "@type": "Question",
+            "name": "How do I change the Google Analytics 4 Measurement ID?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<ul>
+                <li>Open Tag Manager.</li>
+                <li>In the <strong>Variables</strong> tab, locate the variable <code>Google Analytics 4 Measurement ID</code>.</li>
+                <li>Paste the new value. The new value should be the Measurement ID of your Google Analytics 4 property.</li>
+                <li>To confirm the change, click save.</li>
+              </ul>"
+            }
+          },
+  
+          {
+            "@type": "Question",
+            "name": "How do I modify the event trigger?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<ul>
+                <li>Open Tag Manager.</li>
+                <li>In the <strong>Triggers</strong> tab, locate the trigger you want to change.</li>
+                <li>If you are looking to fire the event using the <strong>Custom Event</strong> trigger but using a different name, simply paste your the new event name in the <code>Event name</code> input field.</li>
+                <li>If you are looking to change the trigger type, click on the <code>Trigger Type</code> field and proceed to select the new event trigger.</li>
+              </ul>"
+            }
+          },
+  
+          {
+            "@type": "Question",
+            "name": "How do I modify the event parameters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "<ul>
+                        <li>Open Tag Manager.</li>
+                        <li>In the <strong>Tags</strong> tab, locate the event you want to change.</li>
+                        <li>If you are looking to change the name of the parameter, then locate the parameter and simply enter the new name in the <code>Parameter Name</code> field.</li>
+                        <li>If you are looking to change the value of the parameter, then locate the parameter and simply enter the new value in the <code>Value</code> field.</li>
+                        <li>If you are looking to remove an event parameter, then locate the parameter and click on the button.</li>
+                        <li>If you are looking to add a new parameter, then on the <code>Add row</code> button and enter the event parameter name along with its corresponding value.</li>
+                        <p>Any value following the format of <code>{{Variable Name}}</code> refers to a variable's value.</p>
+                      </ul>"
+            }
+          }
+          ]
+        }
+      </script>
    </head>
 <body>
     <header class="flex-menu navbar-absolute-top">
@@ -543,5 +619,6 @@
         });
       });
     </script>
+
 </body>
 </html>
