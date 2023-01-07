@@ -1,0 +1,20 @@
+:root{
+    --bs-orange: #f1b980;
+}
+
+#what_we_do{
+    position: relative;
+    top: 4rem;
+}
+
+#what_we_do h2{
+    text-transform: uppercase;
+}
+
+#what_we_do div.content-space-1{
+    padding-top: 0 !important;
+}
+
+#what_we_do div.content-space-1 h3{
+    color: var(--bs-orange);
+}
