@@ -36,12 +36,22 @@
           :root {
             --bs-body-text-font: 'Quicksand', sans-serif;
             --bs-nav-link-font-size: 1.225rem;
+            --bs-body-background-color: #fef8f2;
           }
           body {
             font-family: var(--bs-body-text-font);
+            background-color: var(--bs-body-background-color);
           }
           h1, h2, h3, h4, h5, h6 {
             font-family: var(--bs-font-monospace);
+          }
+
+          .text-green {
+            color: #008060;
+          }
+
+          .text-black {
+            color: #000 !important;
           }
     
           nav.home {
@@ -77,6 +87,11 @@
           }
           a.dropdown-item:hover{
             background-color: #e5f8f3;
+          }
+
+          #main{
+            position: relative;
+            top: 4rem;
           }
         </style>
     </head>
@@ -115,6 +130,101 @@
           </div>
         </nav>
     </header>
+    <main id="main">
+        <section id="hero">
+            <!-- Hero -->
+            <div>
+                <div class="container position-relative zi-2 content-space-b-1 content-space-t-2 content-space-md-3">
+                <!-- Heading -->
+                <div class="w-lg-75 text-center mx-lg-auto mb-7">
+                    <h1 class="display-3 text-green mb-md-5">Web Analytics <span class="text-warning">Services</span></h1>
+                    <p class="lead text-white-70 text-black">You build it, we track it! Let us help you build a comprehensive understanding of your business' online visitors.</p>
+                </div>
+                <!-- End Heading -->
+            
+                <div class="text-center mx-auto mb-7" style="max-width: 32rem;">            
+                    <button data-tf-popup="Y0vKRD5f" data-tf-iframe-props="title=Market-fit Landing Page Form" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#008060;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Learn more</button><script src="//embed.typeform.com/next/embed.js"></script>
+                </div>
+            
+                <!-- Code Editor -->
+                <div class="code-editor mx-auto" style="width: 46rem;">
+                    <div class="code-editor-container">
+                    <!-- Line Numbers -->
+                    <div class="code-editor-line-numbers">
+                        <span class="code-editor-line-numbers-item">1</span>
+                        <span class="code-editor-line-numbers-item">2</span>
+                        <span class="code-editor-line-numbers-item">3</span>
+                        <span class="code-editor-line-numbers-item">4</span>
+                        <span class="code-editor-line-numbers-item">5</span>
+                        <span class="code-editor-line-numbers-item">6</span>
+                        <span class="code-editor-line-numbers-item">7</span>
+                        <span class="code-editor-line-numbers-item">8</span>
+                        <span class="code-editor-line-numbers-item">9</span>
+                        <span class="code-editor-line-numbers-item">10</span>
+                        <span class="code-editor-line-numbers-item">11</span>
+                        <span class="code-editor-line-numbers-item">12</span>
+                        <span class="code-editor-line-numbers-item">13</span>
+                        <span class="code-editor-line-numbers-item">14</span>
+                        <span class="code-editor-line-numbers-item">15</span>
+                    </div>
+                    <!-- End Line Numbers -->
+                    <!-- Typing Area -->
+                    <div class="code-editor-typing-area">
+                        <div class="mb-4">
+                            <span class="text-muted">// gtag.js</span>
+                        </div>
+            
+                        <div class="mb-4">
+                            <span>gtag(</span>
+                            <div class="ps-3"><span>"event",</span></div>
+                            <div class="ps-3"><span>"user_login",{</span></div>
+                            <div class="ps-3"><span>"method":</span> <span>"google"</span></div>
+                            <div class="ps-3"><span>}</span></div>
+                            <div><span>);</span></div>
+                        </div>
+            
+                        <div class="mb-4">
+                            <span>gtag(</span>
+                            <div class="ps-3"><span>"event",</span></div>
+                            <div class="ps-3"><span>"user_signup",{</span></div>
+                            <div class="ps-3"><span>"signup_method":</span> <span>"email"</span></div>
+                            <div class="ps-3"><span>}</span></div>
+                            <div><span>);</span></div>
+                        </div>
+                    </div>
+                    <!-- End Typing Area -->
+            
+                    <!-- Typing Area -->
+                    <div class="code-editor-typing-area">
+                        <div class="mb-4">
+                        <span class="text-muted">// Segment</span>
+                        </div>
+            
+                        <div class="mb-4">
+                        <div><span>analytics.track('User Login', {</span></div>
+                        <div class="ps-3"><span>"method": 'google',</span></div>
+                        <div class="ps-3"><span>email: 'datakyu@help.tracking'</span></div>
+                        <div><span>});</span></div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div><span>analytics.track('User Signup', {</span></div>
+                            <div class="ps-3"><span>"method": 'email',</span></div>
+                            <div class="ps-3"><span>email: 'datakyu@help.tracking'</span></div>
+                            <div><span>});</span></div>
+                            </div>
+                    </div>
+                    <!-- End Typing Area -->
+                    </div>
+                  </div>
+                </div>
+                <!-- End Code Editor -->
+                </div>
+            </div>
+            <!-- End Hero -->
+            
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
