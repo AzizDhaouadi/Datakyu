@@ -658,17 +658,17 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     }
 
                     let generatedCodeZeroParameterGtag = `
-                    gtag({'event': '${addedCustomEventName}'
-                    });
+                    gtag('event', '${addedCustomEventName}'
+                    );
                     `;
                     
                     let generatedCodeOnePlusParameterGtag = `
-                    gtag({'event': '${addedCustomEventName}', {
+                    gtag('event', '${addedCustomEventName}', {
                         <br>
                         ${addSectionGtag}
                       }
                       <br>
-                    });
+                    );
                     `;
 
                     if(codeGeneratorForm.querySelectorAll(".added.name").length == 0){
