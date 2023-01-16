@@ -2,7 +2,7 @@
     --bs-orange: #f1b980;
 }
 
-#what_we_do, #pricing{
+#what_we_do, #pricing, #FAQ, footer{
     position: relative;
     top: 4rem;
 }
