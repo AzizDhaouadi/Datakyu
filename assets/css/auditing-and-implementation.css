@@ -2,7 +2,7 @@
     --bs-orange: #f1b980;
 }
 
-#what_we_do, #pricing, #FAQ, footer{
+#what_we_do, #pricing, footer{
     position: relative;
     top: 4rem;
 }
@@ -22,4 +22,9 @@
 ul#codeEditorTab a img {
     width: 4rem;
     height: 2rem;
+}
+
+#FAQ {
+    position: relative;
+    top: 3rem;
 }
