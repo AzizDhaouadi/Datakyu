@@ -613,21 +613,24 @@
 
                             <!-- Typing Area -->
                             <div class="code-editor-typing-area">
+
                               <div class="mb-4">
-                                <span>window.dataLayer.push(</span>
-                                <div class="ps-3"><span class="text-primary">"event",</span></div>
-                                <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
-                                <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
-                                <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                                <span class="text-primary">window.dataLayer = window.dataLayer || [];</span>
+                              </div>
+
+                              <div class="mb-4">
+                                <span>window.dataLayer.push({</span>
+                                  <div class="ps-3"><span class="text-primary">"event"</span><span>:"submitted_form",</span></div>
+                                <div class="ps-3"><span class="text-primary">"form_id"</span><span>:"contact_form",</span></div>
+                                <div class="ps-3"><span class="text-primary">"session_number"</span><span>:4</span></div>
                                 <div><span>});</span></div>
                               </div>
 
                               <div class="mb-4">
-                                <span>gtag(</span>
-                                <div class="ps-3"><span class="text-primary">"event",</span></div>
-                                <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
-                                <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
-                                <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer-Webinar"</span></div>
+                                <span>window.dataLayer.push({</span>
+                                  <div class="ps-3"><span class="text-primary">"event"</span><span>:"generate_lead",</span></div>
+                                <div class="ps-3"><span class="text-primary">"page"</span><span>:"/contact-us/",</span></div>
+                                <div class="ps-3"><span class="text-primary">"campaign"</span><span>:"Summer Webinar"</span></div>
                                 <div><span>});</span></div>
                               </div>
                             </div>
@@ -663,7 +666,26 @@
 
                             <!-- Typing Area -->
                             <div class="code-editor-typing-area">
-                              Coming soon...
+                              
+                              <div class="mb-4">
+                                <span class="text-primary">// Tracking events with Segment</span>
+                              </div>
+
+                              <div class="mb-4">
+                                <span>analytics.track(</span>
+                                <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">form_id</span>:<span>"contact_form",</span></div>
+                                <div class="ps-3"><span class="text-primary">session_number</span>:<span>4</span></div>
+                                <div><span>});</span></div>
+                              </div>
+
+                              <div class="mb-4">
+                                <span>analytics.track(</span>
+                                <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">page</span>:<span>"/contact-us/",</span></div>
+                                <div class="ps-3"><span class="text-primary">campaign</span>:<span>"Summer Webinar"</span></div>
+                                <div><span>});</span></div>
+                              </div>
                             </div>
                             <!-- End Typing Area -->
                           </div>
@@ -697,7 +719,25 @@
 
                             <!-- Typing Area -->
                             <div class="code-editor-typing-area">
-                              Coming soon...
+
+                              <div class="mb-4">
+                                <span class="text-primary">// Tracking events with Mixpanel</span>
+                              </div>
+
+                              <div class="mb-4">
+                                <span>mixpanel.track(</span>
+                                <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
+                                <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                                <div><span>});</span></div>
+                              </div>
+                              <div class="mb-4">
+                                <span>mixpanel.track(</span>
+                                <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
+                                <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer Webinar"</span></div>
+                                <div><span>});</span></div>
+                              </div>
                             </div>
                             <!-- End Typing Area -->
                           </div>
