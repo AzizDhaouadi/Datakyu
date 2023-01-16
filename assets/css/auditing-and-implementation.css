@@ -2,6 +2,11 @@
     --bs-orange: #f1b980;
 }
 
+
+html{
+    scroll-behavior: smooth !important;
+}
+
 #what_we_do, #pricing, footer, #why_work_with_us, #how_we_do_it{
     position: relative;
     top: 4rem;
