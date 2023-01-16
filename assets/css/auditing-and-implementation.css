@@ -18,3 +18,8 @@
 #what_we_do div.content-space-1 h3{
     color: var(--bs-orange);
 }
+
+ul#codeEditorTab a img {
+    width: 4rem;
+    height: 2rem;
+}
