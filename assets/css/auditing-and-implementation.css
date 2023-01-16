@@ -28,3 +28,42 @@ ul#codeEditorTab a img {
     position: relative;
     top: 3rem;
 }
+
+.accordion-body {
+    line-height: 2rem;
+  }
+
+  .accordion-body, .accordion-button{
+    background-color: white !important;
+  }
+
+  .accordion-button:focus {
+    z-index:3;
+    outline:0;
+    box-shadow: 0 0 0 0.1rem #e5e8e8;
+  }
+
+  .accordion-item {
+    border: 0.0625rem solid rgb(0, 34, 28, 0.1) !important;
+  }
+
+  .accordion-item:first-of-type {
+    border-top-left-radius: 0.3125rem !important; 
+    border-top-right-radius: 0.3125rem !important;
+  }
+
+  .accordion-item:not(:first-of-type) {
+    border-top: 0 !important;
+  }
+
+  .accordion-item:last-of-type {
+    border-bottom-right-radius: 0.3125rem !important; 
+    border-bottom-left-radius: 0.3125rem !important; 
+  }
+
+  .highlight{
+    background: rgba(135,131,120,0.15);
+    color: #EB5757;
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+  }
