@@ -559,26 +559,27 @@
                             <!-- Typing Area -->
                             <div class="code-editor-typing-area">
                               <div class="mb-4">
-                                <span class="text-primary">import</span> <span>space</span>
+                                <span class="text-primary">//Tracking events with gtag</span>
                               </div>
 
                               <div class="mb-4">
-                                <span>daa = sp.get(</span>
-                                <div class="ps-3"><span class="text-primary">"daily_active_addresses/space",</span></div>
-                                <div class="ps-3"><span class="text-primary">from_date=</span> <span>"2020-09-17",</span></div>
-                                <div class="ps-3"><span class="text-primary">to_date=</span> <span>"2020-09-21",</span></div>
-                                <div class="ps-3"><span class="text-primary">interval=</span> <span>"1hour"</span></div>
-                                <div><span>)</span></div>
+                                <span>gtag(</span>
+                                <div class="ps-3"><span class="text-primary">"event",</span></div>
+                                <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
+                                <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                                <div><span>});</span></div>
                               </div>
 
-                              <div>
-                                <span>prices = sp.get(</span>
-                                <div class="ps-3"><span class="text-primary">"prices/space",</span></div>
-                                <div class="ps-3"><span class="text-primary">from_date=</span> <span>"2020-09-17",</span></div>
-                                <div class="ps-3"><span class="text-primary">to_date=</span> <span>"2020-09-21",</span></div>
-                                <div class="ps-3"><span class="text-primary">interval=</span> <span>"1hour"</span></div>
-                                <div><span>)</span></div>
+                              <div class="mb-4">
+                                <span>gtag(</span>
+                                <div class="ps-3"><span class="text-primary">"event",</span></div>
+                                <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
+                                <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer-Webinar"</span></div>
+                                <div><span>});</span></div>
                               </div>
+
                             </div>
                             <!-- End Typing Area -->
                           </div>
@@ -612,7 +613,23 @@
 
                             <!-- Typing Area -->
                             <div class="code-editor-typing-area">
-                              Coming soon...
+                              <div class="mb-4">
+                                <span>window.dataLayer.push(</span>
+                                <div class="ps-3"><span class="text-primary">"event",</span></div>
+                                <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
+                                <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                                <div><span>});</span></div>
+                              </div>
+
+                              <div class="mb-4">
+                                <span>gtag(</span>
+                                <div class="ps-3"><span class="text-primary">"event",</span></div>
+                                <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                                <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
+                                <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer-Webinar"</span></div>
+                                <div><span>});</span></div>
+                              </div>
                             </div>
                             <!-- End Typing Area -->
                           </div>
