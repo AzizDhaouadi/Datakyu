@@ -19,9 +19,10 @@
     
           gtag('config', 'G-00VKM23QFH');
         </script>
-    
+
         <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,24 +176,10 @@
                         <div class="mb-4">
                             <span class="text-muted">// gtag.js</span>
                         </div>
-            
-                        <div class="mb-4">
-                            <span>gtag(</span>
-                            <div class="ps-3"><span>"event",</span></div>
-                            <div class="ps-3"><span>"user_login",{</span></div>
-                            <div class="ps-3"><span>"method":</span> <span>"google"</span></div>
-                            <div class="ps-3"><span>}</span></div>
-                            <div><span>);</span></div>
-                        </div>
-            
-                        <div class="mb-4">
-                            <span>gtag(</span>
-                            <div class="ps-3"><span>"event",</span></div>
-                            <div class="ps-3"><span>"user_signup",{</span></div>
-                            <div class="ps-3"><span>"signup_method":</span> <span>"email"</span></div>
-                            <div class="ps-3"><span>}</span></div>
-                            <div><span>);</span></div>
-                        </div>
+
+                        <div class="gtagtyped"></div>
+                        <div class="gtag2typed"></div>
+
                     </div>
                     <!-- End Typing Area -->
             
@@ -201,20 +188,8 @@
                         <div class="mb-4">
                         <span class="text-muted">// Segment</span>
                         </div>
-            
-                        <div class="mb-4">
-                        <div><span>analytics.track('User Login', {</span></div>
-                        <div class="ps-3"><span>"method": 'google',</span></div>
-                        <div class="ps-3"><span>email: 'datakyu@help.tracking'</span></div>
-                        <div><span>});</span></div>
-                        </div>
-
-                        <div class="mb-4">
-                            <div><span>analytics.track('User Signup', {</span></div>
-                            <div class="ps-3"><span>"method": 'email',</span></div>
-                            <div class="ps-3"><span>email: 'datakyu@help.tracking'</span></div>
-                            <div><span>});</span></div>
-                            </div>
+                        <div class="segmenttyped"></div>
+                        <div class="segment2typed"></div>
                     </div>
                     <!-- End Typing Area -->
                     </div>
@@ -571,6 +546,8 @@
                                 <div><span>});</span></div>
                               </div>
 
+                              <div class="gtagNavTyped"></div>
+
                               <div class="mb-4">
                                 <span>gtag(</span>
                                 <div class="ps-3"><span class="text-primary">"event",</span></div>
@@ -874,9 +851,9 @@
             <!-- End Heading -->
 
             <div class="row">
-              <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7">
+              <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
                 <!-- Card -->
-                <a class="card card-lg card-transition bg-soft-primary-light shadow-none h-100" href="../documentation/index.html">
+                <a class="card card-lg card-transition bg-soft-primary-light shadow-none h-100" href="#">
                   <div class="card-header">
                     <h5 class="card-title text-inherit">Documentation</h5>
                     <p class="card-text text-body">We help you build and maintain tracking systems.</p>
@@ -889,9 +866,9 @@
               </div>
               <!-- End Cole -->
 
-              <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7">
+              <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
                 <!-- Card -->
-                <a class="card card-lg card-transition bg-soft-warning shadow-none h-100" href="../snippets/index.html">
+                <a class="card card-lg card-transition bg-soft-warning shadow-none h-100" href="#">
                   <div class="card-header">
                     <h5 class="card-title text-inherit">Tracking Code</h5>
                     <p class="card-text text-body">We build functioninng, high quality code for our traking systems.</p>
@@ -904,7 +881,7 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7">
+              <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
                 <!-- Card -->
                 <a class="card card-lg card-transition bg-soft-success shadow-none h-100" href="#">
                   <div class="card-header">
@@ -945,7 +922,7 @@
             <!-- End Heading -->
 
             <div class="row align-items-sm-center col-sm-divider mb-5 mb-sm-10">
-              <div class="col-sm-6 col-md-4 offset-md-2">
+              <div class="col-sm-6 col-md-4 offset-md-2" data-aos="zoom-in">
                 <div class="text-center">
                   <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-money-profits.svg" alt="Image Description">
 
@@ -1006,7 +983,7 @@
           <!-- End Pricing -->
         </section>
         
-        <section id="FAQ" data-aos="zoom-out">
+        <section id="FAQ">
           <!-- FAQ -->
           <div class="container content-space-1">
             <div class="text-center">
@@ -1144,5 +1121,11 @@
     <script>
       AOS.init();
     </script>
+    <script src="/assets/js/general_files/typed.js"></script>
 </body>
 </html>
+
+
+                            
+                            
+                           
