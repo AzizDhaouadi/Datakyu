@@ -9,7 +9,7 @@ let sessionNumberPromise = new Promise(resolve => {
   
   sessionNumberPromise.then((session_number) => {
     current_session_number = session_number;
-  })
+  });
   
 // Fire dataLayer events for nav link clicks
 const navLinks = document.querySelectorAll('a.nav-link'); // Getting the list of nav links
@@ -69,3 +69,4 @@ packageButtons.forEach((packageButton) => {
         });
     });
 });
+
