@@ -113,7 +113,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="#services">Our Services</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+                    <li><a class="dropdown-item" href="/services/auditing-and-implementation.html">Auditing & Implementation</a></li>
+                  </ul>
+                </li>
                 <a class="nav-link" href="#packages">Packages</a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -262,7 +269,7 @@
                     <div class="flex-grow-1 ms-sm-5">
                         <span class="text-cap">Understand the events being tracked</span>
                         <h5>Implementation Phase</h5>
-                        <p>Do we need more context for the tracked events? Are we able to answer all of our questions with the data at hand?</p>
+                        <p>Do we need more context for the tracked events?</p>
                     </div>
                     </div>
                     <!-- End Media -->
