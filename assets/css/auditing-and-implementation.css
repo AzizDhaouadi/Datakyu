@@ -72,3 +72,23 @@ ul#codeEditorTab a img {
     border-radius: 3px;
     padding: 0.2em 0.4em;
   }
+
+  .flex-mobile{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  /* Start Media Queries */
+  @media only screen and (width: 820px){
+    span.text-cap, div.flex-grow-1.ms-sm-5 h5{
+      font-size: 80%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 767px){
+    div#navbarNavAltMarkup{
+      width: 100%;
+    }
+  }
