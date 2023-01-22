@@ -1,0 +1,27 @@
+div.row.tech-stack{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div.row.tech-stack .col-sm-6.mb-3.mb-sm-0{
+    width: 100%;
+}
+
+section#migration-services, section#migration-exp, section#pricing, section#get-started, section#FAQ{
+    position: relative;
+    top: 3rem;
+}
+
+section#migration-services div.card-header img{
+    width: 5rem;
+    height: 2rem;
+}
+
+section#migration-exp .bg-img-center{
+    background-size: contain !important;
+}
+
+footer{
+    position: relative;
+    top: 5.5rem;
+}
