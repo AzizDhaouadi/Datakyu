@@ -21,6 +21,12 @@ section#migration-exp .bg-img-center{
     background-size: contain !important;
 }
 
+section#get-started .content-space-1{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+
 footer{
     position: relative;
     top: 5.5rem;
