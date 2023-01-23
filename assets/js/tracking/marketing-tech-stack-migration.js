@@ -49,3 +49,17 @@ accordionElements.forEach((accordionElement) => {
         });
     });
 })
+
+// Fire dataLayer event for the cheking the price of the service and packages
+const pricingPackages = document.querySelectorAll('input');
+pricingPackages.forEach((pricingPackage) => {
+    pricingPackage.addEventListener('change', (event) =>{
+        if(event.target.closest(".form-check-row-select").querySelector('td.table-text-center').classList.contains('blur-price')){
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'revealed_price',
+                'service_package': event.target.closest('.form-check-row-select').querySelector('label').textContent.trim()
+            })
+        }
+    });
+});
