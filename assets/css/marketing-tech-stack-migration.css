@@ -65,6 +65,10 @@ section#get-started .content-space-1{
     padding: 0.2em 0.4em;
   }
 
+  .blur-price{
+    filter: blur(.5rem);
+  }
+
 footer{
     position: relative;
     top: 5.5rem;
