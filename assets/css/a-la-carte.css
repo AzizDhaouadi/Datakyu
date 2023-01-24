@@ -1,4 +1,4 @@
-#consulting-services, footer{
+#consulting-services, #our_technology_stack, footer{
     position: relative;
     top: 3rem;
 }
@@ -11,4 +11,20 @@
 
 .btn:focus{
     background-color: #F9FAFC !important;
+}
+
+ul#codeEditorTab{
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1.5rem;
+}
+
+ul#codeEditorTab a img {
+    width: 4rem;
+    height: 2rem;
+}
+
+.side-by-side{
+    display: flex;
+    gap: 1rem;
 }
