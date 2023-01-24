@@ -1,0 +1,14 @@
+#consulting-services, footer{
+    position: relative;
+    top: 3rem;
+}
+.btn-light:hover, .btn-light:focus{
+    box-shadow: none !important;
+}
+.btn:active:focus{
+    box-shadow: none !important;
+}
+
+.btn:focus{
+    background-color: #F9FAFC !important;
+}
