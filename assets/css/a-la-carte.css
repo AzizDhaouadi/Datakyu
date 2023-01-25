@@ -1,4 +1,4 @@
-#consulting-services, #our_technology_stack, footer{
+#consulting-services, #our_technology_stack, #ourProcess, footer{
     position: relative;
     top: 3rem;
 }
@@ -27,4 +27,9 @@ ul#codeEditorTab a img {
 .side-by-side{
     display: flex;
     gap: 1rem;
+}
+
+.content-spacing{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
