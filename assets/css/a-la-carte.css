@@ -33,3 +33,7 @@ ul#codeEditorTab a img {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+button[data-tf-popup]::selection{
+    color: #f1b980;
+}
