@@ -56,17 +56,3 @@ processSteps.forEach((processStep) => {
         });
     });
 });
-
-//Fire event when the user clicks on the package buttons
-const packageButtons = document.querySelectorAll('button[onclick]');
-packageButtons.forEach((packageButton) => {
-    packageButton.addEventListener('click', (e) => {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            'event': 'clicked_package_button',
-            'package_type': e.target.getAttribute('id'),
-            'event_session_number': current_session_number
-        });
-    });
-});
-
