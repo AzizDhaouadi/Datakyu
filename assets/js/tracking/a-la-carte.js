@@ -1,3 +1,17 @@
+//Measurement ID
+const measurementID = 'G-00VKM23QFH';
+let current_session_number;
+
+//Getting the session_number parameter from the gtag library
+let sessionNumberPromise = new Promise(resolve => {
+    gtag('get', measurementID, 'session_number', resolve)
+  });
+  
+  sessionNumberPromise.then((session_number) => {
+    current_session_number = session_number;
+  });
+
+
 // Fire dataLayer events for the clicks on the Typeform button and link
 const typeformElements = document.querySelectorAll('[data-tf-popup]');
 typeformElements.forEach((typeformElement) => {
