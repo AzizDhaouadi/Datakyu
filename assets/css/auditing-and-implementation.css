@@ -95,6 +95,11 @@ ul#codeEditorTab a img {
 
   @media only screen and (max-width: 414px) {
     
+    span.text-cap{
+      font-weight: 500;
+      font-size: .9rem;
+    }
+
     section#what_we_do div.row {
       gap: 2rem;
       margin-bottom: 2rem;
