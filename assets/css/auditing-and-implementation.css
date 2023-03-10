@@ -92,3 +92,50 @@ ul#codeEditorTab a img {
       width: 100%;
     }
   }
+
+  @media only screen and (max-width: 414px) {
+    
+    span.text-cap{
+      font-weight: 500;
+      font-size: .9rem;
+    }
+
+    section#what_we_do div.row {
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .d-sm-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    section#what_we_do h3{
+      text-align: center;
+    }
+
+    section#what_we_do div.mobile-column-reverse {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    section#what_we_do ul#codeEditorTab {
+      margin-bottom: 2rem;
+      gap: 2.5rem;
+    }
+
+    section#what_we_do ul#codeEditorTab li{
+      min-width: 40%;
+    }
+
+    section#what_we_do div.code-editor-typing-area {
+      white-space: normal;
+    }
+
+    section#how_we_do_it div.row {
+      gap: 1.5rem;
+    }
+  }
