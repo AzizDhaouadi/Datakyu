@@ -126,6 +126,10 @@ ul#codeEditorTab a img {
       min-width: 40%;
     }
 
+    section#what_we_do div.code-editor-typing-area {
+      white-space: normal;
+    }
+
     section#how_we_do_it div.row {
       gap: 1.5rem;
     }
