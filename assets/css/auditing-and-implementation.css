@@ -120,4 +120,8 @@ ul#codeEditorTab a img {
     section#what_we_do ul#codeEditorTab {
       margin-bottom: 2rem;
     }
+
+    section#what_we_do ul#codeEditorTab li{
+      min-width: 40%;
+    }
   }
