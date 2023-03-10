@@ -116,4 +116,8 @@ ul#codeEditorTab a img {
       display: flex;
       flex-direction: column-reverse;
     }
+
+    section#what_we_do ul#codeEditorTab {
+      margin-bottom: 2rem;
+    }
   }
