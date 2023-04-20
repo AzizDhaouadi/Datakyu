@@ -25,10 +25,9 @@ navLinks.forEach((navLink) => {
 });
 
 // Fire dataLayer events for the clicks on the Typeform button and link
-const typeformElements = document.querySelectorAll('[data-tf-popup]');
+const typeformElements = document.querySelectorAll('#marketing_websites');
 typeformElements.forEach((typeformElement) => {
     typeformElement.addEventListener('click', (e) => {
-        console.log('element clicked');
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
             'event': 'initiated_contact_form',

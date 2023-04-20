@@ -93,6 +93,20 @@ ul#codeEditorTab a img {
     }
   }
 
+  @media only screen and (max-width: 1024px) {
+    #codeEditorTab {
+      display: none;
+    }
+
+    #why_work_with_us .container.content-space-1 {
+      padding-top: 0rem !important;
+    }
+
+    .flex-grow-1 .text-cap {
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: 414px) {
     
     span.text-cap{
@@ -137,5 +151,25 @@ ul#codeEditorTab a img {
 
     section#how_we_do_it div.row {
       gap: 1.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 834px) {
+    .code-editor.mx-auto {
+      width: initial !important;
+    }
+
+    #what_we_do .container.content-space-1 .col-md-6 {
+      width: initial;
+    }
+
+    #how_we_do_it .card-header {
+      word-wrap: initial;
+    }
+
+    #how_we_do_it .card-header .d-flex.align-items-center {
+      flex-direction: column;
+      gap: .25rem;
+      margin-bottom: 1rem;
     }
   }

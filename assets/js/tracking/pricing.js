@@ -1,15 +1,3 @@
-const getThisPackageButtons = document.querySelectorAll('button[id]');      
-getThisPackageButtons.forEach((getThisPackageButton) => {
-  const { open, close, toggle, refresh } = window.tf.createPopup('Y0vKRD5f');
-  getThisPackageButton.onclick = toggle
-});
-
-const contactSalesButtons = document.querySelectorAll('.btn.btn-white');
-contactSalesButtons.forEach((contactSalesButton) => {
-  const { open, close, toggle, refresh } = window.tf.createPopup('Y0vKRD5f');
-  contactSalesButton.onclick = toggle
-});
-
 //Measurement ID
 const measurementID = 'G-00VKM23QFH';
 let current_session_number;

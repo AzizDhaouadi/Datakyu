@@ -10,7 +10,11 @@
 }
 
 .btn:focus{
-    background-color: #F9FAFC !important;
+    background-color: #008060 !important;
+}
+
+.card-body .btn:focus {
+    background-color: #f9fafc !important;
 }
 
 ul#codeEditorTab{

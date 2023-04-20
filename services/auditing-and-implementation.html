@@ -19,6 +19,21 @@
             })(window,document,'script','dataLayer','GTM-MP972DZ');
           </script>
         <!-- End Google Tag Manager -->
+<<<<<<< HEAD
+=======
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-00VKM23QFH"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-00VKM23QFH');
+        </script>
+>>>>>>> dev_env
+
+        <!-- Tally forms snippet -->
+        <script async src="https://tally.so/widgets/embed.js"></script>
 
         <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -261,9 +276,13 @@
                     Resources
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                     <li><a class="dropdown-item" href="https://datajournal.datakyu.co">Blog</a></li>
                     <li><a class="dropdown-item" href="/resources/sample-code-generator.html">Google Analytics 4 Sample Code Generator</a></li>
                     <li><a class="dropdown-item" href="https://datakyuco.notion.site/Google-Analytics-4-Tracking-Plan-aadb29a9d2b545c6a8041b2ed7c2a95d">Google Analytics 4 Tracking Plan</a></li>
+=======
+                    <li><a class="dropdown-item" href="/resources/sample-code-generator.html" target="_blank">Google Analytics 4 Sample Code Generator</a></li>
+>>>>>>> dev_env
                     <li><a class="dropdown-item" href="/resources/google-tag-manager-container-tempaltes.html">Google Tag Manager Container Templates</a></li>
                     <li style="padding-left: 1rem;"><hr class="dropdown-divider">Coming Soon</li>
                     <li><a class="dropdown-item" href="/resources/looker-studio-templates.html">Looker Studio Dashboard Templates</a></li>
@@ -288,7 +307,7 @@
                 <!-- End Heading -->
             
                 <div class="text-center mx-auto mb-7" style="max-width: 32rem;">            
-                    <button data-tf-popup="Y0vKRD5f" data-tf-iframe-props="title=Market-fit Landing Page Form" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#008060;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Contact us</button><script src="//embed.typeform.com/next/embed.js"></script>
+                  <button type="button" class="btn btn-primary cta" id="marketing_websites" data-tally-open="nG6E8e" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="1000">Contact us</button>
                 </div>
             
                 <!-- Code Editor -->
@@ -394,7 +413,7 @@
                 <!-- End Row -->
             
                 <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
+                <div class="col-md-6 mb-3 mb-md-7">
                     <!-- Media -->
                     <div class="d-sm-flex">
                     <div class="flex-shrink-0 mb-3 mb-sm-0">
@@ -411,7 +430,7 @@
                 </div>
                 <!-- End Col -->
             
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3 mb-md-7">
                     <!-- Media -->
                     <div class="d-sm-flex">
                     <div class="flex-shrink-0 mb-3 mb-sm-0">
@@ -1115,7 +1134,7 @@
                   <div class="flex-grow-1 text-dark ms-sm-3 mb-3 mb-sm-0">Do you have a question? Drop us a message!</div>
 
                   <div class="flex-shrink-0 ms-sm-3">
-                    <button data-tf-popup="Y0vKRD5f" data-tf-iframe-props="title=Market-fit Landing Page Form" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#008060;color:#FFFFFF;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Contact us</button><script src="//embed.typeform.com/next/embed.js"></script>
+                    <button type="button" class="btn btn-primary cta" id="marketing_websites" data-tally-open="nG6E8e" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="1000">Contact us</button>
                   </div>
                 </div>
               </div>
@@ -1241,7 +1260,7 @@
             <!-- Info -->
             <div class="text-center">
               <p class="mb-0">Still have questions?</p>
-              <a data-tf-popup="Y0vKRD5f" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Market-fit Landing Page Form" data-tf-transitive-search-params style="color:#008060;text-decoration:underline;font-size:20px;cursor:pointer;">Contact our support team</a><script src="//embed.typeform.com/next/embed.js"></script>
+              <button type="button" class="btn btn-primary cta" id="marketing_websites" data-tally-open="nG6E8e" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="1000">Contact us</button>
             </div>
             <!-- End Info -->
           </div>
@@ -1266,6 +1285,7 @@
     <script src="/assets/js/general_files/typed.js"></script>
     <script src="/assets/js/tracking/auditing-and-implementation.js"></script>
     <script>
+      'use strict';
       let techStackDiv = document.querySelector('div.col-lg-6:nth-child(2)');
       let techStackDivFlexMobileClass = techStackDiv.classList.contains("flex-mobile");
       window.addEventListener("resize", () => {
@@ -1279,6 +1299,13 @@
             techStackDiv.classList.add("flex-mobile");
           }
         }
+      })
+
+      const emptyHrefAttLinks = document.querySelectorAll('a[href="#"]');
+      emptyHrefAttLinks.forEach((emptyHrefAttLink) => {
+        emptyHrefAttLink.addEventListener('click', (event) => {
+          event.preventDefault();
+        })
       })
     </script>
 </body>
