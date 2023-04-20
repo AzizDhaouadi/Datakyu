@@ -394,7 +394,7 @@
                 <!-- End Row -->
             
                 <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
+                <div class="col-md-6 mb-3 mb-md-7">
                     <!-- Media -->
                     <div class="d-sm-flex">
                     <div class="flex-shrink-0 mb-3 mb-sm-0">
@@ -411,7 +411,7 @@
                 </div>
                 <!-- End Col -->
             
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3 mb-md-7">
                     <!-- Media -->
                     <div class="d-sm-flex">
                     <div class="flex-shrink-0 mb-3 mb-sm-0">
@@ -1266,6 +1266,7 @@
     <script src="/assets/js/general_files/typed.js"></script>
     <script src="/assets/js/tracking/auditing-and-implementation.js"></script>
     <script>
+      'use strict';
       let techStackDiv = document.querySelector('div.col-lg-6:nth-child(2)');
       let techStackDivFlexMobileClass = techStackDiv.classList.contains("flex-mobile");
       window.addEventListener("resize", () => {
@@ -1279,6 +1280,13 @@
             techStackDiv.classList.add("flex-mobile");
           }
         }
+      })
+
+      const emptyHrefAttLinks = document.querySelectorAll('a[href="#"]');
+      emptyHrefAttLinks.forEach((emptyHrefAttLink) => {
+        emptyHrefAttLink.addEventListener('click', (event) => {
+          event.preventDefault();
+        })
       })
     </script>
 </body>
