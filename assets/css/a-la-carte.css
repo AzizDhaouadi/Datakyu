@@ -13,6 +13,10 @@
     background-color: #008060 !important;
 }
 
+.card-body .btn:focus {
+    background-color: #f9fafc !important;
+}
+
 ul#codeEditorTab{
     flex-direction: column;
     align-items: flex-start !important;
