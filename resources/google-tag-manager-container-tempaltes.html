@@ -31,7 +31,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Set up Google Analytics 4 Events with Google Tag Manager - Container Templates | Datakyu</title>
+  <title>Google Tag Manager Container Templates | Datakyu</title>
   <meta name="description"
     content="Set up GA4 event tracking in only 4 easy steps. Use our preconfigured Google Tag Manager containers to set up your workspace. Choose the container for all GA4 properties, or Ecommerce container for ecommerce events or the SaaS container for SaaS businesses. Download the container, import it in your GTM workspace, test the configuration and then publish the changes.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -116,260 +116,261 @@
   </style>
 
   <script type="application/ld+json">
-    {
-  	"@context": "https://schema.org",
-    "@graph": [
-    	{
-      	"@type": "WebApplication",
-        "@id": "Google Tag Manager Container Templates",
-        "name": "Google Tag Manager Container Templates",
-        "keywords": [
-          "Google Analytics 4",
-          "GA4",
-          "GA4 event tracking",
-          "E-commerce tracking",
-          "Google Tag Manager containers"
-        ],
-        "description": "A web application that generates templates of Google Tag Manager containers ready for tracking can save marketers and web developers time and effort. It automates the process of creating and configuring GTM containers, and can be used to track a variety of data.",
-        "operatingSystem": "All",
-        "browserRequirements": "Requires HTML5 support",
-        "version": "1.0.0",
-        "applicationCategory": "BusinessApplication",
-        "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html",
-        "featureList": "Automatic Google Tag Manager containers generation",
-        "isAccessibleForFree": "True",
-        "creator": {
-          "@type": "Organization",
-          "name": "Datakyu",
-          "url": "https://www.datakyu.co",
-          "logo": "https://www.datakyu.co/assets/logo/logo-transparent.svg",
-          "foundingDate": "2022-12-01",
-          "foundingLocation": {
-            "@type": "Place",
-              "address": "1010 Sainte-Catherine O Ste 200"
-          },
-          "knowsAbout": [
-            "https://en.wikipedia.org/wiki/Google_Analytics",
-              "https://en.wikipedia.org/wiki/Looker_Studio",
-              "https://en.wikipedia.org/wiki/Mixpanel"
-          ],
-          "keywords": [
-          "Google Analytics 4",
-          "Web Analytics",
-          "Web Tracking Implementation",
-              "Product Analytics",
-              "Segment",
-              "Mixpanel"
-        ],
-          "description": "Datakyu is an emerging marketing and product analytics start-up that provides cutting-edge web tracking implementation solutions. Leveraging the latest tools and technologies like BigQuery, Google Analytics 4, Mixpanel, Segment, and Looker Studio, the company is positioned to transform the way businesses make informed decisions. Datakyu's innovative approach to data analysis, coupled with its ability to create tailored solutions, places it at the forefront of the industry. With a deep understanding of marketing and product analytics and a steadfast commitment to delivering exceptional results, Datakyu is poised to become a leading player in this dynamic and ever-evolving field.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "1010 Sainte-Catherine O Ste 200",
-            "addressLocality": "Montreal",
-            "addressRegion": "QC",
-            "postalCode": "H3B 5L1",
-            "addressCountry": "CA"
-          },
-          "contactPoint": [{
-            "@type": "ContactPoint",
-            "telephone": "support@datakyu.co",
-            "contactType": "customer service"
-          }, {
-            "@type": "ContactPoint",
-            "telephone": "sales@datakyu.co",
-            "contactType": "sales"
-          }],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Web Analytics Services",
-            "itemListElement": [{
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Web Analytics Auditing & Implementation"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Marketing Tech Migration Services"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Web Analytics Consulting Services"
-                }
-              }
-            ]
-          }
-        }
-      },
-      
       {
-      	"@type": "FAQPage",
-        "about": {
-        	"@id": "Google Tag Manager Container Templates"
-        },
-          "mainEntity":[{
-            "@type": "Question",
-            "name": "How do I create a new container for my Google Tag Manager workspace?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "<ul>
-                <li>Open Tag Manager.</li>
-                <li>In the Accounts tab, next to the account name, click More Actions &#8942; Create Container.</li>
-                <li>Enter a descriptive Container name and select the container type.</li>
-                <li>To create your container, click Create</li>
-              </ul>"
-            }
-          },
-  
-          {
-            "@type": "Question",
-            "name": "Do I merge or overwite when importing the container?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We recommend <strong>merging</strong> the imported container with your current one. This way, you avoid overwriting any existing configuration which may lead to errors later. Any duplicate settings wll be renamed which avoid issues.
-              <br>
-              If you want to merge, make sure to inspect your current configuration and the new tags, triggers and variables to make sure nothing is causing any conflicts; only then do you proceed with the merge."
-            }
-          },
-  
-          {
-            "@type": "Question",
-            "name": "How do I change the Google Analytics 4 Measurement ID?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "<ul>
-                <li>Open Tag Manager.</li>
-                <li>In the <strong>Variables</strong> tab, locate the variable <code>Google Analytics 4 Measurement ID</code>.</li>
-                <li>Paste the new value. The new value should be the Measurement ID of your Google Analytics 4 property.</li>
-                <li>To confirm the change, click save.</li>
-              </ul>"
-            }
-          },
-  
-          {
-            "@type": "Question",
-            "name": "How do I modify the event trigger?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "<ul>
-                <li>Open Tag Manager.</li>
-                <li>In the <strong>Triggers</strong> tab, locate the trigger you want to change.</li>
-                <li>If you are looking to fire the event using the <strong>Custom Event</strong> trigger but using a different name, simply paste your the new event name in the <code>Event name</code> input field.</li>
-                <li>If you are looking to change the trigger type, click on the <code>Trigger Type</code> field and proceed to select the new event trigger.</li>
-              </ul>"
-            }
-          },
-  
-          {
-            "@type": "Question",
-            "name": "How do I modify the event parameters?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "<ul>
-                        <li>Open Tag Manager.</li>
-                        <li>In the <strong>Tags</strong> tab, locate the event you want to change.</li>
-                        <li>If you are looking to change the name of the parameter, then locate the parameter and simply enter the new name in the <code>Parameter Name</code> field.</li>
-                        <li>If you are looking to change the value of the parameter, then locate the parameter and simply enter the new value in the <code>Value</code> field.</li>
-                        <li>If you are looking to remove an event parameter, then locate the parameter and click on the button.</li>
-                        <li>If you are looking to add a new parameter, then on the <code>Add row</code> button and enter the event parameter name along with its corresponding value.</li>
-                        <p>Any value following the format of <code>{{Variable Name}}</code> refers to a variable's value.</p>
-                      </ul>"
+    	"@context": "https://schema.org",
+      "@graph": [
+      	{
+        	"@type": "WebApplication",
+          "@id": "Google Tag Manager Container Templates",
+          "name": "Google Tag Manager Container Templates",
+          "keywords": [
+            "Google Analytics 4",
+            "GA4",
+            "GA4 event tracking",
+            "E-commerce tracking",
+            "Google Tag Manager containers"
+          ],
+          "description": "A web application that generates templates of Google Tag Manager containers ready for tracking can save marketers and web developers time and effort. It automates the process of creating and configuring GTM containers, and can be used to track a variety of data.",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires HTML5 support",
+          "version": "1.0.0",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html",
+          "featureList": "Automatic Google Tag Manager containers generation",
+          "isAccessibleForFree": "True",
+          "creator": {
+            "@type": "Organization",
+            "name": "Datakyu",
+            "url": "https://www.datakyu.co",
+            "logo": "https://www.datakyu.co/assets/logo/logo-transparent.svg",
+            "foundingDate": "2022-12-01",
+            "foundingLocation": {
+              "@type": "Place",
+                "address": "1010 Sainte-Catherine O Ste 200"
+            },
+            "knowsAbout": [
+              "https://en.wikipedia.org/wiki/Google_Analytics",
+                "https://en.wikipedia.org/wiki/Looker_Studio",
+                "https://en.wikipedia.org/wiki/Mixpanel"
+            ],
+            "keywords": [
+            "Google Analytics 4",
+            "Web Analytics",
+            "Web Tracking Implementation",
+                "Product Analytics",
+                "Segment",
+                "Mixpanel"
+          ],
+            "description": "Datakyu is an emerging marketing and product analytics start-up that provides cutting-edge web tracking implementation solutions. Leveraging the latest tools and technologies like BigQuery, Google Analytics 4, Mixpanel, Segment, and Looker Studio, the company is positioned to transform the way businesses make informed decisions. Datakyu's innovative approach to data analysis, coupled with its ability to create tailored solutions, places it at the forefront of the industry. With a deep understanding of marketing and product analytics and a steadfast commitment to delivering exceptional results, Datakyu is poised to become a leading player in this dynamic and ever-evolving field.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1010 Sainte-Catherine O Ste 200",
+              "addressLocality": "Montreal",
+              "addressRegion": "QC",
+              "postalCode": "H3B 5L1",
+              "addressCountry": "CA"
+            },
+            "contactPoint": [{
+              "@type": "ContactPoint",
+              "telephone": "support@datakyu.co",
+              "contactType": "customer service"
+            }, {
+              "@type": "ContactPoint",
+              "telephone": "sales@datakyu.co",
+              "contactType": "sales"
+            }],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Web Analytics Services",
+              "itemListElement": [{
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Web Analytics Auditing & Implementation"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Marketing Tech Migration Services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Web Analytics Consulting Services"
+                  }
+                }
+              ]
             }
           }
-          ]
-      
-      },
-  
-  	 {
-     	 "@type": "HowTo",
-          "name": "How to use the Google Tag Manager Container Tempaltes",
-       	  "about": {
+        },
+        
+        {
+        	"@type": "FAQPage",
+          "name": "How to Import a Google Tag Manager container into a workspace.",
+          "about": {
           	"@id": "Google Tag Manager Container Templates"
           },
-          "tool": [
+            "mainEntity":[{
+              "@type": "Question",
+              "name": "How do I create a new container for my Google Tag Manager workspace?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<ul>
+                  <li>Open Tag Manager.</li>
+                  <li>In the Accounts tab, next to the account name, click More Actions &#8942; Create Container.</li>
+                  <li>Enter a descriptive Container name and select the container type.</li>
+                  <li>To create your container, click Create</li>
+                </ul>"
+              }
+            },
+    
             {
-              "@type": "HowToTool",
-              "name": "Your Google Tag Manager Workspace"
-            }, {
-              "@type": "HowToTool",
-              "name": "Your Google Tag Manager Container"
-            },{
-              "@type": "HowToTool",
-              "name": "Datakyu's Template Google Tag Manager Container"
+              "@type": "Question",
+              "name": "Do I merge or overwite when importing the container?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We recommend <strong>merging</strong> the imported container with your current one. This way, you avoid overwriting any existing configuration which may lead to errors later. Any duplicate settings wll be renamed which avoid issues.
+                <br>
+                If you want to merge, make sure to inspect your current configuration and the new tags, triggers and variables to make sure nothing is causing any conflicts; only then do you proceed with the merge."
+              }
+            },
+    
+            {
+              "@type": "Question",
+              "name": "How do I change the Google Analytics 4 Measurement ID?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<ul>
+                  <li>Open Tag Manager.</li>
+                  <li>In the <strong>Variables</strong> tab, locate the variable <code>Google Analytics 4 Measurement ID</code>.</li>
+                  <li>Paste the new value. The new value should be the Measurement ID of your Google Analytics 4 property.</li>
+                  <li>To confirm the change, click save.</li>
+                </ul>"
+              }
+            },
+    
+            {
+              "@type": "Question",
+              "name": "How do I modify the event trigger?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<ul>
+                  <li>Open Tag Manager.</li>
+                  <li>In the <strong>Triggers</strong> tab, locate the trigger you want to change.</li>
+                  <li>If you are looking to fire the event using the <strong>Custom Event</strong> trigger but using a different name, simply paste your the new event name in the <code>Event name</code> input field.</li>
+                  <li>If you are looking to change the trigger type, click on the <code>Trigger Type</code> field and proceed to select the new event trigger.</li>
+                </ul>"
+              }
+            },
+    
+            {
+              "@type": "Question",
+              "name": "How do I modify the event parameters?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<ul>
+                          <li>Open Tag Manager.</li>
+                          <li>In the <strong>Tags</strong> tab, locate the event you want to change.</li>
+                          <li>If you are looking to change the name of the parameter, then locate the parameter and simply enter the new name in the <code>Parameter Name</code> field.</li>
+                          <li>If you are looking to change the value of the parameter, then locate the parameter and simply enter the new value in the <code>Value</code> field.</li>
+                          <li>If you are looking to remove an event parameter, then locate the parameter and click on the button.</li>
+                          <li>If you are looking to add a new parameter, then on the <code>Add row</code> button and enter the event parameter name along with its corresponding value.</li>
+                          <p>Any value following the format of <code>{{Variable Name}}</code> refers to a variable's value.</p>
+                        </ul>"
+              }
             }
-          ],
-          "step": [
-            {
-              "@type": "HowToStep",
-              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step1",
-              "name": "Download Datakyu's Template Container",
-              "itemListElement": [{
-                "@type": "HowToDirection",
-                "text": "Select of the container templates that you would like to use."
+            ]
+        
+        },
+    
+    	 {
+       	 "@type": "HowTo",
+            "name": "How to use the Google Tag Manager Container Tempaltes",
+         	  "about": {
+            	"@id": "Google Tag Manager Container Templates"
+            },
+            "tool": [
+              {
+                "@type": "HowToTool",
+                "name": "Your Google Tag Manager Workspace"
               }, {
-                "@type": "HowToDirection",
-                "text": "Next, download the container of your choice."
-              }]
-            }, {
-              "@type": "HowToStep",
-              "name": "Import Container",
-              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step2",
-              "itemListElement": [{
+                "@type": "HowToTool",
+                "name": "Your Google Tag Manager Container"
+              },{
+                "@type": "HowToTool",
+                "name": "Datakyu's Template Google Tag Manager Container"
+              }
+            ],
+            "step": [
+              {
                 "@type": "HowToStep",
-                "text": "Create a Google Tag Manager container in your current workspace. If you don't have an account, create a Google Tag Manager account and container."
+                "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step1",
+                "name": "Download Datakyu's Template Container",
+                "itemListElement": [{
+                  "@type": "HowToDirection",
+                  "text": "Select of the container templates that you would like to use."
+                }, {
+                  "@type": "HowToDirection",
+                  "text": "Next, download the container of your choice."
+                }]
               }, {
-                "@type": "HowToDirection",
-                "text": "Next, head to the Admin section, and choose import container."
+                "@type": "HowToStep",
+                "name": "Import Container",
+                "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step2",
+                "itemListElement": [{
+                  "@type": "HowToDirection",
+                  "text": "Create a Google Tag Manager container in your current workspace. If you don't have an account, create a Google Tag Manager account and container."
+                }, {
+                  "@type": "HowToDirection",
+                  "text": "Next, head to the Admin section, and choose import container."
+                }
+                ]
+              }, {
+                "@type": "HowToStep",
+                "name": "Configure Imported Container",
+                "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step3",
+                "itemListElement": [{
+                  "@type": "HowToDirection",
+                  "text": "For Choose container file, select the file you just downloaded."
+                }, {
+                  "@type": "HowToDirection",
+                  "text": "Then choose Existing."
+                }, {
+                  "@type": "HowToDirection",
+                  "text": "Next, select Merge"
+                }, {
+                  "@type": "HowToTip",
+                  "text": "Finally, click confirm"
+                }]
+              }, {
+                "@type": "HowToStep",
+                "name": "Change Measurement ID & Publish",
+                "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step4",
+                "itemListElement": [{
+                  "@type": "HowToDirection",
+                  "text": "Change the Google Analytics 4 Measurement ID variable's value to that of your property."
+                }, {
+                  "@type": "HowToDirection",
+                  "text": "Review the imported tags, triggers and variables."
+                }, {
+                  "@type": "HowToDirection",
+                  "text": "Preview and test the current workspace configuration."
+                }, {
+                  "@type": "HowToDirection",
+                  "text": "Once your are done testing, publish your workspace."
+                }
+                ]
               }
-              ]
-            }, {
-              "@type": "HowToStep",
-              "name": "Configure Imported Container",
-              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step3",
-              "itemListElement": [{
-                "@type": "HowToDirection",
-                "text": "For Choose container file, select the file you just downloaded."
-              }, {
-                "@type": "HowToDirection",
-                "text": "Then choose Existing."
-              }, {
-                "@type": "HowToDirection",
-                "text": "Next, select Merge"
-              }, {
-                "@type": "HowToTip",
-                "text": "Finally, click confirm"
-              }]
-            }, {
-              "@type": "HowToStep",
-              "name": "Change Measurement ID & Publish",
-              "url": "https://www.datakyu.co/resources/google-tag-manager-container-tempaltes.html#step4",
-              "itemListElement": [{
-                "@type": "HowToDirection",
-                "text": "Change the Google Analytics 4 Measurement ID variable's value to that of your property."
-              }, {
-                "@type": "HowToDirection",
-                "text": "Review the imported tags, triggers and variables."
-              }, {
-                "@type": "HowToDirection",
-                "text": "Preview and test the current workspace configuration."
-              }, {
-                "@type": "HowToDirection",
-                "text": "Once your are done testing, publish your workspace."
-              }
-              ]
-            }
-          ],
-          "totalTime": "PT30M"
-     
-     }
-    ]
-  }      
+            ],
+            "totalTime": "PT30M"
+       
+       }
+      ]
+    }      
   </script>
 
 </head>
