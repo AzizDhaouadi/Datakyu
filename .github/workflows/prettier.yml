@@ -22,14 +22,12 @@ jobs:
         run: npm install -g prettier
 
       - name: Run Prettier
-        run: |
-          prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'
+        run: prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'
 
       - name: Configure Git
-        run: git config --global user.name "GitHub Actions"
-        
-      - name: Configure Git
-        run: git config --global user.email "actions@users.noreply.github.com"
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@users.noreply.github.com"
 
       - name: Add changes to Git
         run: git add -A
@@ -38,6 +36,6 @@ jobs:
         run: git diff-index --quiet HEAD || git commit -m "Auto-format code with Prettier"
 
       - name: Push changes
-        run: git push origin HEAD:<name-of-remote-branch>
+        run: git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
