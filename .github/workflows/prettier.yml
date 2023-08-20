@@ -13,9 +13,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Fetch Latest Changes
-        run: git fetch origin HEAD
-
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
@@ -38,7 +35,7 @@ jobs:
       - name: Check if changes exist
         run: git diff-index --quiet HEAD || git commit -m "Auto-format code with Prettier"
 
-      - name: Push changes to current branch
-        run: git push origin ${{ github.base_ref }}
+      - name: Push changes to remote target branch
+        run: git push origin HEAD:${{ github.base_ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
