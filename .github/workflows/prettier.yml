@@ -13,7 +13,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Fetch Latest Changes
+      - name: Fetch Latest Changes Before Workflow
         run: git pull origin HEAD:${{ github.base_ref }}
 
       - name: Install Node.js
@@ -37,6 +37,9 @@ jobs:
 
       - name: Check if changes exist
         run: git diff-index --quiet HEAD || git commit -m "Auto-format code with Prettier"
+
+      - name: Fetch Latest Changes
+        run: git pull origin HEAD:${{ github.base_ref }}
 
       - name: Push changes to current branch
         run: git push origin HEAD:${{ github.base_ref }}
