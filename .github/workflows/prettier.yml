@@ -1,0 +1,41 @@
+name: Prettier Auto Formatting
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install Prettier globally
+        run: npm install -g prettier
+
+      - name: Run Prettier
+        run: prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@users.noreply.github.com"
+
+      - name: Add changes to Git
+        run: git add -A
+
+      - name: Check if changes exist
+        run: git diff-index --quiet HEAD || git commit -m "Auto-format code with Prettier"
+
+      - name: Push changes to base branch
+        run: git push origin HEAD:${{ github.base_ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
