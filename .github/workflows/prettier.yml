@@ -39,6 +39,6 @@ jobs:
         run: git diff-index --quiet HEAD || git commit -m "Auto-format code with Prettier"
 
       - name: Push changes to current branch
-        run: git push origin HEAD:${{ github.base_ref }}
+        run: git push origin ${{ github.base_ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
