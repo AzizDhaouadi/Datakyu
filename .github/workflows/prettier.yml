@@ -13,9 +13,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Fetch Latest Changes
-        run: git pull origin ${{ github.base_ref }} --rebase
-
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
