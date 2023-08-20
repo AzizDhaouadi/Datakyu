@@ -36,7 +36,7 @@ jobs:
         run: git diff-index --quiet HEAD || git commit -m "Auto-format code with Prettier"
         
       - name: Fetch Latest Changes
-        run: git pull origin ${{ github.base_ref }}
+        run: git pull origin ${{ github.base_ref }} --rebase
 
       - name: Push changes to remote target branch
         run: git push origin HEAD:${{ github.base_ref }}
