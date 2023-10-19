@@ -16,7 +16,7 @@
  --bs-teal:#077C76;
  --bs-cyan:#0dcaf0;
  --bs-black:#000;
- --bs-white:#fff;
+ --bs-white:#fff;         
  --bs-gray:#8C98A4;
  --bs-gray-dark:#51596C;
  --bs-gray-100:#F9FAFC;
@@ -17075,10 +17075,7 @@ input[type=number] {
 .device-browser-lg .device-browser-header {
  max-width:60rem
 }
-.dropdown-menu {
- box-shadow:0 .6125rem 2.5rem .6125rem rgba(140,152,164,.175);
- margin-top:.5rem
-}
+
 .dropdown-menu .dropdown-item.dropdown-toggle::after {
  -webkit-transform:rotate(-90deg);
  transform:rotate(-90deg)
