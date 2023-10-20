@@ -36,7 +36,7 @@ navDropdownLinks.forEach((navDropdownLink) => {
 });
 
 //Fire event when user clicks on the drop a message button
-const dropMessageButton = document.querySelector('a.btn-primary[href="#contactSection"]');
+const dropMessageButton = document.querySelector('a.btn-primary[data-lead-capture-modal-button]');
 dropMessageButton.addEventListener('click', () => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
