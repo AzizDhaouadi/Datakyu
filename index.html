@@ -16,7 +16,7 @@
 
       gtag("config", "G-00VKM23QFH")
     </script>
-    <script src="https://tally.so/widgets/embed.js"></script>
+    <script src="./assets/js/general_files/index.js" type="module" defer></script>
 
     <!-- Google Tag Manager -->
     <script>
@@ -103,6 +103,21 @@
 
       .text-bold {
         font-weight: bold;
+      }
+
+      dialog {
+        width: 50% !important;
+        border: none;
+        font-family: var(--bs-body-text-font);
+      }
+
+      [data-lead-capture-modal] [data-close-lead-capture-modal] {
+        width: 2rem;
+        height: 2rem;
+        background-image: url("./assets/images/ni-x.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
       }
 
       a#navbarDropdown:hover {
@@ -560,7 +575,7 @@
                   <div class="flex-grow-1 text-dark ms-sm-3 mb-3 mb-sm-0">Empowering businesses take ownership of their data</div>
 
                   <div class="flex-shrink-0 ms-sm-3">
-                    <a class="btn btn-primary" href="#contactSection">Drop a message</a>
+                    <a class="btn btn-primary" data-lead-capture-modal-button>Drop a message</a>
                   </div>
                 </div>
               </div>
@@ -828,25 +843,28 @@
         <!-- Heading -->
         <div class="w-lg-65 text-center mx-lg-auto mb-7">
           <h3>Ready to work together?</h3>
-          <p>Tell us your story and we'll be in touch.</p>
+          <p>We are one message away. Just fill in the form, and you will be hearing from us soon.</p>
+          <button type="submit" class="btn btn-primary btn-lg" data-form-type="action" data-lead-capture-modal-button style="max-width: 45%">
+            Send us a message
+          </button>
         </div>
+        <dialog data-lead-capture-modal>
+          <div class="container d-flex flex-column">
+            <div class="d-flex justify-content-end">
+              <span data-close-lead-capture-modal></span>
+            </div>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "44171646",
+                formId: "357a2ea7-c337-419e-b440-c454bb6608bd",
+              })
+            </script>
+          </div>
+        </dialog>
         <!-- End Heading -->
-
-        <!-- Form -->
-        <div class="mx-auto" style="max-width: 35rem">
-          <iframe
-            data-tally-src="https://tally.so/embed/nG6E8e?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            loading="lazy"
-            width="100%"
-            height="2931"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="How can we help you?"></iframe>
-        </div>
-        <!-- End Form -->
       </div>
-
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -862,14 +880,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"></script>
-    <script>
-      // Load all embeds on the page
-      Tally.loadEmbeds()
-      const contactSection = document.getElementById("contactSection")
-      const SwitchTocontactSection = () => {
-        contactSection.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
-      }
-    </script>
     <script type="text/javascript" src="/assets/js/tracking/indexPageDataLayerEvents.js"></script>
   </body>
 </html>
