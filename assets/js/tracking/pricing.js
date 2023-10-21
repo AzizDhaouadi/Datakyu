@@ -31,8 +31,8 @@ const logPackageButtonClick = (button) => {
 
 packageButtons.forEach((packageButton) => {
   packageButton.addEventListener("click", (e) => {
-    logPackageButtonClick(e)
-    controlContactModule()
+    logPackageButtonClick(e);
+    controlContactModule();
   })
 })
 
@@ -48,5 +48,6 @@ contactButtons.forEach((contactButton) => {
         event: "clicked_contact_us",
         event_session_number: current_session_number,
     });
+    controlContactModule();
   });
 })
