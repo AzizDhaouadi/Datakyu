@@ -1,3 +1,5 @@
+import { controlContactModule } from '../modules/contact.module.js';
+
 // Measurement ID
 const measurementID = 'G-00VKM23QFH';
 let current_session_number;
@@ -22,6 +24,7 @@ typeformElements.forEach((typeformElement) => {
             'event_session_number': current_session_number,
             'cta_text': e.target.textContent
         });
+        controlContactModule();
     });
 });
 
