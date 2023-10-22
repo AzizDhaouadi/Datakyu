@@ -42,9 +42,6 @@
       gtag("config", "G-00VKM23QFH")
     </script>
 
-    <!-- Tally forms snippet -->
-    <script async src="https://tally.so/widgets/embed.js"></script>
-
     <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -144,6 +141,20 @@
       #main {
         position: relative;
         top: 7rem;
+      }
+      dialog {
+        width: 50% !important;
+        border: none;
+        font-family: var(--bs-body-text-font);
+      }
+
+      [data-lead-capture-modal] [data-close-lead-capture-modal] {
+        width: 2rem;
+        height: 2rem;
+        background-image: url("/assets/images/ni-x.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
       }
     </style>
     <script type="application/ld+json">
@@ -571,18 +582,7 @@
                     </div>
 
                     <div class="card-footer pt-0">
-                      <button
-                        type="button"
-                        class="btn btn-primary cta"
-                        id="marketing_websites"
-                        data-tally-open="nG6E8e"
-                        data-tally-align-left="1"
-                        data-tally-overlay="1"
-                        data-tally-emoji-text="👋"
-                        data-tally-emoji-animation="wave"
-                        data-tally-auto-close="1000">
-                        Contact us
-                      </button>
+                      <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
                     </div>
                   </div>
                   <!-- End Card -->
@@ -610,18 +610,7 @@
                     </div>
 
                     <div class="card-footer pt-0">
-                      <button
-                        type="button"
-                        class="btn btn-primary cta"
-                        id="marketing_websites"
-                        data-tally-open="nG6E8e"
-                        data-tally-align-left="1"
-                        data-tally-overlay="1"
-                        data-tally-emoji-text="👋"
-                        data-tally-emoji-animation="wave"
-                        data-tally-auto-close="1000">
-                        Contact us
-                      </button>
+                      <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
                     </div>
                   </div>
                   <!-- End Card -->
@@ -649,18 +638,7 @@
                     </div>
 
                     <div class="card-footer pt-0">
-                      <button
-                        type="button"
-                        class="btn btn-primary cta"
-                        id="marketing_websites"
-                        data-tally-open="nG6E8e"
-                        data-tally-align-left="1"
-                        data-tally-overlay="1"
-                        data-tally-emoji-text="👋"
-                        data-tally-emoji-animation="wave"
-                        data-tally-auto-close="1000">
-                        Contact us
-                      </button>
+                      <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
                     </div>
                   </div>
                   <!-- End Card -->
@@ -916,18 +894,7 @@
                       <div class="mb-sm-5">
                         <h3>Can't find what you are looking for?</h3>
                       </div>
-                      <button
-                        type="button"
-                        class="btn btn-primary cta"
-                        id="marketing_websites"
-                        data-tally-open="nG6E8e"
-                        data-tally-align-left="1"
-                        data-tally-overlay="1"
-                        data-tally-emoji-text="👋"
-                        data-tally-emoji-animation="wave"
-                        data-tally-auto-close="1000">
-                        Contact us
-                      </button>
+                      <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
                     </div>
                     <!-- End Col -->
                   </div>
@@ -1089,6 +1056,21 @@
           </section>
         </div>
       </div>
+      <dialog data-lead-capture-modal>
+        <div class="container d-flex flex-column">
+          <div class="d-flex justify-content-end">
+            <span data-close-lead-capture-modal></span>
+          </div>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "44171646",
+              formId: "357a2ea7-c337-419e-b440-c454bb6608bd",
+            })
+          </script>
+        </div>
+      </dialog>
     </main>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
@@ -1105,7 +1087,7 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"></script>
     <script src="/assets/js/general_files/migrationTyped.js"></script>
-    <script src="/assets/js/tracking/marketing-tech-stack-migration.js"></script>
+    <script src="/assets/js/tracking/marketing-tech-stack-migration.js" type="module"></script>
     <script>
       document.addEventListener("change", (event) => {
         const clickTarget = event.target.closest(".form-check-row-select")
