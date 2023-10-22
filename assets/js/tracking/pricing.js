@@ -45,9 +45,18 @@ contactButtons.forEach((contactButton) => {
   contactButton.addEventListener('click', () => {
     window.dataLayer = window.dataLayer || []
     window.dataLayer.push({
-        event: "clicked_contact_us",
+        event: "initiated_contact_form",
         event_session_number: current_session_number,
     });
     controlContactModule();
   });
 })
+
+window.addEventListener("message", function (event) {
+        if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
+            window.dataLayer.push({
+                'event': "captured_lead",
+                'form_id': event.data.id,
+            });
+        }
+    });

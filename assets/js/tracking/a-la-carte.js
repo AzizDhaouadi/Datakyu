@@ -51,3 +51,12 @@ processSteps.forEach((processStep) => {
         });
     });
 });
+
+window.addEventListener("message", function (event) {
+        if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
+            window.dataLayer.push({
+                'event': "captured_lead",
+                'form_id': event.data.id,
+            });
+        }
+    });

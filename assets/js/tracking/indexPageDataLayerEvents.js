@@ -40,7 +40,7 @@ const dropMessageButton = document.querySelector('a.btn-primary[data-lead-captur
 dropMessageButton.addEventListener('click', () => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-        'event': 'clicked_drop_message_button',
+        'event': 'initiated_contact_form',
         'event_session_number': current_session_number
     });
 });
@@ -56,3 +56,12 @@ processSteps.forEach((processStep) => {
         });
     });
 });
+
+window.addEventListener("message", function (event) {
+        if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
+            window.dataLayer.push({
+                'event': "captured_lead",
+                'form_id': event.data.id,
+            });
+        }
+    });
