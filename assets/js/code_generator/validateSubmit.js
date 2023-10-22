@@ -74,20 +74,27 @@ let addedCustomEventName;
 let addedEventParameterNames = [];
 let addedEventParameterValues = [];
 
-
 const typeSampleCode = (sampleCodeContainer, sampleCode) => {
+    const generateButton = document.querySelector('[type="submit"]');
+
     const eventSampleCode = {
         strings: [sampleCode],
         typeSpeed: 5,
         loop: false,
-        showCursor: false
+        showCursor: false,
+        onBegin: () => {
+            generateButton.setAttribute('disabled', '');
+        },
+        onComplete: () => {
+            generateButton.removeAttribute('disabled');
+        }
     }
-    const eventSampleCodeTyped = new Typed(sampleCodeContainer, eventSampleCode);
+   const eventSampleCodeTyped = new Typed(sampleCodeContainer, eventSampleCode);
 }
 
-
 codeGeneratorForm.addEventListener("submit", (event) => {
-    event.preventDefault()
+    event.preventDefault();
+
     chosentEventType = codeGeneratorForm.elements["event_type"].value;
     chosenEventName = codeGeneratorForm.elements["event_name"].value;
     chosenTrackingMedium = codeGeneratorForm.elements["tracking_medium"].value;
