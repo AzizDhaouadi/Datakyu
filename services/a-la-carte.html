@@ -31,9 +31,6 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Tally forms snippet -->
-    <script async src="https://tally.so/widgets/embed.js"></script>
-
     <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8" />
@@ -132,6 +129,21 @@
       #main {
         position: relative;
         top: 7rem;
+      }
+
+      dialog {
+        width: 50% !important;
+        border: none;
+        font-family: var(--bs-body-text-font);
+      }
+
+      [data-lead-capture-modal] [data-close-lead-capture-modal] {
+        width: 2rem;
+        height: 2rem;
+        background-image: url("/assets/images/ni-x.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
       }
 
       .img-fluid.shadow-xl.rounded-2.align-size {
@@ -405,18 +417,7 @@
                 <!-- End Heading -->
 
                 <div class="d-grid d-sm-flex gap-3">
-                  <button
-                    type="button"
-                    class="btn btn-primary cta"
-                    id="marketing_websites"
-                    data-tally-open="nG6E8e"
-                    data-tally-align-left="1"
-                    data-tally-overlay="1"
-                    data-tally-emoji-text="👋"
-                    data-tally-emoji-animation="wave"
-                    data-tally-auto-close="1000">
-                    Contact us
-                  </button>
+                  <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
                 </div>
               </div>
               <!-- End Col -->
@@ -521,18 +522,7 @@
           <!-- Info -->
           <div class="text-center">
             <p class="mb-0">Do you have some questions</p>
-            <button
-              type="button"
-              class="btn btn-primary cta"
-              id="marketing_websites"
-              data-tally-open="nG6E8e"
-              data-tally-align-left="1"
-              data-tally-overlay="1"
-              data-tally-emoji-text="👋"
-              data-tally-emoji-animation="wave"
-              data-tally-auto-close="1000">
-              Contact us
-            </button>
+            <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
           </div>
           <!-- End Info -->
         </div>
@@ -1034,9 +1024,7 @@
           </div>
         </div>
         <!-- End Card -->
-        <div class="text-center content-spacing">
-          <!-- <button data-tf-popup="Y0vKRD5f" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Market-fit Landing Page Form" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#008060;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Contact us</button><script src="//embed.typeform.com/next/embed.js"></script> -->
-        </div>
+        <div class="text-center content-spacing"></div>
       </section>
 
       <section class="overflow-hidden" id="ourProcess">
@@ -1182,18 +1170,7 @@
                 <div class="mb-sm-5">
                   <h3>Can't find what you are looking for?</h3>
                 </div>
-                <button
-                  type="button"
-                  class="btn btn-primary cta"
-                  id="marketing_websites"
-                  data-tally-open="nG6E8e"
-                  data-tally-align-left="1"
-                  data-tally-overlay="1"
-                  data-tally-emoji-text="👋"
-                  data-tally-emoji-animation="wave"
-                  data-tally-auto-close="1000">
-                  Contact us
-                </button>
+                <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
               </div>
             </div>
             <!-- End Col -->
@@ -1202,6 +1179,21 @@
         </div>
       </div>
       <!-- End CTA -->
+      <dialog data-lead-capture-modal>
+        <div class="container d-flex flex-column">
+          <div class="d-flex justify-content-end">
+            <span data-close-lead-capture-modal></span>
+          </div>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "44171646",
+              formId: "357a2ea7-c337-419e-b440-c454bb6608bd",
+            })
+          </script>
+        </div>
+      </dialog>
     </main>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
@@ -1225,6 +1217,6 @@
         })
       })
     </script>
-    <script src="/assets/js/tracking/a-la-carte.js"></script>
+    <script src="/assets/js/tracking/a-la-carte.js" type="module"></script>
   </body>
 </html>
