@@ -71,3 +71,18 @@ window.addEventListener("message", function (event) {
             });
         }
     });
+
+window.addEventListener('load', () => {
+    const techStackLinks = document.querySelectorAll('a[id*="Editor"]');
+    if(techStackLinks == 'undefined') {
+        throw new Error('Tech stack links were not found');
+    }
+    let currentTechStackLinkIndex = 1;
+    setInterval(() => {
+        techStackLinks[currentTechStackLinkIndex].click();
+        currentTechStackLinkIndex++;
+        if(currentTechStackLinkIndex > 4) {
+            currentTechStackLinkIndex = 0;
+        }
+    }, 5000);
+});
