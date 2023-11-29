@@ -30,13 +30,13 @@ navLinks.forEach((navLink) => {
 const typeformElements = document.querySelectorAll('#marketing_websites');
 typeformElements.forEach((typeformElement) => {
     typeformElement.addEventListener('click', (e) => {
+        controlContactModule();
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
             'event': 'initiated_contact_form',
             'event_session_number': current_session_number,
             'cta_text': e.target.textContent
         });
-        controlContactModule();
     });
 });
 
