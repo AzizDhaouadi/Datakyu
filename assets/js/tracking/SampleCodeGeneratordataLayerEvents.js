@@ -6,7 +6,14 @@ navLinks.forEach((navLink) => {
         window.dataLayer.push({
             'event': 'clicked_nav_link',
             'nav_item': navLink.textContent.trim()
-        }); 
+        });
+        swetrix.track({
+            ev: 'clicked_nav_link',
+            unique: false,
+            meta: {
+                'nav_item': navLink.textContent.trim()
+            }
+        });
     })
 });
 
@@ -18,6 +25,13 @@ accordionButtons.forEach((accordionButton) => {
         window.dataLayer.push({
             'event': 'clicked_accordion_button',
             'accordion_title': accordionButton.textContent.trim()
-        }); 
+        });
+        swetrix.track({
+            ev: 'clicked_accordion_button',
+            unique: false,
+            meta: {
+                'accordion_title': accordionButton.textContent.trim()
+            }
+        });
     })
 });
