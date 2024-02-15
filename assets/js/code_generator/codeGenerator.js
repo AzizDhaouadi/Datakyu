@@ -1,11 +1,11 @@
-const radioButtonsList = document.querySelectorAll('input[type="radio"]');
-let eventNameDropDownContainer = document.getElementById("event_name_selector_div");
-let eventNameDropDown = document.getElementById("event_name");
-let customEventNameInputField = document.getElementById("custom_event_name_div");
-let customEventParametersDiv = document.getElementById("custom_event_name_parameters_div");
-let codeContainer = document.getElementById('codeSection');
-let addCustomEventParameterButton = document.getElementById("add_custom_event_parameter");
-let button_row = document.getElementById("button_row");
+const radioButtonsList = document.querySelectorAll('input[type="radio"]')
+let eventNameDropDownContainer = document.getElementById("event_name_selector_div")
+let eventNameDropDown = document.getElementById("event_name")
+let customEventNameInputField = document.getElementById("custom_event_name_div")
+let customEventParametersDiv = document.getElementById("custom_event_name_parameters_div")
+let codeContainer = document.getElementById("codeSection")
+let addCustomEventParameterButton = document.getElementById("add_custom_event_parameter")
+let button_row = document.getElementById("button_row")
 
 let placeholderSampleCode = `
 window.dataLayer = window.dataLayer || [];
@@ -21,8 +21,7 @@ window.dataLayer.push({
  });
  </div>`
 
-
- let customEventParameterRow = `
+let customEventParameterRow = `
  <div class="col-sm-4">
  <div class="mb-4">
    <label class="form-label added_label_name">Event paramater</label>
@@ -46,29 +45,27 @@ window.dataLayer.push({
 `
 
 window.onload = () => {
-    codeContainer.innerHTML = placeholderSampleCode;   
+  codeContainer.innerHTML = placeholderSampleCode
 }
 
-let dropDownElement = document.getElementById('event_name');
+let dropDownElement = document.getElementById("event_name")
 
-let selectedEventType = "all_properties";
+let selectedEventType = "all_properties"
 
 document.addEventListener("click", (event) => {
-    const clickTarget = event.target.closest(".remove");
-    if (clickTarget){
-        clickTarget.closest(".row").remove();
-    }
-});
+  const clickTarget = event.target.closest(".remove")
+  if (clickTarget) {
+    clickTarget.closest(".row").remove()
+  }
+})
 
 radioButtonsList.forEach((radioButton) => {
-    radioButton.addEventListener('change', (e) => {
-        
-        selectedEventType = e.target.value;
+  radioButton.addEventListener("change", (e) => {
+    selectedEventType = e.target.value
 
-        switch(selectedEventType) {
-            
-            case "SaaS":
-                eventNameDropDown.innerHTML = `<option value="tutorial_begin">tutorial_begin</option>
+    switch (selectedEventType) {
+      case "SaaS":
+        eventNameDropDown.innerHTML = `<option value="tutorial_begin">tutorial_begin</option>
                  <option value="tutorial_complete">tutorial_complete</option>
                  <option value="add_payment_info">add_payment_info</option>
                  <option value="begin_checkout">begin_checkout</option>
@@ -84,17 +81,17 @@ radioButtonsList.forEach((radioButton) => {
                  <option value="cancel_subscription">cancel_subscription</option>
                  <option value="renew_subscription">renew_subscription</option>`
 
-                 if(customEventNameInputField.classList.contains("visually-hidden")) {
-                    break;
-                 } else {
-                    eventNameDropDownContainer.classList.toggle("visually-hidden");
-                    customEventNameInputField.classList.toggle("visually-hidden");
-                    customEventParametersDiv.classList.toggle("visually-hidden");
-                 }
-                 break;
-            
-            case "ecommerce":
-                eventNameDropDown.innerHTML = `<option value="add_payment_info">add_payment_info</option>
+        if (customEventNameInputField.classList.contains("visually-hidden")) {
+          break
+        } else {
+          eventNameDropDownContainer.classList.toggle("visually-hidden")
+          customEventNameInputField.classList.toggle("visually-hidden")
+          customEventParametersDiv.classList.toggle("visually-hidden")
+        }
+        break
+
+      case "ecommerce":
+        eventNameDropDown.innerHTML = `<option value="add_payment_info">add_payment_info</option>
                  <option value="begin_checkout">begin_checkout</option>
                  <option value="purchase">purchase</option>
                  <option value="add_to_cart">add_to_cart</option>
@@ -105,73 +102,72 @@ radioButtonsList.forEach((radioButton) => {
                  <option value="view_item">view_item</option>
                  <option value="add_shipping_info">add_shipping_info</option>
                  <option value="refund">refund</option>`
-                 if(customEventNameInputField.classList.contains("visually-hidden")) {
-                    break;
-                 } else {
-                    eventNameDropDownContainer.classList.toggle("visually-hidden");
-                    customEventNameInputField.classList.toggle("visually-hidden");
-                    customEventParametersDiv.classList.toggle("visually-hidden");
-                 }
-                 break;
+        if (customEventNameInputField.classList.contains("visually-hidden")) {
+          break
+        } else {
+          eventNameDropDownContainer.classList.toggle("visually-hidden")
+          customEventNameInputField.classList.toggle("visually-hidden")
+          customEventParametersDiv.classList.toggle("visually-hidden")
+        }
+        break
 
-            case "all_properties":
-                    eventNameDropDown.innerHTML = `
+      case "all_properties":
+        eventNameDropDown.innerHTML = `
                     <option value="login">login</option>
                     <option value="purchase">purchase</option>
                     <option value="search">search</option>
                     <option value="select_content">select_content</option>
                     <option value="share">share</option>
                     <option value="sign_up">sign_up</option>`
-                    if(customEventNameInputField.classList.contains("visually-hidden")) {
-                        break;
-                     } else {
-                        eventNameDropDownContainer.classList.toggle("visually-hidden");
-                        customEventNameInputField.classList.toggle("visually-hidden");
-                        customEventParametersDiv.classList.toggle("visually-hidden");
-                     }
-                     break;
-            
-            case "custom_event":
-                eventNameDropDownContainer.classList.toggle("visually-hidden");
-                customEventNameInputField.classList.toggle("visually-hidden");
-                customEventParametersDiv.classList.toggle("visually-hidden");
-        }        
+        if (customEventNameInputField.classList.contains("visually-hidden")) {
+          break
+        } else {
+          eventNameDropDownContainer.classList.toggle("visually-hidden")
+          customEventNameInputField.classList.toggle("visually-hidden")
+          customEventParametersDiv.classList.toggle("visually-hidden")
+        }
+        break
 
-    });
-});
+      case "custom_event":
+        eventNameDropDownContainer.classList.toggle("visually-hidden")
+        customEventNameInputField.classList.toggle("visually-hidden")
+        customEventParametersDiv.classList.toggle("visually-hidden")
+    }
+  })
+})
 
 addCustomEventParameterButton.addEventListener("click", (e) => {
-  let rowToAppend = document.createElement("div");
-  rowToAppend.setAttribute("class", "row");
-  rowToAppend.innerHTML = customEventParameterRow;
-  customEventParametersDiv.insertBefore(rowToAppend, button_row);
-  
-});
+  let rowToAppend = document.createElement("div")
+  rowToAppend.setAttribute("class", "row")
+  rowToAppend.innerHTML = customEventParameterRow
+  customEventParametersDiv.insertBefore(rowToAppend, button_row)
+})
 
 // Select the node that will be observed for mutations
-const targetNode = document.getElementById('custom_event_name_parameters_div');
+const targetNode = document.getElementById("custom_event_name_parameters_div")
 // Options for the observer (which mutations to observe)
-const config = {childList: true};
+const config = { childList: true }
 // Callback function to execute when mutations are observed
-const callback = (mutationList, observer) => {
+const callback = (mutationList) => {
   for (const mutation of mutationList) {
-    if (mutation.type === 'childList') {
-      const addedNode = mutation.addedNodes[0];
-      const addedNodeEventParameterNameField = addedNode.querySelector(".added.name");
-      const addedNodeEventParameterValueField = addedNode.querySelector(".added.value");
+    if (mutation.type === "childList") {
+      const addedNode = mutation.addedNodes[0]
+      if (addedNode) {
+        const addedNodeEventParameterNameField = addedNode?.querySelector(".added.name")
+        const addedNodeEventParameterValueField = addedNode?.querySelector(".added.value")
 
-      addedNodeEventParameterNameField.setAttribute("id", `event_parameter_name_${document.querySelectorAll("input.added.name").length}`);
-      addedNodeEventParameterNameField.setAttribute("name", `event_parameter_name_${document.querySelectorAll("input.added.name").length}`);
+        addedNodeEventParameterNameField.setAttribute("id", `event_parameter_name_${document.querySelectorAll("input.added.name").length}`)
+        addedNodeEventParameterNameField.setAttribute("name", `event_parameter_name_${document.querySelectorAll("input.added.name").length}`)
 
-      addedNodeEventParameterValueField.setAttribute("id", `event_parameter_name_${document.querySelectorAll("input.added.value").length}`);
-      addedNodeEventParameterValueField.setAttribute("name", `event_parameter_name_${document.querySelectorAll("input.added.value").length}`);
-      
-    } 
+        addedNodeEventParameterValueField.setAttribute("id", `event_parameter_name_${document.querySelectorAll("input.added.value").length}`)
+        addedNodeEventParameterValueField.setAttribute("name", `event_parameter_name_${document.querySelectorAll("input.added.value").length}`)
+      }
+    }
   }
-};
+}
 
 // Create an observer instance linked to the callback function
-const observer = new MutationObserver(callback);
+const observer = new MutationObserver(callback)
 
 // Start observing the target node for configured mutations
-observer.observe(targetNode, config);
+observer.observe(targetNode, config)

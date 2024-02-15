@@ -1,17 +1,19 @@
 let dataLayerSearchEvent = `
     window.dataLayer = window.dataLayer || [];
+    <br>
     window.dataLayer.push({
         <br>
         <span class="indent">'event': 'search'</span>,
         <br>
         <span class="indent">'search_term': 'Datakyu'</span>
-        
+        <br>
       });`
 
 let gtagSearchEvent = `
     gtag('event', 'search', {
         <br>
         'search_term': 'Datakyu'
+        <br>
     });`
 
 let apiSearchEvent = `

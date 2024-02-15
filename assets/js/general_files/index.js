@@ -1,8 +1,5 @@
-$(".cta").click(() => {
-  $("html,body").animate(
-    {
-      scrollTop: $("#contactSection").offset().top,
-    },
-    "slow"
-  );
-});
+'use strict';
+
+import { controlContactModule } from "../modules/contact.module.js";
+
+window.addEventListener('load', controlContactModule);

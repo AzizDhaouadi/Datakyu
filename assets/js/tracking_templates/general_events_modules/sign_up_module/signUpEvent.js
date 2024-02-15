@@ -1,11 +1,12 @@
 let dataLayerSignUpEvent = `
     window.dataLayer = window.dataLayer || [];
+    <br>
     window.dataLayer.push({
         <br>
         <span class="indent">'event': 'sign_up'</span>,
         <br>
         <span class="indent">'method': 'Apple'</span>
-        
+        <br>
       });`
 
 let gtagSignUpEvent = `

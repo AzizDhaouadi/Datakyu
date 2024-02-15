@@ -1,1200 +1,1231 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Start cookieyes banner -->
-<script id="cookieyes" type="text/javascript"
-  src="https://cdn-cookieyes.com/client_data/5cd9002534c83870252a4773/script.js"></script>
-<!-- End cookieyes banner -->
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5cd9002534c83870252a4773/script.js"></script>
+  <!-- End cookieyes banner -->
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-00VKM23QFH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-00VKM23QFH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag("js", new Date());
 
       gtag("config", "G-00VKM23QFH");
-  </script>
-  <!-- Google Tag Manager -->
-  <script>
-      ; (function (w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : ""
-        j.async = true
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, "script", "dataLayer", "GTM-MP972DZ")
-  </script>
-  <!-- End Google Tag Manager -->
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MP972DZ");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Tally forms snippet -->
-  <script async src="https://tally.so/widgets/embed.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulting Services - Web & Product Analytics| Datakyu</title>
+    <meta
+      name="description"
+      content="Datakyu's mission is to help businesses measure what matters and find a source of truth to help decrease uncertainty and chaos" />
+    <link rel="canonical" href="https://www.datakyu.co/services/a-la-carte.html" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/custom-styles.css" />
+    <link rel="stylesheet" href="/assets/css/theme-styles.css" />
+    <link rel="stylesheet" href="/assets/css/a-la-carte.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-  <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consulting Services - Web & Product Analytics| Datakyu</title>
-  <meta name="description"
-    content="Datakyu's mission is to help businesses measure what matters and find a source of truth to help decrease uncertainty and chaos" />
-  <link rel="canonical" href="https://www.datakyu.co/services/a-la-carte.html" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/assets/css/custom-styles.css" />
-  <link rel="stylesheet" href="/assets/css/theme-styles.css" />
-  <link rel="stylesheet" href="/assets/css/a-la-carte.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-
-    :root {
-      --bs-body-text-font: "Quicksand", sans-serif;
-      --bs-nav-link-font-size: 1.225rem;
-      --bs-body-background-color: #fef8f2;
-    }
-
-    body {
-      font-family: var(--bs-body-text-font);
-      background-color: var(--bs-body-background-color);
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: var(--bs-font-monospace);
-    }
-
-    .text-green {
-      color: #008060;
-    }
-
-    .fill-green {
-      fill: #008060;
-    }
-
-    .text-black {
-      color: #000 !important;
-    }
-
-    nav.home {
-      margin: 0 auto;
-      padding-top: 1rem;
-      background-color: inherit !important;
-    }
-
-    .nav-link {
-      font-weight: bold;
-    }
-
-    div.navbar-nav {
-      justify-content: space-around;
-    }
-
-    .no-padding {
-      padding-top: 0 !important;
-    }
-
-    .emoji {
-      font-size: 2rem;
-    }
-
-    .light {
-      background-color: inherit !important;
-    }
-
-    .text-full-width {
-      text-transform: full-width;
-    }
-
-    .text-bold {
-      font-weight: bold;
-    }
-
-    a#navbarDropdown:hover {
-      color: var(--bs-nav-link-hover-color);
-    }
-
-    a.dropdown-item:hover {
-      background-color: #e5f8f3;
-    }
-
-    #main {
-      position: relative;
-      top: 7rem;
-    }
-
-    .img-fluid.shadow-xl.rounded-2.align-size {
-      box-shadow: none !important;
-      width: 85%;
-      height: 85%;
-    }
-  </style>
-  <script type="application/ld+json">
-      {
-  "@context": "https://schema.org/",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://www.datakyu.co/",
-      "name": "Datakyu",
-      "url": "https://www.datakyu.co/",
-      "logo": "https://www.datakyu.co/assets/logo/logo-transparent.svg",
-      "foundingDate": "2022-12-01",
-      "foundingLocation": {
-        "@type": "Place",
-        "address": "1010 Sainte-Catherine O Ste 200"
-      },
-      "knowsAbout": [
-        "https://en.wikipedia.org/wiki/Google_Analytics",
-        "https://en.wikipedia.org/wiki/Looker_Studio",
-        "https://en.wikipedia.org/wiki/Mixpanel"
-      ],
-      "keywords": [
-        "Google Analytics 4",
-        "Web Analytics",
-        "Web Tracking Implementation",
-        "Product Analytics",
-        "Segment",
-        "Mixpanel"
-      ],
-      "description": "Datakyu is an emerging marketing and product analytics start-up that provides cutting-edge web tracking implementation solutions. Leveraging the latest tools and technologies like BigQuery, Google Analytics 4, Mixpanel, Segment, and Looker Studio, the company is positioned to transform the way businesses make informed decisions. Datakyu's innovative approach to data analysis, coupled with its ability to create tailored solutions, places it at the forefront of the industry. With a deep understanding of marketing and product analytics and a steadfast commitment to delivering exceptional results, Datakyu is poised to become a leading player in this dynamic and ever-evolving field.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1010 Sainte-Catherine O Ste 200",
-        "addressLocality": "Montreal",
-        "addressRegion": "QC",
-        "postalCode": "H3B 5L1",
-        "addressCountry": "CA"
-      },
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "telephone": "support@datakyu.co",
-          "contactType": "customer service"
-        },
-        {
-          "@type": "ContactPoint",
-          "telephone": "sales@datakyu.co",
-          "contactType": "sales"
-        }
-      ],
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Montreal"
+      :root {
+        --bs-body-text-font: "Quicksand", sans-serif;
+        --bs-nav-link-font-size: 1.225rem;
+        --bs-body-background-color: #fef8f2;
       }
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Web Analytics Consulting Services",
-      "provider": {
-        "@type": "Organization",
-        "@id": "https://www.datakyu.co/"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Canada"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Web Analytics Services",
-        "itemListElement": [
+
+      body {
+        font-family: var(--bs-body-text-font);
+        background-color: var(--bs-body-background-color);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--bs-font-monospace);
+      }
+
+      .text-green {
+        color: #008060;
+      }
+
+      .fill-green {
+        fill: #008060;
+      }
+
+      .text-black {
+        color: #000 !important;
+      }
+
+      nav.home {
+        margin: 0 auto;
+        padding-top: 1rem;
+        background-color: inherit !important;
+      }
+
+      .nav-link {
+        font-weight: bold;
+      }
+
+      div.navbar-nav {
+        justify-content: space-around;
+      }
+
+      .no-padding {
+        padding-top: 0 !important;
+      }
+
+      .emoji {
+        font-size: 2rem;
+      }
+
+      .light {
+        background-color: inherit !important;
+      }
+
+      .text-full-width {
+        text-transform: full-width;
+      }
+
+      .text-bold {
+        font-weight: bold;
+      }
+
+      a#navbarDropdown:hover {
+        color: var(--bs-nav-link-hover-color);
+      }
+
+      a.dropdown-item:hover {
+        background-color: #e5f8f3;
+      }
+
+      #main {
+        position: relative;
+        top: 7rem;
+      }
+
+      dialog {
+        width: 50% !important;
+        border: none;
+        font-family: var(--bs-body-text-font);
+      }
+
+      [data-lead-capture-modal] [data-close-lead-capture-modal] {
+        width: 2rem;
+        height: 2rem;
+        background-image: url("/assets/images/ni-x.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+      }
+
+      .img-fluid.shadow-xl.rounded-2.align-size {
+        box-shadow: none !important;
+        width: 85%;
+        height: 85%;
+      }
+
+      .card.card-transition {
+        cursor: initial;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@graph": [
           {
-            "@type": "OfferCatalog",
-            "name": "Web Analytics Consulting Services",
-            "itemListElement": [
+            "@type": "Organization",
+            "@id": "https://www.datakyu.co/",
+            "name": "Datakyu",
+            "url": "https://www.datakyu.co/",
+            "logo": "https://www.datakyu.co/assets/logo/logo-transparent.svg",
+            "foundingDate": "2022-12-01",
+            "foundingLocation": {
+              "@type": "Place",
+              "address": "1010 Sainte-Catherine O Ste 200"
+            },
+            "knowsAbout": [
+              "https://en.wikipedia.org/wiki/Google_Analytics",
+              "https://en.wikipedia.org/wiki/Looker_Studio",
+              "https://en.wikipedia.org/wiki/Mixpanel"
+            ],
+            "keywords": ["Google Analytics 4", "Web Analytics", "Web Tracking Implementation", "Product Analytics", "Segment", "Mixpanel"],
+            "description": "Datakyu is an emerging marketing and product analytics start-up that provides cutting-edge web tracking implementation solutions. Leveraging the latest tools and technologies like BigQuery, Google Analytics 4, Mixpanel, Segment, and Looker Studio, the company is positioned to transform the way businesses make informed decisions. Datakyu's innovative approach to data analysis, coupled with its ability to create tailored solutions, places it at the forefront of the industry. With a deep understanding of marketing and product analytics and a steadfast commitment to delivering exceptional results, Datakyu is poised to become a leading player in this dynamic and ever-evolving field.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1010 Sainte-Catherine O Ste 200",
+              "addressLocality": "Montreal",
+              "addressRegion": "QC",
+              "postalCode": "H3B 5L1",
+              "addressCountry": "CA"
+            },
+            "contactPoint": [
               {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Product Analytics Consulting"
+                "@type": "ContactPoint",
+                "telephone": "support@datakyu.co",
+                "contactType": "customer service"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "sales@datakyu.co",
+                "contactType": "sales"
+              }
+            ],
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "Montreal"
+            }
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Web Analytics Consulting Services",
+            "provider": {
+              "@type": "Organization",
+              "@id": "https://www.datakyu.co/"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Canada"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Web Analytics Services",
+              "itemListElement": [
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Web Analytics Consulting Services",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Product Analytics Consulting"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Growth Marketing Consulting"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tracking Implementation Consulting"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "isRelatedTo": [
+              {
+                "@type": "Service",
+                "serviceType": "Marketing Tech Migration Services",
+                "provider": {
+                  "@type": "Organization",
+                  "@id": "https://www.datakyu.co/"
+                },
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Web Analytics Services",
+                  "itemListElement": [
+                    {
+                      "@type": "OfferCatalog",
+                      "name": "Marketing Tech Stack Migration Services",
+                      "itemListElement": [
+                        {
+                          "@type": "Offer",
+                          "itemOffered": {
+                            "@type": "Service",
+                            "name": "Migrate from Universal Analytics to Google Analytics 4"
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "itemOffered": {
+                            "@type": "Service",
+                            "name": "Implement Segment"
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "itemOffered": {
+                            "@type": "Service",
+                            "name": "Implement Mixpanel"
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               },
               {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Growth Marketing Consulting"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Tracking Implementation Consulting"
+                "@type": "Service",
+                "serviceType": "Web Analytics Auditing & Implementation",
+                "provider": {
+                  "@type": "Organization",
+                  "@id": "https://www.datakyu.co/"
+                },
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Web Analytics Services",
+                  "itemListElement": [
+                    {
+                      "@type": "OfferCatalog",
+                      "name": "Web Analytics Auditing & Implementation",
+                      "itemListElement": [
+                        {
+                          "@type": "Offer",
+                          "itemOffered": {
+                            "@type": "Service",
+                            "name": "Web Analytics Auditing"
+                          }
+                        },
+                        {
+                          "@type": "Offer",
+                          "itemOffered": {
+                            "@type": "Service",
+                            "name": "Web Analytics Implementation"
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               }
             ]
           }
         ]
-      },
-      "isRelatedTo": [
-        {
-          "@type": "Service",
-          "serviceType": "Marketing Tech Migration Services",
-          "provider": {
-            "@type": "Organization",
-            "@id": "https://www.datakyu.co/"
-          },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Web Analytics Services",
-            "itemListElement": [
-              {
-                "@type": "OfferCatalog",
-                "name": "Marketing Tech Stack Migration Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Migrate from Universal Analytics to Google Analytics 4"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Implement Segment"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Implement Mixpanel"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "@type": "Service",
-          "serviceType": "Web Analytics Auditing & Implementation",
-          "provider": {
-            "@type": "Organization",
-            "@id": "https://www.datakyu.co/"
-          },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Web Analytics Services",
-            "itemListElement": [
-              {
-                "@type": "OfferCatalog",
-                "name": "Web Analytics Auditing & Implementation",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Web Analytics Auditing"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Web Analytics Implementation"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ]
-}
+      }
     </script>
-</head>
+  </head>
 
-<body id="body">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP972DZ" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <header class="flex-menu navbar-absolute-top">
-    <nav class="navbar navbar-expand-lg bg-light home">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src="/assets/logo/logo-transparent.svg" alt="Logo" class="d-inline-block align-text-top" />
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
-                <li><a class="dropdown-item" href="/services/auditing-and-implementation.html">Auditing &
-                    Implementation</a></li>
-                <li><a class="dropdown-item" href="/services/marketing-tech-stack-migration.html">Marketing Tech Stack
-                    Migration</a></li>
-                <li><a class="dropdown-item" href="/services/a-la-carte.html">Consulting Services</a></li>
-              </ul>
-            </li>
-            <a class="nav-link" href="/pricing.html">Packages</a>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Resources
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://datajournal.datakyu.co/" target="_blank">Blog</a></li>
-                <li>
-                  <a class="dropdown-item" href="/resources/sample-code-generator.html" target="_blank">Google Analytics
-                    4 Sample Code Generator</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/resources/google-tag-manager-container-tempaltes.html"
-                    target="_blank">Google Tag
-                    Manager Container Templates</a>
-                </li>
-                <li style="padding-left: 1rem">
-                  <hr class="dropdown-divider" />
-                  Coming Soon
-                </li>
-                <li><a class="dropdown-item" href="/resources/looker-studio-templates.html" target="_blank">Looker
-                    Studio Dashboard
-                    Templates</a></li>
-              </ul>
-            </li>
+  <body id="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP972DZ" height="0" width="0" style="display: none; visibility: hidden"></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="https://swetrix.org/swetrix.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        swetrix.init("KT4Y783yoT2n");
+        swetrix.trackViews();
+      });
+    </script>
+
+    <noscript>
+      <img src="https://api.swetrix.com/log/noscript?pid=KT4Y783yoT2n" alt="" referrerpolicy="no-referrer-when-downgrade" />
+    </noscript>
+    <header class="flex-menu navbar-absolute-top">
+      <nav class="navbar navbar-expand-lg bg-light home">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="/assets/logo/logo-transparent.svg" alt="Logo" class="d-inline-block align-text-top" />
+          </a>
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarServicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+                  <li><a class="dropdown-item" href="/services/auditing-and-implementation.html">Auditing & Implementation</a></li>
+                  <li><a class="dropdown-item" href="/services/marketing-tech-stack-migration.html">Marketing Tech Stack Migration</a></li>
+                  <li><a class="dropdown-item" href="/services/a-la-carte.html">Consulting Services</a></li>
+                </ul>
+              </li>
+              <a class="nav-link" href="/pricing.html">Packages</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resources
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://datajournal.datakyu.co/">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/resources/sample-code-generator.html">Google Analytics 4 Sample Code Generator</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/resources/google-tag-manager-container-tempaltes.html">Google Tag Manager Container Templates</a>
+                  </li>
+                  <li style="padding-left: 1rem">
+                    <hr class="dropdown-divider" />
+                    Coming Soon
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/resources/looker-studio-templates.html">Looker Studio Dashboard Templates</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main id="main">
-    <section id="hero">
-      <!-- Hero -->
-      <div class="position-relative">
-        <div class="container content-space-t-3 content-space-b-1">
-          <div class="row justify-content-center align-items-md-center mb-7">
-            <div class="col-md-6 mb-7 mb-md-0">
-              <!-- Heading -->
-              <div class="pe-lg-3 mb-7">
-                <h1 class="display-3 text-green mb-3 mb-md-5">Turn your data into <span
-                    class="text-warning">insights</span></h1>
-                <p class="lead text-black-70">
-                  Unleash the hidden potential of your website and products with our analytics consulting services and
-                  take your online presence to
-                  the next level!
-                </p>
-              </div>
-              <!-- End Heading -->
+      </nav>
+    </header>
+    <main id="main">
+      <section id="hero">
+        <!-- Hero -->
+        <div class="position-relative">
+          <div class="container content-space-t-3 content-space-b-1">
+            <div class="row justify-content-center align-items-md-center mb-7">
+              <div class="col-md-6 mb-7 mb-md-0">
+                <!-- Heading -->
+                <div class="pe-lg-3 mb-7">
+                  <h1 class="display-3 text-green mb-3 mb-md-5">Turn your data into <span class="text-warning">insights</span></h1>
+                  <p class="lead text-black-70">
+                    Unleash the hidden potential of your website and products with our analytics consulting services and take your online presence to
+                    the next level!
+                  </p>
+                </div>
+                <!-- End Heading -->
 
-              <div class="d-grid d-sm-flex gap-3">
-                <button type="button" class="btn btn-primary cta" id="marketing_websites" data-tally-open="nG6E8e"
-                  data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋"
-                  data-tally-emoji-animation="wave" data-tally-auto-close="1000">
-                  Contact us
-                </button>
+                <div class="d-grid d-sm-flex gap-3">
+                  <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
+                </div>
               </div>
+              <!-- End Col -->
+
+              <div class="col-sm-10 col-md-6">
+                <img class="img-fluid" src="/assets/images/oc-project-development.svg" alt="Image Description" />
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <!-- Lines -->
+          <div class="lines lines-light">
+            <div class="lines-container">
+              <div class="lines-item"></div>
+              <div class="lines-item"></div>
+              <div class="lines-item"></div>
+              <div class="lines-item"></div>
+              <div class="lines-item"></div>
+            </div>
+          </div>
+          <!-- End Lines -->
+        </div>
+        <!-- End Hero -->
+      </section>
+      <section id="consulting-services">
+        <!-- Blog -->
+        <div class="container content-space-1">
+          <!-- Heading -->
+          <div class="w-lg-65 text-center mx-lg-auto mb-7">
+            <h3>Our consulting services</h3>
+            <p class="fs-6 lead">All the different ways we can help.</p>
+          </div>
+          <!-- End Heading -->
+
+          <div class="row mb-5 mb-sm-5">
+            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+              <!-- Card -->
+              <a class="card card-lg card-transition bg-primary-dark" style="min-height: 22rem">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <span class="badge bg-soft-light">Data infrastructure</span>
+                  </div>
+                  <h4 class="card-title text-white mb-5">Auditing & Implementation</h4>
+                  <p class="small text-white">
+                    Streamline your online performance and increase conversions with our web and product analytics auditing and implementation
+                    consulting services.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#auditingAndImplementation">Learn more</button>
+                </div>
+              </a>
+              <!-- End Card -->
             </div>
             <!-- End Col -->
 
-            <div class="col-sm-10 col-md-6">
-              <img class="img-fluid" src="/assets/images/oc-project-development.svg" alt="Image Description" />
+            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+              <!-- Card -->
+              <a class="card card-lg card-transition bg-primary-dark" style="min-height: 22rem">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <span class="badge bg-soft-light">Data insights</span>
+                  </div>
+                  <h4 class="card-title text-white mb-5">Product Performance</h4>
+                  <p class="small text-white">
+                    Maximize the potential of your product and drive growth through the utilization of our consulting services for product growth
+                    strategy.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#productPerformance">Learn more</button>
+                  <!-- End Button trigger modal -->
+                </div>
+              </a>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+              <!-- Card -->
+              <a class="card card-lg card-transition bg-primary-dark" style="min-height: 22rem">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <span class="badge bg-soft-light">Data Insights</span>
+                  </div>
+                  <h4 class="card-title text-white mb-5">Advertising Performance</h4>
+                  <p class="small text-white">
+                    Maximize return on investment and improve the performance of your advertising campaigns through our consulting services for
+                    advertising performance enhancement.
+                  </p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#advertisingPerformance">Learn more</button>
+                  <!-- End Button trigger modal -->
+                </div>
+              </a>
+              <!-- End Card -->
             </div>
             <!-- End Col -->
           </div>
           <!-- End Row -->
-        </div>
 
-        <!-- Lines -->
-        <div class="lines lines-light">
-          <div class="lines-container">
-            <div class="lines-item"></div>
-            <div class="lines-item"></div>
-            <div class="lines-item"></div>
-            <div class="lines-item"></div>
-            <div class="lines-item"></div>
+          <!-- Info -->
+          <div class="text-center">
+            <p class="mb-0">Do you have some questions</p>
+            <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
           </div>
+          <!-- End Info -->
         </div>
-        <!-- End Lines -->
-      </div>
-      <!-- End Hero -->
-    </section>
-    <section id="consulting-services">
-      <!-- Blog -->
-      <div class="container content-space-1">
-        <!-- Heading -->
-        <div class="w-lg-65 text-center mx-lg-auto mb-7">
-          <h3>Our consulting services</h3>
-          <p class="fs-6 lead">All the different ways we can help.</p>
-        </div>
-        <!-- End Heading -->
+        <!-- End Blog -->
 
-        <div class="row mb-5 mb-sm-5">
-          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
-            <!-- Card -->
-            <a class="card card-lg card-transition bg-primary-dark" style="min-height: 22rem">
-              <div class="card-body">
-                <div class="mb-3">
-                  <span class="badge bg-soft-light">Data infrastructure</span>
-                </div>
-                <h4 class="card-title text-white mb-5">Auditing & Implementation</h4>
-                <p class="small text-white">
-                  Streamline your online performance and increase conversions with our web and product analytics
-                  auditing and implementation
-                  consulting services.
+        <!-- Modal -->
+        <div
+          id="auditingAndImplementation"
+          class="modal fade"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="auditingAndImplementation"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="auditingAndImplementationTitle">What are auditing & implementation consulting services?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Our web analytics consulting services provide comprehensive analysis of your website data. We help identify key performance
+                  indicators, track user behavior, and provide actionable insights to optimize your website and drive business growth. By utilizing
+                  our web analytics consulting services, you can gain a deeper understanding of your audience, improve user experience and increase
+                  conversions.
                 </p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                  data-bs-target="#auditingAndImplementation">Learn more</button>
               </div>
-            </a>
-            <!-- End Card -->
+            </div>
           </div>
-          <!-- End Col -->
+        </div>
+        <!-- End Modal -->
 
-          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
-            <!-- Card -->
-            <a class="card card-lg card-transition bg-primary-dark" style="min-height: 22rem">
-              <div class="card-body">
-                <div class="mb-3">
-                  <span class="badge bg-soft-light">Data insights</span>
-                </div>
-                <h4 class="card-title text-white mb-5">Product Performance</h4>
-                <p class="small text-white">
-                  Maximize the potential of your product and drive growth through the utilization of our consulting
-                  services for product growth
-                  strategy.
+        <!-- Modal -->
+        <div id="productPerformance" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="productPerformance" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productPerformanceTitle">What are product performance consulting services?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Our product analytics consulting services provide a comprehensive evaluation of your product performance. By analyzing data from
+                  user interactions and usage patterns, we identify key areas for improvement and provide actionable recommendations to optimize user
+                  experience and drive revenue growth. Through the utilization of our product analytics consulting services, you can gain a deeper
+                  understanding of your audience, improve product performance, and increase revenue.
                 </p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                  data-bs-target="#productPerformance">Learn more</button>
-                <!-- End Button trigger modal -->
               </div>
-            </a>
-            <!-- End Card -->
+            </div>
           </div>
-          <!-- End Col -->
+        </div>
+        <!-- End Modal -->
 
-          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
-            <!-- Card -->
-            <a class="card card-lg card-transition bg-primary-dark" style="min-height: 22rem">
-              <div class="card-body">
-                <div class="mb-3">
-                  <span class="badge bg-soft-light">Data Insights</span>
-                </div>
-                <h4 class="card-title text-white mb-5">Advertising Performance</h4>
-                <p class="small text-white">
-                  Maximize return on investment and improve the performance of your advertising campaigns through our
-                  consulting services for
-                  advertising performance enhancement.
+        <!-- Modal -->
+        <div id="advertisingPerformance" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="advertisingPerformance" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="advertisingPerformanceTitle">What are marketing performance consulting services?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Our marketing performance consulting services provide a comprehensive evaluation of your marketing efforts. By analyzing data from
+                  campaigns, customer interactions and other marketing-related activities, we identify areas for improvement and provide actionable
+                  recommendations to optimize your marketing strategy and drive better results. Utilize our consulting services to gain a competitive
+                  edge, achieve desired business outcomes and optimize return on investment.
                 </p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                  data-bs-target="#advertisingPerformance">Learn more</button>
-                <!-- End Button trigger modal -->
-              </div>
-            </a>
-            <!-- End Card -->
-          </div>
-          <!-- End Col -->
-        </div>
-        <!-- End Row -->
-
-        <!-- Info -->
-        <div class="text-center">
-          <p class="mb-0">Do you have some questions</p>
-          <button type="button" class="btn btn-primary cta" id="marketing_websites" data-tally-open="nG6E8e"
-            data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋"
-            data-tally-emoji-animation="wave" data-tally-auto-close="1000">
-            Contact us
-          </button>
-        </div>
-        <!-- End Info -->
-      </div>
-      <!-- End Blog -->
-
-      <!-- Modal -->
-      <div id="auditingAndImplementation" class="modal fade" tabindex="-1" role="dialog"
-        aria-labelledby="auditingAndImplementation" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="auditingAndImplementationTitle">What are auditing & implementation consulting
-                services?</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Our web analytics consulting services provide comprehensive analysis of your website data. We help
-                identify key performance
-                indicators, track user behavior, and provide actionable insights to optimize your website and drive
-                business growth. By utilizing
-                our web analytics consulting services, you can gain a deeper understanding of your audience, improve
-                user experience and increase
-                conversions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal -->
-
-      <!-- Modal -->
-      <div id="productPerformance" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="productPerformance"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="productPerformanceTitle">What are product performance consulting services?
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Our product analytics consulting services provide a comprehensive evaluation of your product
-                performance. By analyzing data from
-                user interactions and usage patterns, we identify key areas for improvement and provide actionable
-                recommendations to optimize user
-                experience and drive revenue growth. Through the utilization of our product analytics consulting
-                services, you can gain a deeper
-                understanding of your audience, improve product performance, and increase revenue.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal -->
-
-      <!-- Modal -->
-      <div id="advertisingPerformance" class="modal fade" tabindex="-1" role="dialog"
-        aria-labelledby="advertisingPerformance" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="advertisingPerformanceTitle">What are marketing performance consulting
-                services?</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Our marketing performance consulting services provide a comprehensive evaluation of your marketing
-                efforts. By analyzing data from
-                campaigns, customer interactions and other marketing-related activities, we identify areas for
-                improvement and provide actionable
-                recommendations to optimize your marketing strategy and drive better results. Utilize our consulting
-                services to gain a competitive
-                edge, achieve desired business outcomes and optimize return on investment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal -->
-    </section>
-
-    <section id="our_technology_stack">
-      <!-- Features -->
-      <div class="overflow-hidden">
-        <div class="container content-space-1">
-          <div class="row align-items-lg-center">
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="pe-lg-5">
-                <!-- Heading -->
-                <div class="mb-7">
-                  <h3 class="h4 text-warning">Our technology stack</h3>
-                  <p class="fs-6">Our technology stack is built to be modern and future-proof. If you can build it, we
-                    can track it!</p>
-                </div>
-                <!-- End Heading -->
-
-                <div class="d-grid gap-3">
-                  <!-- Nav Tabs -->
-                  <ul class="nav nav-justified align-items-center" id="codeEditorTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link active side-by-side" id="codeEditorOne-tab" href="#codeEditorOne"
-                        data-bs-toggle="tab" data-bs-target="#codeEditorOne" role="tab" aria-controls="codeEditorOne"
-                        aria-selected="true">
-                        <!-- SVG -->
-                        <img src="/assets/images/google-analytics-4.svg" width="38" height="39"
-                          alt="Google Analytics 4" />
-                        <!-- End SVG -->
-                        <p class="small text-muted">Google Analytics 4</p>
-                      </a>
-                    </li>
-
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link side-by-side" id="codeEditorTwo-tab" href="#codeEditorTwo" data-bs-toggle="tab"
-                        data-bs-target="#codeEditorTwo" role="tab" aria-controls="codeEditorTwo" aria-selected="false">
-                        <!-- SVG -->
-                        <img src="/assets/images/google-tag-manager.svg" width="38" height="39"
-                          alt="Google Tag Manager" />
-                        <!-- End SVG -->
-                        <p class="small text-muted">Google Tag Manager</p>
-                      </a>
-                    </li>
-
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link side-by-side" id="codeEditorThree-tab" href="#codeEditorThree"
-                        data-bs-toggle="tab" data-bs-target="#codeEditorThree" role="tab"
-                        aria-controls="codeEditorThree" aria-selected="false">
-                        <!-- SVG -->
-                        <img src="/assets/images/segment.svg" width="38" height="39" alt="Segment" />
-                        <!-- End SVG -->
-                        <p class="small text-muted">Segment</p>
-                      </a>
-                    </li>
-
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link side-by-side" id="codeEditorFour-tab" href="#codeEditorFour"
-                        data-bs-toggle="tab" data-bs-target="#codeEditorFour" role="tab" aria-controls="codeEditorFour"
-                        aria-selected="false">
-                        <!-- SVG -->
-                        <img src="/assets/images/mixpanel.svg" width="38" height="39" alt="Mixpanel" />
-                        <!-- End SVG -->
-                        <p class="small text-muted">Mixpanel</p>
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- End Nav Tabs -->
-                </div>
               </div>
             </div>
-            <!-- End Col -->
+          </div>
+        </div>
+        <!-- End Modal -->
+      </section>
 
-            <div class="col-lg-6">
+      <section id="our_technology_stack">
+        <!-- Features -->
+        <div class="overflow-hidden">
+          <div class="container content-space-1">
+            <div class="row align-items-lg-center">
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="pe-lg-5">
+                  <!-- Heading -->
+                  <div class="mb-7">
+                    <h3 class="h4 text-warning">Our technology stack</h3>
+                    <p class="fs-6">Our technology stack is built to be modern and future-proof. If you can build it, we can track it!</p>
+                  </div>
+                  <!-- End Heading -->
+
+                  <div class="d-grid gap-3">
+                    <!-- Nav Tabs -->
+                    <ul class="nav nav-justified align-items-center" id="codeEditorTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link active side-by-side"
+                          id="codeEditorOne-tab"
+                          href="#codeEditorOne"
+                          data-bs-toggle="tab"
+                          data-bs-target="#codeEditorOne"
+                          role="tab"
+                          aria-controls="codeEditorOne"
+                          aria-selected="true">
+                          <!-- SVG -->
+                          <img src="/assets/images/google-analytics-4.svg" width="38" height="39" alt="Google Analytics 4" />
+                          <!-- End SVG -->
+                          <p class="small text-muted">Google Analytics 4</p>
+                        </a>
+                      </li>
+
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link side-by-side"
+                          id="codeEditorTwo-tab"
+                          href="#codeEditorTwo"
+                          data-bs-toggle="tab"
+                          data-bs-target="#codeEditorTwo"
+                          role="tab"
+                          aria-controls="codeEditorTwo"
+                          aria-selected="false">
+                          <!-- SVG -->
+                          <img src="/assets/images/google-tag-manager.svg" width="38" height="39" alt="Google Tag Manager" />
+                          <!-- End SVG -->
+                          <p class="small text-muted">Google Tag Manager</p>
+                        </a>
+                      </li>
+
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link side-by-side"
+                          id="codeEditorThree-tab"
+                          href="#codeEditorThree"
+                          data-bs-toggle="tab"
+                          data-bs-target="#codeEditorThree"
+                          role="tab"
+                          aria-controls="codeEditorThree"
+                          aria-selected="false">
+                          <!-- SVG -->
+                          <img src="/assets/images/segment.svg" width="38" height="39" alt="Segment" />
+                          <!-- End SVG -->
+                          <p class="small text-muted">Segment</p>
+                        </a>
+                      </li>
+
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link side-by-side"
+                          id="codeEditorFour-tab"
+                          href="#codeEditorFour"
+                          data-bs-toggle="tab"
+                          data-bs-target="#codeEditorFour"
+                          role="tab"
+                          aria-controls="codeEditorFour"
+                          aria-selected="false">
+                          <!-- SVG -->
+                          <img src="/assets/images/mixpanel.svg" width="38" height="39" alt="Mixpanel" />
+                          <!-- End SVG -->
+                          <p class="small text-muted">Mixpanel</p>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- End Nav Tabs -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Col -->
+
+              <div class="col-lg-6">
+                <!-- Tab Content -->
+                <div class="tab-content mb-7" id="codeEditorTabContent">
+                  <div class="tab-pane fade show active" id="codeEditorOne" role="tabpanel" aria-labelledby="codeEditorOne-tab">
+                    <!-- Code Editor -->
+                    <div class="code-editor overflow-hidden">
+                      <div class="code-editor-container">
+                        <!-- Line Numbers -->
+                        <div class="code-editor-line-numbers">
+                          <span class="code-editor-line-numbers-item">1</span>
+                          <span class="code-editor-line-numbers-item">2</span>
+                          <span class="code-editor-line-numbers-item">3</span>
+                          <span class="code-editor-line-numbers-item">4</span>
+                          <span class="code-editor-line-numbers-item">5</span>
+                          <span class="code-editor-line-numbers-item">6</span>
+                          <span class="code-editor-line-numbers-item">7</span>
+                          <span class="code-editor-line-numbers-item">8</span>
+                          <span class="code-editor-line-numbers-item">9</span>
+                          <span class="code-editor-line-numbers-item">10</span>
+                          <span class="code-editor-line-numbers-item">11</span>
+                          <span class="code-editor-line-numbers-item">12</span>
+                          <span class="code-editor-line-numbers-item">13</span>
+                          <span class="code-editor-line-numbers-item">14</span>
+                          <span class="code-editor-line-numbers-item">15</span>
+                        </div>
+                        <!-- End Line Numbers -->
+
+                        <!-- Typing Area -->
+                        <div class="code-editor-typing-area">
+                          <div class="mb-4">
+                            <span class="text-primary">//Tracking events with gtag</span>
+                          </div>
+
+                          <div class="mb-4">
+                            <span>gtag(</span>
+                            <div class="ps-3"><span class="text-primary">"event",</span></div>
+                            <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                            <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
+                            <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                            <div><span>});</span></div>
+                          </div>
+
+                          <div class="gtagNavTyped"></div>
+
+                          <div class="mb-4">
+                            <span>gtag(</span>
+                            <div class="ps-3"><span class="text-primary">"event",</span></div>
+                            <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                            <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
+                            <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer-Webinar"</span></div>
+                            <div><span>});</span></div>
+                          </div>
+                        </div>
+                        <!-- End Typing Area -->
+                      </div>
+                    </div>
+                    <!-- End Code Editor -->
+                  </div>
+
+                  <div class="tab-pane fade" id="codeEditorTwo" role="tabpanel" aria-labelledby="codeEditorTwo-tab">
+                    <!-- Code Editor -->
+                    <div class="code-editor overflow-hidden">
+                      <div class="code-editor-container">
+                        <!-- Line Numbers -->
+                        <div class="code-editor-line-numbers">
+                          <span class="code-editor-line-numbers-item">1</span>
+                          <span class="code-editor-line-numbers-item">2</span>
+                          <span class="code-editor-line-numbers-item">3</span>
+                          <span class="code-editor-line-numbers-item">4</span>
+                          <span class="code-editor-line-numbers-item">5</span>
+                          <span class="code-editor-line-numbers-item">6</span>
+                          <span class="code-editor-line-numbers-item">7</span>
+                          <span class="code-editor-line-numbers-item">8</span>
+                          <span class="code-editor-line-numbers-item">9</span>
+                          <span class="code-editor-line-numbers-item">10</span>
+                          <span class="code-editor-line-numbers-item">11</span>
+                          <span class="code-editor-line-numbers-item">12</span>
+                          <span class="code-editor-line-numbers-item">13</span>
+                          <span class="code-editor-line-numbers-item">14</span>
+                          <span class="code-editor-line-numbers-item">15</span>
+                        </div>
+                        <!-- End Line Numbers -->
+
+                        <!-- Typing Area -->
+                        <div class="code-editor-typing-area">
+                          <div class="mb-4">
+                            <span class="text-primary">window.dataLayer = window.dataLayer || [];</span>
+                          </div>
+
+                          <div class="mb-4">
+                            <span>window.dataLayer.push({</span>
+                            <div class="ps-3"><span class="text-primary">"event"</span><span>:"submitted_form",</span></div>
+                            <div class="ps-3"><span class="text-primary">"form_id"</span><span>:"contact_form",</span></div>
+                            <div class="ps-3"><span class="text-primary">"session_number"</span><span>:4</span></div>
+                            <div><span>});</span></div>
+                          </div>
+
+                          <div class="mb-4">
+                            <span>window.dataLayer.push({</span>
+                            <div class="ps-3"><span class="text-primary">"event"</span><span>:"generate_lead",</span></div>
+                            <div class="ps-3"><span class="text-primary">"page"</span><span>:"/contact-us/",</span></div>
+                            <div class="ps-3"><span class="text-primary">"campaign"</span><span>:"Summer Webinar"</span></div>
+                            <div><span>});</span></div>
+                          </div>
+                        </div>
+                        <!-- End Typing Area -->
+                      </div>
+                    </div>
+                    <!-- End Code Editor -->
+                  </div>
+
+                  <div class="tab-pane fade" id="codeEditorThree" role="tabpanel" aria-labelledby="codeEditorThree-tab">
+                    <!-- Code Editor -->
+                    <div class="code-editor overflow-hidden">
+                      <div class="code-editor-container">
+                        <!-- Line Numbers -->
+                        <div class="code-editor-line-numbers">
+                          <span class="code-editor-line-numbers-item">1</span>
+                          <span class="code-editor-line-numbers-item">2</span>
+                          <span class="code-editor-line-numbers-item">3</span>
+                          <span class="code-editor-line-numbers-item">4</span>
+                          <span class="code-editor-line-numbers-item">5</span>
+                          <span class="code-editor-line-numbers-item">6</span>
+                          <span class="code-editor-line-numbers-item">7</span>
+                          <span class="code-editor-line-numbers-item">8</span>
+                          <span class="code-editor-line-numbers-item">9</span>
+                          <span class="code-editor-line-numbers-item">10</span>
+                          <span class="code-editor-line-numbers-item">11</span>
+                          <span class="code-editor-line-numbers-item">12</span>
+                          <span class="code-editor-line-numbers-item">13</span>
+                          <span class="code-editor-line-numbers-item">14</span>
+                          <span class="code-editor-line-numbers-item">15</span>
+                        </div>
+                        <!-- End Line Numbers -->
+
+                        <!-- Typing Area -->
+                        <div class="code-editor-typing-area">
+                          <div class="mb-4">
+                            <span class="text-primary">// Tracking events with Segment</span>
+                          </div>
+
+                          <div class="mb-4">
+                            <span>analytics.track(</span>
+                            <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                            <div class="ps-3"><span class="text-primary">form_id</span>:<span>"contact_form",</span></div>
+                            <div class="ps-3"><span class="text-primary">session_number</span>:<span>4</span></div>
+                            <div><span>});</span></div>
+                          </div>
+
+                          <div class="mb-4">
+                            <span>analytics.track(</span>
+                            <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                            <div class="ps-3"><span class="text-primary">page</span>:<span>"/contact-us/",</span></div>
+                            <div class="ps-3"><span class="text-primary">campaign</span>:<span>"Summer Webinar"</span></div>
+                            <div><span>});</span></div>
+                          </div>
+                        </div>
+                        <!-- End Typing Area -->
+                      </div>
+                    </div>
+                    <!-- End Code Editor -->
+                  </div>
+
+                  <div class="tab-pane fade" id="codeEditorFour" role="tabpanel" aria-labelledby="codeEditorFour-tab">
+                    <!-- Code Editor -->
+                    <div class="code-editor overflow-hidden">
+                      <div class="code-editor-container">
+                        <!-- Line Numbers -->
+                        <div class="code-editor-line-numbers">
+                          <span class="code-editor-line-numbers-item">1</span>
+                          <span class="code-editor-line-numbers-item">2</span>
+                          <span class="code-editor-line-numbers-item">3</span>
+                          <span class="code-editor-line-numbers-item">4</span>
+                          <span class="code-editor-line-numbers-item">5</span>
+                          <span class="code-editor-line-numbers-item">6</span>
+                          <span class="code-editor-line-numbers-item">7</span>
+                          <span class="code-editor-line-numbers-item">8</span>
+                          <span class="code-editor-line-numbers-item">9</span>
+                          <span class="code-editor-line-numbers-item">10</span>
+                          <span class="code-editor-line-numbers-item">11</span>
+                          <span class="code-editor-line-numbers-item">12</span>
+                          <span class="code-editor-line-numbers-item">13</span>
+                          <span class="code-editor-line-numbers-item">14</span>
+                          <span class="code-editor-line-numbers-item">15</span>
+                        </div>
+                        <!-- End Line Numbers -->
+
+                        <!-- Typing Area -->
+                        <div class="code-editor-typing-area">
+                          <div class="mb-4">
+                            <span class="text-primary">// Tracking events with Mixpanel</span>
+                          </div>
+
+                          <div class="mb-4">
+                            <span>mixpanel.track(</span>
+                            <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                            <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
+                            <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                            <div><span>});</span></div>
+                          </div>
+                          <div class="mb-4">
+                            <span>mixpanel.track(</span>
+                            <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                            <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
+                            <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer Webinar"</span></div>
+                            <div><span>});</span></div>
+                          </div>
+                        </div>
+                        <!-- End Typing Area -->
+                      </div>
+                    </div>
+                    <!-- End Code Editor -->
+                  </div>
+                </div>
+                <!-- End Tab Content -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+        <!-- End Features -->
+
+        <!-- CTA -->
+        <div class="container">
+          <!-- Heading -->
+          <div class="w-lg-65 text-center mx-lg-auto mb-7">
+            <h3 class="h3">Complex problems we make <span class="text-warning">simple</span></h3>
+          </div>
+          <!-- End Heading -->
+        </div>
+
+        <!-- Card -->
+        <div class="container">
+          <div class="w-lg-75 mx-lg-auto">
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-4">
+                <!-- Card -->
+                <a class="card card-transition card-bordered shadow-none h-100" href="">
+                  <div class="card-body">
+                    <div class="text-center mb-4">
+                      <img class="img-fluid" src="/assets/images/oc-hi-five.svg" alt="Image Description" style="height: 6rem" />
+                    </div>
+                    <h6 class="card-title">Implementation audit</h6>
+                    <p class="card-text text-body">Understand which interactions on your website are generating data.</p>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm-6 col-md-4 mb-4">
+                <!-- Card -->
+                <a class="card card-transition card-bordered shadow-none h-100" href="">
+                  <div class="card-body">
+                    <div class="text-center mb-4">
+                      <img class="img-fluid" src="/assets/images/oc-user-profile.svg" alt="Image Description" style="height: 6rem" />
+                    </div>
+
+                    <h6 class="card-title">Interactive dashboards</h6>
+                    <p class="card-text text-body">Use dynamic dashboards that help you access the right data at the right time.</p>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm-6 col-md-4 mb-4">
+                <!-- Card -->
+                <a class="card card-transition card-bordered shadow-none h-100" href="">
+                  <div class="card-body">
+                    <div class="text-center mb-4">
+                      <img class="img-fluid" src="/assets/images/oc-collaboration.svg" alt="Image Description" style="height: 6rem" />
+                    </div>
+
+                    <h6 class="card-title">User journey tracking</h6>
+                    <p class="card-text text-body">Establish full visibility on how users turn from visitors, to leads to customers.</p>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
+                <!-- Card -->
+                <a class="card card-transition card-bordered shadow-none h-100" href="">
+                  <div class="card-body">
+                    <div class="text-center mb-4">
+                      <img class="img-fluid" src="/assets/images/oc-money-profits.svg" alt="Image Description" style="height: 6rem" />
+                    </div>
+
+                    <h6 class="card-title">E-commerce tracking</h6>
+                    <p class="card-text text-body">Form a coherent understanding of your traffic, products performance and checkout funnel.</p>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm-6 col-md-4 mb-4 mb-sm-0">
+                <!-- Card -->
+                <a class="card card-transition card-bordered shadow-none h-100" href="">
+                  <div class="card-body">
+                    <div class="text-center mb-4">
+                      <img class="img-fluid" src="/assets/images/oc-unlock.svg" alt="Image Description" style="height: 6rem" />
+                    </div>
+
+                    <h6 class="card-title">User identification</h6>
+                    <p class="card-text text-body">Establish cross domain and cross device tracking and build more accurate user personas.</p>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-sm-6 col-md-4">
+                <!-- Card -->
+                <a class="card card-transition card-bordered shadow-none h-100" href="">
+                  <div class="card-body">
+                    <div class="text-center mb-4">
+                      <img class="img-fluid" src="/assets/images/oc-looking-for-answers.svg" alt="Image Description" style="height: 6rem" />
+                    </div>
+
+                    <h6 class="card-title">Insights</h6>
+                    <p class="card-text text-body">Build the foundatinal frameworks to uncover insights and make data-driven decisions.</p>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+        <!-- End Card -->
+        <div class="text-center content-spacing"></div>
+      </section>
+
+      <section class="overflow-hidden" id="ourProcess">
+        <div class="container content-space-1 content-space-md-3">
+          <div class="row align-items-md-center">
+            <div class="col-md-6 mb-7 mb-md-0">
               <!-- Tab Content -->
-              <div class="tab-content mb-7" id="codeEditorTabContent">
-                <div class="tab-pane fade show active" id="codeEditorOne" role="tabpanel"
-                  aria-labelledby="codeEditorOne-tab">
-                  <!-- Code Editor -->
-                  <div class="code-editor overflow-hidden">
-                    <div class="code-editor-container">
-                      <!-- Line Numbers -->
-                      <div class="code-editor-line-numbers">
-                        <span class="code-editor-line-numbers-item">1</span>
-                        <span class="code-editor-line-numbers-item">2</span>
-                        <span class="code-editor-line-numbers-item">3</span>
-                        <span class="code-editor-line-numbers-item">4</span>
-                        <span class="code-editor-line-numbers-item">5</span>
-                        <span class="code-editor-line-numbers-item">6</span>
-                        <span class="code-editor-line-numbers-item">7</span>
-                        <span class="code-editor-line-numbers-item">8</span>
-                        <span class="code-editor-line-numbers-item">9</span>
-                        <span class="code-editor-line-numbers-item">10</span>
-                        <span class="code-editor-line-numbers-item">11</span>
-                        <span class="code-editor-line-numbers-item">12</span>
-                        <span class="code-editor-line-numbers-item">13</span>
-                        <span class="code-editor-line-numbers-item">14</span>
-                        <span class="code-editor-line-numbers-item">15</span>
-                      </div>
-                      <!-- End Line Numbers -->
-
-                      <!-- Typing Area -->
-                      <div class="code-editor-typing-area">
-                        <div class="mb-4">
-                          <span class="text-primary">//Tracking events with gtag</span>
-                        </div>
-
-                        <div class="mb-4">
-                          <span>gtag(</span>
-                          <div class="ps-3"><span class="text-primary">"event",</span></div>
-                          <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
-                          <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span>
-                          </div>
-                          <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
-                          <div><span>});</span></div>
-                        </div>
-
-                        <div class="gtagNavTyped"></div>
-
-                        <div class="mb-4">
-                          <span>gtag(</span>
-                          <div class="ps-3"><span class="text-primary">"event",</span></div>
-                          <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
-                          <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
-                          <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer-Webinar"</span>
-                          </div>
-                          <div><span>});</span></div>
-                        </div>
-                      </div>
-                      <!-- End Typing Area -->
-                    </div>
-                  </div>
-                  <!-- End Code Editor -->
+              <div class="tab-content" id="step-TabServicesContent">
+                <div class="tab-pane fade show active" id="stepServicesZero" role="tabpanel" aria-labelledby="stepServicesZero-tab">
+                  <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/oc-yelling.svg" />
+                </div>
+                <div class="tab-pane fade" id="stepServicesOne" role="tabpanel" aria-labelledby="stepServicesOne-tab">
+                  <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/oc-project-development.svg" alt="Image Description" />
                 </div>
 
-                <div class="tab-pane fade" id="codeEditorTwo" role="tabpanel" aria-labelledby="codeEditorTwo-tab">
-                  <!-- Code Editor -->
-                  <div class="code-editor overflow-hidden">
-                    <div class="code-editor-container">
-                      <!-- Line Numbers -->
-                      <div class="code-editor-line-numbers">
-                        <span class="code-editor-line-numbers-item">1</span>
-                        <span class="code-editor-line-numbers-item">2</span>
-                        <span class="code-editor-line-numbers-item">3</span>
-                        <span class="code-editor-line-numbers-item">4</span>
-                        <span class="code-editor-line-numbers-item">5</span>
-                        <span class="code-editor-line-numbers-item">6</span>
-                        <span class="code-editor-line-numbers-item">7</span>
-                        <span class="code-editor-line-numbers-item">8</span>
-                        <span class="code-editor-line-numbers-item">9</span>
-                        <span class="code-editor-line-numbers-item">10</span>
-                        <span class="code-editor-line-numbers-item">11</span>
-                        <span class="code-editor-line-numbers-item">12</span>
-                        <span class="code-editor-line-numbers-item">13</span>
-                        <span class="code-editor-line-numbers-item">14</span>
-                        <span class="code-editor-line-numbers-item">15</span>
-                      </div>
-                      <!-- End Line Numbers -->
-
-                      <!-- Typing Area -->
-                      <div class="code-editor-typing-area">
-                        <div class="mb-4">
-                          <span class="text-primary">window.dataLayer = window.dataLayer || [];</span>
-                        </div>
-
-                        <div class="mb-4">
-                          <span>window.dataLayer.push({</span>
-                          <div class="ps-3"><span class="text-primary">"event"</span><span>:"submitted_form",</span>
-                          </div>
-                          <div class="ps-3"><span class="text-primary">"form_id"</span><span>:"contact_form",</span>
-                          </div>
-                          <div class="ps-3"><span class="text-primary">"session_number"</span><span>:4</span></div>
-                          <div><span>});</span></div>
-                        </div>
-
-                        <div class="mb-4">
-                          <span>window.dataLayer.push({</span>
-                          <div class="ps-3"><span class="text-primary">"event"</span><span>:"generate_lead",</span>
-                          </div>
-                          <div class="ps-3"><span class="text-primary">"page"</span><span>:"/contact-us/",</span></div>
-                          <div class="ps-3"><span class="text-primary">"campaign"</span><span>:"Summer Webinar"</span>
-                          </div>
-                          <div><span>});</span></div>
-                        </div>
-                      </div>
-                      <!-- End Typing Area -->
-                    </div>
-                  </div>
-                  <!-- End Code Editor -->
+                <div class="tab-pane fade" id="stepServicesTwo" role="tabpanel" aria-labelledby="stepServicesTwo-tab">
+                  <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/nc-sucking-into-the-work.svg" alt="Image Description" />
                 </div>
 
-                <div class="tab-pane fade" id="codeEditorThree" role="tabpanel" aria-labelledby="codeEditorThree-tab">
-                  <!-- Code Editor -->
-                  <div class="code-editor overflow-hidden">
-                    <div class="code-editor-container">
-                      <!-- Line Numbers -->
-                      <div class="code-editor-line-numbers">
-                        <span class="code-editor-line-numbers-item">1</span>
-                        <span class="code-editor-line-numbers-item">2</span>
-                        <span class="code-editor-line-numbers-item">3</span>
-                        <span class="code-editor-line-numbers-item">4</span>
-                        <span class="code-editor-line-numbers-item">5</span>
-                        <span class="code-editor-line-numbers-item">6</span>
-                        <span class="code-editor-line-numbers-item">7</span>
-                        <span class="code-editor-line-numbers-item">8</span>
-                        <span class="code-editor-line-numbers-item">9</span>
-                        <span class="code-editor-line-numbers-item">10</span>
-                        <span class="code-editor-line-numbers-item">11</span>
-                        <span class="code-editor-line-numbers-item">12</span>
-                        <span class="code-editor-line-numbers-item">13</span>
-                        <span class="code-editor-line-numbers-item">14</span>
-                        <span class="code-editor-line-numbers-item">15</span>
-                      </div>
-                      <!-- End Line Numbers -->
-
-                      <!-- Typing Area -->
-                      <div class="code-editor-typing-area">
-                        <div class="mb-4">
-                          <span class="text-primary">// Tracking events with Segment</span>
-                        </div>
-
-                        <div class="mb-4">
-                          <span>analytics.track(</span>
-                          <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
-                          <div class="ps-3"><span class="text-primary">form_id</span>:<span>"contact_form",</span></div>
-                          <div class="ps-3"><span class="text-primary">session_number</span>:<span>4</span></div>
-                          <div><span>});</span></div>
-                        </div>
-
-                        <div class="mb-4">
-                          <span>analytics.track(</span>
-                          <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
-                          <div class="ps-3"><span class="text-primary">page</span>:<span>"/contact-us/",</span></div>
-                          <div class="ps-3"><span class="text-primary">campaign</span>:<span>"Summer Webinar"</span>
-                          </div>
-                          <div><span>});</span></div>
-                        </div>
-                      </div>
-                      <!-- End Typing Area -->
-                    </div>
-                  </div>
-                  <!-- End Code Editor -->
-                </div>
-
-                <div class="tab-pane fade" id="codeEditorFour" role="tabpanel" aria-labelledby="codeEditorFour-tab">
-                  <!-- Code Editor -->
-                  <div class="code-editor overflow-hidden">
-                    <div class="code-editor-container">
-                      <!-- Line Numbers -->
-                      <div class="code-editor-line-numbers">
-                        <span class="code-editor-line-numbers-item">1</span>
-                        <span class="code-editor-line-numbers-item">2</span>
-                        <span class="code-editor-line-numbers-item">3</span>
-                        <span class="code-editor-line-numbers-item">4</span>
-                        <span class="code-editor-line-numbers-item">5</span>
-                        <span class="code-editor-line-numbers-item">6</span>
-                        <span class="code-editor-line-numbers-item">7</span>
-                        <span class="code-editor-line-numbers-item">8</span>
-                        <span class="code-editor-line-numbers-item">9</span>
-                        <span class="code-editor-line-numbers-item">10</span>
-                        <span class="code-editor-line-numbers-item">11</span>
-                        <span class="code-editor-line-numbers-item">12</span>
-                        <span class="code-editor-line-numbers-item">13</span>
-                        <span class="code-editor-line-numbers-item">14</span>
-                        <span class="code-editor-line-numbers-item">15</span>
-                      </div>
-                      <!-- End Line Numbers -->
-
-                      <!-- Typing Area -->
-                      <div class="code-editor-typing-area">
-                        <div class="mb-4">
-                          <span class="text-primary">// Tracking events with Mixpanel</span>
-                        </div>
-
-                        <div class="mb-4">
-                          <span>mixpanel.track(</span>
-                          <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
-                          <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span>
-                          </div>
-                          <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
-                          <div><span>});</span></div>
-                        </div>
-                        <div class="mb-4">
-                          <span>mixpanel.track(</span>
-                          <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
-                          <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
-                          <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer Webinar"</span>
-                          </div>
-                          <div><span>});</span></div>
-                        </div>
-                      </div>
-                      <!-- End Typing Area -->
-                    </div>
-                  </div>
-                  <!-- End Code Editor -->
+                <div class="tab-pane fade" id="stepServicesThree" role="tabpanel" aria-labelledby="stepServicesThree-tab">
+                  <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/nc-scale-a-process.svg" alt="Image Description" />
                 </div>
               </div>
               <!-- End Tab Content -->
             </div>
             <!-- End Col -->
+
+            <div class="col-md-6 mt-5 mt-md-0">
+              <div class="ps-md-5">
+                <!-- Heading -->
+                <div class="mb-7">
+                  <span class="text-cap">Our Methodology</span>
+                  <h3 class="highlight">Our Secret Process <span class="emoji">🤫</span></h3>
+                </div>
+                <!-- End Heading -->
+
+                <!-- Step -->
+                <ul class="nav step step-icon-sm step-border-last-0" id="step-TabServices" role="tablist">
+                  <li class="step-item" role="presentation">
+                    <a
+                      class="step-content-wrapper active"
+                      href="#stepServicesZero"
+                      id="stepServicesZero-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#stepServicesZero"
+                      role="tab"
+                      aria-controls="stepServicesZero"
+                      aria-selected="true">
+                      <span class="step-icon step-icon-soft-secondary">0</span>
+                      <div class="step-content">
+                        <h6 class="step-title highlight-yellow">Initial Call</h6>
+                        <p class="step-text">
+                          We don't like wasting time, and we'd certainly do not want to waste yours. As such, our process begins with a "discovery"
+                          call to ensure we are a right fit.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="step-item" role="presentation">
+                    <a
+                      class="step-content-wrapper"
+                      href="#stepServicesOne"
+                      id="stepServicesOne-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#stepServicesOne"
+                      role="tab"
+                      aria-controls="stepServicesOne"
+                      aria-selected="false"
+                      tabindex="-1">
+                      <span class="step-icon step-icon-soft-secondary">1</span>
+                      <div class="step-content">
+                        <h6 class="step-title highlight-yellow">Scope of work</h6>
+                        <p class="step-text">
+                          At this stage, we identify the amount of work needs to be done to ensure the desired output. We will let you know if we need
+                          your help to accomplish our goal.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="step-item" role="presentation">
+                    <a
+                      class="step-content-wrapper"
+                      href="#stepServicesTwo"
+                      id="stepServicesTwo-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#stepServicesTwo"
+                      role="tab"
+                      aria-controls="stepServicesTwo"
+                      aria-selected="false"
+                      tabindex="-1">
+                      <span class="step-icon step-icon-soft-secondary">2</span>
+                      <div class="step-content">
+                        <h6 class="step-title highlight-yellow">Analysis & Implementation</h6>
+                        <p class="step-text">We turn our to-do into results.</p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class="step-item" role="presentation">
+                    <a
+                      class="step-content-wrapper"
+                      href="#stepServicesThree"
+                      id="stepServicesThree-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#stepServicesThree"
+                      role="tab"
+                      aria-controls="stepServicesThree"
+                      aria-selected="false"
+                      tabindex="-1">
+                      <span class="step-icon step-icon-soft-secondary">3</span>
+                      <div class="step-content">
+                        <h6 class="step-title highlight-yellow">Documentation & Reporting</h6>
+                        <p class="step-text">
+                          To create transperancy and a work history, our team will share docuementation & reports of the work done.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End Step -->
+              </div>
+            </div>
+            <!-- End Col -->
           </div>
           <!-- End Row -->
         </div>
-      </div>
-      <!-- End Features -->
-
+      </section>
       <!-- CTA -->
-      <div class="container">
-        <!-- Heading -->
-        <div class="w-lg-65 text-center mx-lg-auto mb-7">
-          <h3 class="h3">Complex problems we make <span class="text-warning">simple</span></h3>
-        </div>
-        <!-- End Heading -->
-      </div>
-
-      <!-- Card -->
-      <div class="container">
+      <div class="container content-space-1">
         <div class="w-lg-75 mx-lg-auto">
-          <div class="row">
-            <div class="col-sm-6 col-md-4 mb-4">
-              <!-- Card -->
-              <a class="card card-transition card-bordered shadow-none h-100" href="">
-                <div class="card-body">
-                  <div class="text-center mb-4">
-                    <img class="img-fluid" src="/assets/images/oc-hi-five.svg" alt="Image Description"
-                      style="height: 6rem" />
-                  </div>
-                  <h6 class="card-title">Implementation audit</h6>
-                  <p class="card-text text-body">Understand which interactions on your website are generating data.</p>
-                </div>
-              </a>
-              <!-- End Card -->
+          <div class="row align-items-sm-center">
+            <div class="col-sm-6 mb-5 mb-sm-0">
+              <div class="w-75 mx-auto">
+                <img class="img-fluid" src="/assets/images/oc-sending.svg" alt="Illustration" />
+              </div>
             </div>
             <!-- End Col -->
 
-            <div class="col-sm-6 col-md-4 mb-4">
-              <!-- Card -->
-              <a class="card card-transition card-bordered shadow-none h-100" href="">
-                <div class="card-body">
-                  <div class="text-center mb-4">
-                    <img class="img-fluid" src="/assets/images/oc-user-profile.svg" alt="Image Description"
-                      style="height: 6rem" />
-                  </div>
-
-                  <h6 class="card-title">Interactive dashboards</h6>
-                  <p class="card-text text-body">Use dynamic dashboards that help you access the right data at the right
-                    time.</p>
+            <div class="col-sm-6">
+              <div class="ps-sm-5">
+                <div class="mb-sm-5">
+                  <h3>Can't find what you are looking for?</h3>
                 </div>
-              </a>
-              <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6 col-md-4 mb-4">
-              <!-- Card -->
-              <a class="card card-transition card-bordered shadow-none h-100" href="">
-                <div class="card-body">
-                  <div class="text-center mb-4">
-                    <img class="img-fluid" src="/assets/images/oc-collaboration.svg" alt="Image Description"
-                      style="height: 6rem" />
-                  </div>
-
-                  <h6 class="card-title">User journey tracking</h6>
-                  <p class="card-text text-body">Establish full visibility on how users turn from visitors, to leads to
-                    customers.</p>
-                </div>
-              </a>
-              <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6 col-md-4 mb-4 mb-md-0">
-              <!-- Card -->
-              <a class="card card-transition card-bordered shadow-none h-100" href="">
-                <div class="card-body">
-                  <div class="text-center mb-4">
-                    <img class="img-fluid" src="/assets/images/oc-money-profits.svg" alt="Image Description"
-                      style="height: 6rem" />
-                  </div>
-
-                  <h6 class="card-title">E-commerce tracking</h6>
-                  <p class="card-text text-body">Form a coherent understanding of your traffic, products performance and
-                    checkout funnel.</p>
-                </div>
-              </a>
-              <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6 col-md-4 mb-4 mb-sm-0">
-              <!-- Card -->
-              <a class="card card-transition card-bordered shadow-none h-100" href="">
-                <div class="card-body">
-                  <div class="text-center mb-4">
-                    <img class="img-fluid" src="/assets/images/oc-unlock.svg" alt="Image Description"
-                      style="height: 6rem" />
-                  </div>
-
-                  <h6 class="card-title">User identification</h6>
-                  <p class="card-text text-body">Establish cross domain and cross device tracking and build more
-                    accurate user personas.</p>
-                </div>
-              </a>
-              <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6 col-md-4">
-              <!-- Card -->
-              <a class="card card-transition card-bordered shadow-none h-100" href="">
-                <div class="card-body">
-                  <div class="text-center mb-4">
-                    <img class="img-fluid" src="/assets/images/oc-looking-for-answers.svg" alt="Image Description"
-                      style="height: 6rem" />
-                  </div>
-
-                  <h6 class="card-title">Insights</h6>
-                  <p class="card-text text-body">Build the foundatinal frameworks to uncover insights and make
-                    data-driven decisions.</p>
-                </div>
-              </a>
-              <!-- End Card -->
+                <button type="button" class="btn btn-primary cta" data-lead-capture-modal-button id="marketing_websites">Contact us</button>
+              </div>
             </div>
             <!-- End Col -->
           </div>
           <!-- End Row -->
         </div>
       </div>
-      <!-- End Card -->
-      <div class="text-center content-spacing">
-        <!-- <button data-tf-popup="Y0vKRD5f" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Market-fit Landing Page Form" data-tf-medium="snippet" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#008060;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Contact us</button><script src="//embed.typeform.com/next/embed.js"></script> -->
-      </div>
-    </section>
-
-    <section class="overflow-hidden" id="ourProcess">
-      <div class="container content-space-1 content-space-md-3">
-        <div class="row align-items-md-center">
-          <div class="col-md-6 mb-7 mb-md-0">
-            <!-- Tab Content -->
-            <div class="tab-content" id="step-TabServicesContent">
-              <div class="tab-pane fade show active" id="stepServicesZero" role="tabpanel"
-                aria-labelledby="stepServicesZero-tab">
-                <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/oc-yelling.svg" />
-              </div>
-              <div class="tab-pane fade" id="stepServicesOne" role="tabpanel" aria-labelledby="stepServicesOne-tab">
-                <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/oc-project-development.svg"
-                  alt="Image Description" />
-              </div>
-
-              <div class="tab-pane fade" id="stepServicesTwo" role="tabpanel" aria-labelledby="stepServicesTwo-tab">
-                <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/nc-sucking-into-the-work.svg"
-                  alt="Image Description" />
-              </div>
-
-              <div class="tab-pane fade" id="stepServicesThree" role="tabpanel" aria-labelledby="stepServicesThree-tab">
-                <img class="img-fluid shadow-xl rounded-2 align-size" src="/assets/images/nc-scale-a-process.svg"
-                  alt="Image Description" />
-              </div>
-            </div>
-            <!-- End Tab Content -->
+      <!-- End CTA -->
+      <dialog data-lead-capture-modal>
+        <div class="container d-flex flex-column">
+          <div class="d-flex justify-content-end">
+            <span data-close-lead-capture-modal></span>
           </div>
-          <!-- End Col -->
-
-          <div class="col-md-6 mt-5 mt-md-0">
-            <div class="ps-md-5">
-              <!-- Heading -->
-              <div class="mb-7">
-                <span class="text-cap">Our Methodology</span>
-                <h3 class="highlight">Our Secret Process <span class="emoji">🤫</span></h3>
-              </div>
-              <!-- End Heading -->
-
-              <!-- Step -->
-              <ul class="nav step step-icon-sm step-border-last-0" id="step-TabServices" role="tablist">
-                <li class="step-item" role="presentation">
-                  <a class="step-content-wrapper active" href="#stepServicesZero" id="stepServicesZero-tab"
-                    data-bs-toggle="tab" data-bs-target="#stepServicesZero" role="tab" aria-controls="stepServicesZero"
-                    aria-selected="true">
-                    <span class="step-icon step-icon-soft-secondary">0</span>
-                    <div class="step-content">
-                      <h6 class="step-title highlight-yellow">Initial Call</h6>
-                      <p class="step-text">
-                        We don't like wasting time, and we'd certainly do not want to waste yours. As such, our process
-                        begins with a "discovery"
-                        call to ensure we are a right fit.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-
-                <li class="step-item" role="presentation">
-                  <a class="step-content-wrapper" href="#stepServicesOne" id="stepServicesOne-tab" data-bs-toggle="tab"
-                    data-bs-target="#stepServicesOne" role="tab" aria-controls="stepServicesOne" aria-selected="false"
-                    tabindex="-1">
-                    <span class="step-icon step-icon-soft-secondary">1</span>
-                    <div class="step-content">
-                      <h6 class="step-title highlight-yellow">Scope of work</h6>
-                      <p class="step-text">
-                        At this stage, we identify the amount of work needs to be done to ensure the desired output. We
-                        will let you know if we need
-                        your help to accomplish our goal.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-
-                <li class="step-item" role="presentation">
-                  <a class="step-content-wrapper" href="#stepServicesTwo" id="stepServicesTwo-tab" data-bs-toggle="tab"
-                    data-bs-target="#stepServicesTwo" role="tab" aria-controls="stepServicesTwo" aria-selected="false"
-                    tabindex="-1">
-                    <span class="step-icon step-icon-soft-secondary">2</span>
-                    <div class="step-content">
-                      <h6 class="step-title highlight-yellow">Analysis & Implementation</h6>
-                      <p class="step-text">We turn our to-do into results.</p>
-                    </div>
-                  </a>
-                </li>
-
-                <li class="step-item" role="presentation">
-                  <a class="step-content-wrapper" href="#stepServicesThree" id="stepServicesThree-tab"
-                    data-bs-toggle="tab" data-bs-target="#stepServicesThree" role="tab"
-                    aria-controls="stepServicesThree" aria-selected="false" tabindex="-1">
-                    <span class="step-icon step-icon-soft-secondary">3</span>
-                    <div class="step-content">
-                      <h6 class="step-title highlight-yellow">Documentation & Reporting</h6>
-                      <p class="step-text">
-                        To create transperancy and a work history, our team will share docuementation & reports of the
-                        work done.
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Step -->
-              <a class="link" href="#">If anything sounds unclear, we are one message away.<i
-                  class="bi-chevron-right small ms-1"></i></a>
-            </div>
-          </div>
-          <!-- End Col -->
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "44171646",
+              formId: "357a2ea7-c337-419e-b440-c454bb6608bd",
+            });
+          </script>
         </div>
-        <!-- End Row -->
+      </dialog>
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="text-muted">© 2022 Datakyu Inc.</span>
       </div>
-    </section>
-    <!-- CTA -->
-    <div class="container content-space-1">
-      <div class="w-lg-75 mx-lg-auto">
-        <div class="row align-items-sm-center">
-          <div class="col-sm-6 mb-5 mb-sm-0">
-            <div class="w-75 mx-auto">
-              <img class="img-fluid" src="/assets/images/oc-sending.svg" alt="Illustration" />
-            </div>
-          </div>
-          <!-- End Col -->
-
-          <div class="col-sm-6">
-            <div class="ps-sm-5">
-              <div class="mb-sm-5">
-                <h3>Can't find what you are looking for?</h3>
-              </div>
-              <button type="button" class="btn btn-primary cta" id="marketing_websites" data-tally-open="nG6E8e"
-                data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="👋"
-                data-tally-emoji-animation="wave" data-tally-auto-close="1000">
-                Contact us
-              </button>
-            </div>
-          </div>
-          <!-- End Col -->
-        </div>
-        <!-- End Row -->
-      </div>
-    </div>
-    <!-- End CTA -->
-  </main>
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-      <span class="text-muted">© 2022 Datakyu Inc.</span>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-  <script>
-    const cards = document.querySelectorAll("a.card.card-transition.card-bordered")
-    cards.forEach((card) => {
-      card.addEventListener("click", (e) => {
-        e.preventDefault()
-      })
-    })
-  </script>
-  <script src="/assets/js/tracking/a-la-carte.js"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <script>
+      const cards = document.querySelectorAll("a.card.card-transition.card-bordered");
+      cards.forEach((card) => {
+        card.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+    </script>
+    <script src="/assets/js/tracking/a-la-carte.js" type="module"></script>
+  </body>
 </html>
