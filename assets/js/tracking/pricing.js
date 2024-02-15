@@ -60,7 +60,6 @@ contactButtons.forEach((contactButton) => {
       ev: "initiated_contact_form",
       unique: false,
     });
-    controlContactModule();
   });
 });
 
@@ -78,4 +77,8 @@ window.addEventListener("message", function (event) {
       },
     });
   }
+});
+
+window.addEventListener("load", () => {
+  controlContactModule();
 });

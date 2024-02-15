@@ -36,7 +36,6 @@ navLinks.forEach((navLink) => {
 const typeformElements = document.querySelectorAll("#marketing_websites");
 typeformElements.forEach((typeformElement) => {
   typeformElement.addEventListener("click", (e) => {
-    controlContactModule();
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "initiated_contact_form",
@@ -107,4 +106,8 @@ window.addEventListener("message", function (event) {
       },
     });
   }
+});
+
+window.addEventListener("load", () => {
+  controlContactModule();
 });

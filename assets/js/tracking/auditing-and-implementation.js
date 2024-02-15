@@ -49,7 +49,6 @@ typeformElements.forEach((typeformElement) => {
         cta_text: e.target.textContent,
       },
     });
-    controlContactModule();
   });
 });
 
@@ -108,6 +107,7 @@ window.addEventListener("message", function (event) {
 });
 
 window.addEventListener("load", () => {
+  controlContactModule();
   const techStackLinks = document.querySelectorAll('a[id*="Editor"]');
   if (techStackLinks == "undefined") {
     throw new Error("Tech stack links were not found");
