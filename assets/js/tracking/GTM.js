@@ -86,7 +86,7 @@ navLinks.forEach((navLink) => {
       nav_item: `${e.target.textContent}`,
     });
     swetrix.track({
-      ev: "clicked_nav_lin",
+      ev: "clicked_nav_link",
       unique: false,
       meta: {
         nav_item: `${e.target.textContent}`,
