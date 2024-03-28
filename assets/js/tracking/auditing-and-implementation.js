@@ -52,25 +52,6 @@ typeformElements.forEach((typeformElement) => {
   });
 });
 
-// Fire dataLayer event for the clicks on the tech stack logos
-const techStackLogos = document.querySelectorAll("ul#codeEditorTab a");
-techStackLogos.forEach((techStackLogo) => {
-  techStackLogo.addEventListener("click", () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "click_on_tech_stack_logo",
-      tech_stack_logo: techStackLogo.querySelector("img").getAttribute("alt"),
-    });
-    swetrix.track({
-      ev: "click_on_tech_stack_logo",
-      unique: false,
-      meta: {
-        tech_stack_logo: techStackLogo.querySelector("img").getAttribute("alt"),
-      },
-    });
-  });
-});
-
 // Fire dataLayer event for the clicks on accordion elements
 const accordionElements = document.querySelectorAll("a.accordion-button");
 accordionElements.forEach((accordionElement) => {
