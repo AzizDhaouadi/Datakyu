@@ -1,16 +1,3 @@
-//Measurement ID
-const measurementID = "G-00VKM23QFH";
-let current_session_number;
-
-//Getting the session_number parameter from the gtag library
-let sessionNumberPromise = new Promise((resolve) => {
-  gtag("get", measurementID, "session_number", resolve);
-});
-
-sessionNumberPromise.then((session_number) => {
-  current_session_number = session_number;
-});
-
 // Fire dataLayer events for nav link clicks
 const navLinks = document.querySelectorAll("a.nav-link"); // Getting the list of nav links
 navLinks.forEach((navLink) => {
@@ -55,7 +42,6 @@ dropMessageButton.addEventListener("click", () => {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "initiated_contact_form",
-    event_session_number: current_session_number,
   });
 });
 

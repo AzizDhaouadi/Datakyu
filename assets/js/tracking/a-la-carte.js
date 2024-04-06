@@ -1,18 +1,5 @@
 import { controlContactModule } from "../modules/contact.module.js";
 
-// Measurement ID
-const measurementID = "G-00VKM23QFH";
-let current_session_number;
-
-// Getting the session_number parameter from gtag
-let sessionNumberPromise = new Promise((resolve) => {
-  gtag("get", measurementID, "session_number", resolve);
-});
-
-sessionNumberPromise.then((session_number) => {
-  current_session_number = session_number;
-});
-
 // Fire dataLayer events for the clicks on the Typeform button and link
 const typeformElements = document.querySelectorAll("#marketing_websites");
 typeformElements.forEach((typeformElement) => {
@@ -21,7 +8,6 @@ typeformElements.forEach((typeformElement) => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "initiated_contact_form",
-      event_session_number: current_session_number,
       cta_text: e.target.textContent,
     });
     swetrix.track({
