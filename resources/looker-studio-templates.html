@@ -1,128 +1,124 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Start cookieyes banner -->
-        <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5cd9002534c83870252a4773/script.js"></script>
-        <!-- End cookieyes banner -->
-        <script src="https://js.sentry-cdn.com/17dc7fee29c01933e3c3df799f1c804b.min.js" crossorigin="anonymous"></script>
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    "gtm.start": new Date().getTime(),
-                    event: "gtm.js",
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-MP972DZ");
-        </script>
-        <!-- End Google Tag Manager -->
 
-        <link rel="canonical" href="https://www.datakyu.co/resources/looker-studio-templates.html" />
+<head>
+    <!-- Start cookieyes banner -->
+    <script id="cookieyes" type="text/javascript"
+        src="https://cdn-cookieyes.com/client_data/5cd9002534c83870252a4773/script.js"></script>
+    <!-- End cookieyes banner -->
+    <script src="https://js.sentry-cdn.com/17dc7fee29c01933e3c3df799f1c804b.min.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-MP972DZ");
+    </script>
+    <!-- End Google Tag Manager -->
 
-        <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Set up Google Analytics 4 Events with Google Tag Manager - Container Templates | Datakyu</title>
-        <meta
-            name="description"
-            content="Set up GA4 event tracking in only 4 easy steps. Use our preconfigured Google Tag Manager containers to set up your workspace. Choose the container for all GA4 properties, or Ecommerce container for ecommerce events or the SaaS container for SaaS businesses. Download the container, import it in your GTM workspace, test the configuration and then publish the changes."
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="/assets/css/custom-styles.css" />
-        <link rel="stylesheet" href="/assets/css/theme-styles.css" />
-        <link rel="stylesheet" href="/assets/css/looker-studio.css" />
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+    <link rel="canonical" href="https://www.datakyu.co/resources/looker-studio-templates.html" />
 
-            :root {
-                --bs-body-text-font: "Quicksand", sans-serif;
-                --bs-nav-link-font-size: 1.225rem;
-                --bs-custom-background-color: #fef8f2;
-            }
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set up Google Analytics 4 Events with Google Tag Manager - Container Templates | Datakyu</title>
+    <meta name="description"
+        content="Set up GA4 event tracking in only 4 easy steps. Use our preconfigured Google Tag Manager containers to set up your workspace. Choose the container for all GA4 properties, or Ecommerce container for ecommerce events or the SaaS container for SaaS businesses. Download the container, import it in your GTM workspace, test the configuration and then publish the changes." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/custom-styles.css" />
+    <link rel="stylesheet" href="/assets/css/theme-styles.css" />
+    <link rel="stylesheet" href="/assets/css/looker-studio.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-            html {
-                scroll-behavior: smooth;
-            }
+        :root {
+            --bs-body-text-font: "Quicksand", sans-serif;
+            --bs-nav-link-font-size: 1.225rem;
+            --bs-custom-background-color: #fef8f2;
+        }
 
-            body {
-                font-family: var(--bs-body-text-font);
-                background-color: var(--bs-custom-background-color);
-            }
+        html {
+            scroll-behavior: smooth;
+        }
 
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-family: var(--bs-font-monospace);
-            }
+        body {
+            font-family: var(--bs-body-text-font);
+            background-color: var(--bs-custom-background-color);
+        }
 
-            nav.home {
-                margin: 0 auto;
-                padding-top: 1rem;
-                background-color: inherit !important;
-            }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--bs-font-monospace);
+        }
 
-            .nav-link {
-                font-weight: bold;
-            }
+        nav.home {
+            margin: 0 auto;
+            padding-top: 1rem;
+            background-color: inherit !important;
+        }
 
-            div.navbar-nav {
-                justify-content: space-around;
-            }
+        .nav-link {
+            font-weight: bold;
+        }
 
-            main section.space-top {
-                padding-top: 10rem !important;
-            }
+        div.navbar-nav {
+            justify-content: space-around;
+        }
 
-            figure.fig-center {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                padding: 1rem;
-            }
+        main section.space-top {
+            padding-top: 10rem !important;
+        }
 
-            .text-bold {
-                font-weight: bold;
-            }
+        figure.fig-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+        }
 
-            .card {
-                border-radius: 0 !important;
-            }
+        .text-bold {
+            font-weight: bold;
+        }
 
-            .dropdown-divider {
-                height: 0;
-                margin: 0.5rem 0;
-                overflow: hidden;
-                border-top: 1px solid #e7eaf3;
-                opacity: 1;
-            }
+        .card {
+            border-radius: 0 !important;
+        }
 
-            a svg {
-                color: #7fbca9;
-            }
+        .dropdown-divider {
+            height: 0;
+            margin: 0.5rem 0;
+            overflow: hidden;
+            border-top: 1px solid #e7eaf3;
+            opacity: 1;
+        }
 
-            .smaller-size {
-                max-width: 90%;
-            }
-        </style>
-        <script type="application/ld+json">
+        a svg {
+            color: #7fbca9;
+        }
+
+        .smaller-size {
+            max-width: 90%;
+        }
+    </style>
+    <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "FAQPage",
@@ -199,7 +195,7 @@
             }
         </script>
 
-        <script type="application/ld+json">
+    <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "HowTo",
@@ -299,584 +295,640 @@
                 "totalTime": "PT30M"
             }
         </script>
-    </head>
+</head>
 
-    <body>
-        <script src="https://swetrix.org/swetrix.js" defer></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                swetrix.init("KT4Y783yoT2n");
-                swetrix.trackViews();
-            });
-        </script>
+<body>
+    <script src="https://swetrix.org/swetrix.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            swetrix.init("KT4Y783yoT2n");
+            swetrix.trackViews();
+        });
+    </script>
 
-        <noscript>
-            <img src="https://api.swetrix.com/log/noscript?pid=KT4Y783yoT2n" alt="" referrerpolicy="no-referrer-when-downgrade" />
-        </noscript>
-        <header class="flex-menu navbar-absolute-top">
-            <nav class="navbar navbar-expand-lg bg-light home">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/">
-                        <img src="/assets/logo/logo-transparent.svg" alt="Logo" class="d-inline-block align-text-top" />
-                    </a>
-                    <button
-                        class="navbar-toggler navbar-toggler-right"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltGTM"
-                        aria-controls="navbarNavAltGTM"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse" id="navbarNavAltGTM">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="#how-it-works">How it works</a>
-                            <a class="nav-link" href="/resources/google-tag-manager-container-tempaltes.html">Google Tag Manager Templates</a>
-                            <a class="nav-link" href="/resources/sample-code-generator.html">Set up GA4 Events</a>
+    <noscript>
+        <img src="https://api.swetrix.com/log/noscript?pid=KT4Y783yoT2n" alt=""
+            referrerpolicy="no-referrer-when-downgrade" />
+    </noscript>
+    <header class="flex-menu navbar-absolute-top">
+        <nav class="navbar navbar-expand-lg bg-light home">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="/assets/logo/logo-transparent.svg" alt="Logo" class="d-inline-block align-text-top" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltGTM" aria-controls="navbarNavAltGTM" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNavAltGTM">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#how-it-works">How it works</a>
+                        <a class="nav-link" href="/resources/google-tag-manager-container-tempaltes.html">Google Tag
+                            Manager Templates</a>
+                        <a class="nav-link" href="/resources/sample-code-generator.html">Set up GA4 Events</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="space-top container py-5 text-center">
+            <div class="row py-lg-5">
+                <div class="col-lg-8 col-md-8 mx-auto">
+                    <h1 class="fw-light">Looker Studio Templates</h1>
+                    <p class="lead text-muted">Get up and running with visualizing your data in seconds with our ready
+                        to go templates. Just duplicate, connect and start analyzing!</p>
+                    <p>
+                        <a href="#LookerTemplates" class="btn btn-primary my-2">Explore dashboards</a>
+                        <a href="#how-it-works" class="btn btn-secondary my-2">How it works</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="LookerTemplates">
+            <div class="album py-5">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card">
+                                <figure class="fig-center">
+                                    <img src="/assets/images/looker.svg" width="40%" height="225" class="img-center"
+                                        alt="" />
+                                    <figcaption class="text-muted">General Purpose Looker Studio template.</figcaption>
+                                </figure>
+
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        This dashboard gives a bird's eye view of your performance. Use it to understand
+                                        your user and traffic acquisition as well as overall conversions.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center column-responsive">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseAllType"
+                                                aria-expanded="false" aria-controls="collapseAllType">
+                                                Configuration
+                                            </button>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Replicate</a>
+                                        </div>
+                                        <small class="text-muted text-bold">1 source</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseAllType">
+                                <div class="card h-100 shadow-sm">
+                                    <hr class="dropdown-divider" />
+                                    <div class="card-body">
+                                        <p class="card-text">Use the lists below to understand which data sources and
+                                            charts are being used to build the dashboard.</p>
+                                        <div class="list-group w-auto">
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    fill="currentColor" class="bi bi-boxes flex-shrink-0"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                                </svg>
+                                                <div class="d-flex w-100 justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="mb-0">Data sources</h6>
+                                                        <p class="mb-0 opacity-75">
+                                                            This dashboard uses only one data source which is the <span
+                                                                class="highlight">GA4 - Google Merchandise Store</span>
+                                                            <br />All the data
+                                                            shown in the template is collected from the Google
+                                                            Merchandise Store.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    fill="currentColor" class="bi bi-boxes flex-shrink-0"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                                </svg>
+                                                <div class="d-flex w-100 justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="mb-0">Charts</h6>
+                                                        <p class="mb-0 opacity-75">The dashboard uses multiple charts
+                                                            such as time series, tables, pivot tables, bar charts and
+                                                            pie charts.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <!-- Modal Trigger -->
+                                                <a class="btn btn-primary" role="button" data-bs-toggle="modal"
+                                                    data-bs-target="#generalModal"> <i
+                                                        class="bi-person-circle me-1"></i> Preview </a>
+                                                <!-- End Modal Trigger -->
+
+                                                <div class="modal fade" id="generalModal" tabindex="-1" role="dialog"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-xl"
+                                                        role="document">
+                                                        <div class="modal-content">
+                                                            <!-- Header -->
+                                                            <div class="modal-close">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <!-- End Header -->
+
+                                                            <div
+                                                                class="row justify-content-sm-between align-items-sm-center flex-grow-1">
+                                                                <div class="col-9 col-sm-5 mb-sm-0 mb-5">
+                                                                    <img class="img-fluid smaller-size"
+                                                                        src="/assets/images/oc-yelling.svg"
+                                                                        alt="SVG Illustration" />
+                                                                </div>
+                                                                <!-- End Col -->
+
+                                                                <div class="col-sm-6">
+                                                                    <!-- Heading -->
+                                                                    <div class="mb-4">
+                                                                        <h5 class="h5">COMING SOON!</h5>
+                                                                        <p>The template is being built. Please come back
+                                                                            again or send a request to our team.</p>
+                                                                    </div>
+                                                                    <!-- End Heading -->
+                                                                </div>
+                                                                <!-- End Col -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <figure class="fig-center">
+                                    <img src="/assets/images/looker.svg" width="40%" height="225" class="img-center"
+                                        alt="" />
+                                    <figcaption class="text-muted">Looker Studio template for Saas businesses.
+                                    </figcaption>
+                                </figure>
+
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        This dashboard gives a bird's eye view for SaaS businesses. Use it to understand
+                                        your acquisition, conversions, retention & churn as well as overall
+                                        performance.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center column-responsive">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSaaSType"
+                                                aria-expanded="false" aria-controls="collapseSaaSType">
+                                                Configuration
+                                            </button>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Replicate</a>
+                                        </div>
+                                        <small class="text-muted text-bold">1 source</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseSaaSType">
+                                <div class="card h-100 shadow-sm">
+                                    <hr class="dropdown-divider" />
+                                    <div class="card-body">
+                                        <p class="card-text">Use the lists below to understand which data sources and
+                                            charts are being used to build the dashboard.</p>
+                                        <div class="list-group w-auto">
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    fill="currentColor" class="bi bi-boxes flex-shrink-0"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                                </svg>
+                                                <div class="d-flex w-100 justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="mb-0">Data sources</h6>
+                                                        <p class="mb-0 opacity-75">
+                                                            This dashboard uses only one data source which is the <span
+                                                                class="highlight">GA4 - Google Merchandise Store</span>
+                                                            <br />
+                                                            All the data shown in the template is collected from the
+                                                            Google Merchandise Store.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    fill="currentColor" class="bi bi-boxes flex-shrink-0"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                                </svg>
+                                                <div class="d-flex w-100 justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="mb-0">Charts</h6>
+                                                        <p class="mb-0 opacity-75">The dashboard uses multiple charts
+                                                            such as time series, tables, pivot tables, bar charts and
+                                                            pie charts.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <!-- Modal Trigger -->
+                                                <a class="btn btn-primary" role="button" data-bs-toggle="modal"
+                                                    data-bs-target="#SaaSModal"> <i class="bi-person-circle me-1"></i>
+                                                    Preview </a>
+                                                <!-- End Modal Trigger -->
+
+                                                <div class="modal fade" id="SaaSModal" tabindex="-1" role="dialog"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-xl"
+                                                        role="document">
+                                                        <div class="modal-content">
+                                                            <!-- Header -->
+                                                            <div class="modal-close">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <!-- End Header -->
+
+                                                            <div
+                                                                class="row justify-content-sm-between align-items-sm-center flex-grow-1">
+                                                                <div class="col-9 col-sm-5 mb-sm-0 mb-5">
+                                                                    <img class="img-fluid smaller-size"
+                                                                        src="/assets/images/oc-yelling.svg"
+                                                                        alt="SVG Illustration" />
+                                                                </div>
+                                                                <!-- End Col -->
+
+                                                                <div class="col-sm-6">
+                                                                    <!-- Heading -->
+                                                                    <div class="mb-4">
+                                                                        <h5 class="h5">COMING SOON!</h5>
+                                                                        <p>The template is being built. Please come back
+                                                                            again or send a request to our team.</p>
+                                                                    </div>
+                                                                    <!-- End Heading -->
+                                                                </div>
+                                                                <!-- End Col -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <figure class="fig-center">
+                                    <img src="/assets/images/looker.svg" width="40%" height="225" alt="" />
+                                    <figcaption class="text-muted">Looker Studio template for E-commerce.</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        This dashboard gives a bird's eye view for E-commerce businesses. Use it to
+                                        understand acqusition, purchases, top selling products, and overall performance.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center column-responsive">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseEcommerceType"
+                                                aria-expanded="false" aria-controls="collapseEcommerceType">
+                                                Configuration
+                                            </button>
+                                            <a href="#" class="btn btn-sm btn-outline-secondary">Replicate</a>
+                                        </div>
+                                        <small class="text-muted text-bold">1 source</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseEcommerceType">
+                                <div class="card h-100 shadow-sm">
+                                    <hr class="dropdown-divider" />
+                                    <div class="card-body">
+                                        <p class="card-text">Use the lists below to understand which data sources and
+                                            charts are being used to build the dashboard.</p>
+                                        <div class="list-group w-auto">
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    fill="currentColor" class="bi bi-boxes flex-shrink-0"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                                </svg>
+                                                <div class="d-flex w-100 justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="mb-0">Data sources</h6>
+                                                        <p class="mb-0 opacity-75">
+                                                            This dashboard uses only one data source which is the <span
+                                                                class="highlight">GA4 - Google Merchandise Store</span>
+                                                            <br />All the data
+                                                            shown in the template is collected from the Google
+                                                            Merchandise Store.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    fill="currentColor" class="bi bi-boxes flex-shrink-0"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                                </svg>
+                                                <div class="d-flex w-100 justify-content-between gap-2">
+                                                    <div>
+                                                        <h6 class="mb-0">Charts</h6>
+                                                        <p class="mb-0 opacity-75">The dashboard uses multiple charts
+                                                            such as time series, tables, pivot tables, bar charts and
+                                                            pie charts.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                                                aria-current="true">
+                                                <!-- Modal Trigger -->
+                                                <a class="btn btn-primary" role="button" data-bs-toggle="modal"
+                                                    data-bs-target="#ecommerceModal"> <i
+                                                        class="bi-person-circle me-1"></i> Preview </a>
+                                                <!-- End Modal Trigger -->
+
+                                                <div class="modal fade" id="ecommerceModal" tabindex="-1" role="dialog"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-xl"
+                                                        role="document">
+                                                        <div class="modal-content">
+                                                            <!-- Header -->
+                                                            <div class="modal-close">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <!-- End Header -->
+
+                                                            <div
+                                                                class="row justify-content-sm-between align-items-sm-center flex-grow-1">
+                                                                <div class="col-9 col-sm-5 mb-sm-0 mb-5">
+                                                                    <img class="img-fluid smaller-size"
+                                                                        src="/assets/images/oc-yelling.svg"
+                                                                        alt="SVG Illustration" />
+                                                                </div>
+                                                                <!-- End Col -->
+
+                                                                <div class="col-sm-6">
+                                                                    <!-- Heading -->
+                                                                    <div class="mb-4">
+                                                                        <h5 class="h5">COMING SOON!</h5>
+                                                                        <p>The template is being built. Please come back
+                                                                            again or send a request to our team.</p>
+                                                                    </div>
+                                                                    <!-- End Heading -->
+                                                                </div>
+                                                                <!-- End Col -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class="space-top container py-5 text-center">
-                <div class="row py-lg-5">
-                    <div class="col-lg-8 col-md-8 mx-auto">
-                        <h1 class="fw-light">Looker Studio Templates</h1>
-                        <p class="lead text-muted">Get up and running with visualizing your data in seconds with our ready to go templates. Just duplicate, connect and start analyzing!</p>
-                        <p>
-                            <a href="#LookerTemplates" class="btn btn-primary my-2">Explore dashboards</a>
-                            <a href="#how-it-works" class="btn btn-secondary my-2">How it works</a>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container px-4 py-5">
+                <h2 class="border-bottom pb-2">How does it work?</h2>
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                    <div class="d-flex flex-column align-items-start gap-2">
+                        <h3 class="fw-bold">Visualize your data with Looker Studio <span class="emoji-h3">📊</span></h3>
+                        <p class="muted-text">
+                            Viusalize your data using Looker Studio in <span class="highlight">4 simple steps</span>
+                            using our templates. Whatever your business is, we have a temlate for it. All
+                            of our tempaltes work seamlessly and use the innate Google Analytics connector with Looker
+                            Studio, so there is no funny business there.
+                        </p>
+                        <p class="muted-text">
+                            If you have any questions, you might find an answer in our FAQ section below <span
+                                class="emoji">👇</span>. If you did not find what you were looking for, feel free to
+                            contact us.
                         </p>
                     </div>
-                </div>
-            </section>
-            <section id="LookerTemplates">
-                <div class="album py-5">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                            <div class="col">
-                                <div class="card">
-                                    <figure class="fig-center">
-                                        <img src="/assets/images/looker.svg" width="40%" height="225" class="img-center" alt="" />
-                                        <figcaption class="text-muted">General Purpose Looker Studio template.</figcaption>
-                                    </figure>
-
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            This dashboard gives a bird's eye view of your performance. Use it to understand your user and traffic acquisition as well as overall conversions.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-center column-responsive">
-                                            <div class="btn-group">
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-sm btn-outline-secondary"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseAllType"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseAllType"
-                                                >
-                                                    Configuration
-                                                </button>
-                                                <a href="#" class="btn btn-sm btn-outline-secondary">Replicate</a>
-                                            </div>
-                                            <small class="text-muted text-bold">1 source</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseAllType">
-                                    <div class="card h-100 shadow-sm">
-                                        <hr class="dropdown-divider" />
-                                        <div class="card-body">
-                                            <p class="card-text">Use the lists below to understand which data sources and charts are being used to build the dashboard.</p>
-                                            <div class="list-group w-auto">
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-boxes flex-shrink-0" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
-                                                        />
-                                                    </svg>
-                                                    <div class="d-flex w-100 justify-content-between gap-2">
-                                                        <div>
-                                                            <h6 class="mb-0">Data sources</h6>
-                                                            <p class="mb-0 opacity-75">
-                                                                This dashboard uses only one data source which is the <span class="highlight">GA4 - Google Merchandise Store</span> <br />All the data
-                                                                shown in the template is collected from the Google Merchandise Store.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-boxes flex-shrink-0" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
-                                                        />
-                                                    </svg>
-                                                    <div class="d-flex w-100 justify-content-between gap-2">
-                                                        <div>
-                                                            <h6 class="mb-0">Charts</h6>
-                                                            <p class="mb-0 opacity-75">The dashboard uses multiple charts such as time series, tables, pivot tables, bar charts and pie charts.</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <!-- Modal Trigger -->
-                                                    <a class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#generalModal"> <i class="bi-person-circle me-1"></i> Preview </a>
-                                                    <!-- End Modal Trigger -->
-
-                                                    <div class="modal fade" id="generalModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                                                            <div class="modal-content">
-                                                                <!-- Header -->
-                                                                <div class="modal-close">
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <!-- End Header -->
-
-                                                                <div class="row justify-content-sm-between align-items-sm-center flex-grow-1">
-                                                                    <div class="col-9 col-sm-5 mb-sm-0 mb-5">
-                                                                        <img class="img-fluid smaller-size" src="/assets/images/oc-yelling.svg" alt="SVG Illustration" />
-                                                                    </div>
-                                                                    <!-- End Col -->
-
-                                                                    <div class="col-sm-6">
-                                                                        <!-- Heading -->
-                                                                        <div class="mb-4">
-                                                                            <h5 class="h5">COMING SOON!</h5>
-                                                                            <p>The template is being built. Please come back again or send a request to our team.</p>
-                                                                        </div>
-                                                                        <!-- End Heading -->
-                                                                    </div>
-                                                                    <!-- End Col -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex align-items-start w-100">
+                            <div
+                                class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="bi" viewBox="0 0 16 16">
+                                    <path d="M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+                                    <path
+                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
+                                </svg>
                             </div>
-                            <div class="col">
-                                <div class="card shadow-sm">
-                                    <figure class="fig-center">
-                                        <img src="/assets/images/looker.svg" width="40%" height="225" class="img-center" alt="" />
-                                        <figcaption class="text-muted">Looker Studio template for Saas businesses.</figcaption>
-                                    </figure>
-
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            This dashboard gives a bird's eye view for SaaS businesses. Use it to understand your acquisition, conversions, retention & churn as well as overall
-                                            performance.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-center column-responsive">
-                                            <div class="btn-group">
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-sm btn-outline-secondary"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseSaaSType"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseSaaSType"
-                                                >
-                                                    Configuration
-                                                </button>
-                                                <a href="#" class="btn btn-sm btn-outline-secondary">Replicate</a>
-                                            </div>
-                                            <small class="text-muted text-bold">1 source</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseSaaSType">
-                                    <div class="card h-100 shadow-sm">
-                                        <hr class="dropdown-divider" />
-                                        <div class="card-body">
-                                            <p class="card-text">Use the lists below to understand which data sources and charts are being used to build the dashboard.</p>
-                                            <div class="list-group w-auto">
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-boxes flex-shrink-0" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
-                                                        />
-                                                    </svg>
-                                                    <div class="d-flex w-100 justify-content-between gap-2">
-                                                        <div>
-                                                            <h6 class="mb-0">Data sources</h6>
-                                                            <p class="mb-0 opacity-75">
-                                                                This dashboard uses only one data source which is the <span class="highlight">GA4 - Google Merchandise Store</span>
-                                                                <br />
-                                                                All the data shown in the template is collected from the Google Merchandise Store.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-boxes flex-shrink-0" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
-                                                        />
-                                                    </svg>
-                                                    <div class="d-flex w-100 justify-content-between gap-2">
-                                                        <div>
-                                                            <h6 class="mb-0">Charts</h6>
-                                                            <p class="mb-0 opacity-75">The dashboard uses multiple charts such as time series, tables, pivot tables, bar charts and pie charts.</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <!-- Modal Trigger -->
-                                                    <a class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#SaaSModal"> <i class="bi-person-circle me-1"></i> Preview </a>
-                                                    <!-- End Modal Trigger -->
-
-                                                    <div class="modal fade" id="SaaSModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                                                            <div class="modal-content">
-                                                                <!-- Header -->
-                                                                <div class="modal-close">
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <!-- End Header -->
-
-                                                                <div class="row justify-content-sm-between align-items-sm-center flex-grow-1">
-                                                                    <div class="col-9 col-sm-5 mb-sm-0 mb-5">
-                                                                        <img class="img-fluid smaller-size" src="/assets/images/oc-yelling.svg" alt="SVG Illustration" />
-                                                                    </div>
-                                                                    <!-- End Col -->
-
-                                                                    <div class="col-sm-6">
-                                                                        <!-- Heading -->
-                                                                        <div class="mb-4">
-                                                                            <h5 class="h5">COMING SOON!</h5>
-                                                                            <p>The template is being built. Please come back again or send a request to our team.</p>
-                                                                        </div>
-                                                                        <!-- End Heading -->
-                                                                    </div>
-                                                                    <!-- End Col -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <h3 class="fs-3" id="step1">Step One</h3>
+                                <p>
+                                    Select of the dashboard templates that you would like to use. You can test the
+                                    template and discover its features by opening it in a seperate tab or window.
+                                    Next, click on the <span class="highlight">Replicate</span> button to create a copy
+                                    of your own.
+                                </p>
                             </div>
-                            <div class="col">
-                                <div class="card shadow-sm">
-                                    <figure class="fig-center">
-                                        <img src="/assets/images/looker.svg" width="40%" height="225" alt="" />
-                                        <figcaption class="text-muted">Looker Studio template for E-commerce.</figcaption>
-                                    </figure>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            This dashboard gives a bird's eye view for E-commerce businesses. Use it to understand acqusition, purchases, top selling products, and overall performance.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-center column-responsive">
-                                            <div class="btn-group">
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-sm btn-outline-secondary"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseEcommerceType"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseEcommerceType"
-                                                >
-                                                    Configuration
-                                                </button>
-                                                <a href="#" class="btn btn-sm btn-outline-secondary">Replicate</a>
-                                            </div>
-                                            <small class="text-muted text-bold">1 source</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseEcommerceType">
-                                    <div class="card h-100 shadow-sm">
-                                        <hr class="dropdown-divider" />
-                                        <div class="card-body">
-                                            <p class="card-text">Use the lists below to understand which data sources and charts are being used to build the dashboard.</p>
-                                            <div class="list-group w-auto">
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-boxes flex-shrink-0" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
-                                                        />
-                                                    </svg>
-                                                    <div class="d-flex w-100 justify-content-between gap-2">
-                                                        <div>
-                                                            <h6 class="mb-0">Data sources</h6>
-                                                            <p class="mb-0 opacity-75">
-                                                                This dashboard uses only one data source which is the <span class="highlight">GA4 - Google Merchandise Store</span> <br />All the data
-                                                                shown in the template is collected from the Google Merchandise Store.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-boxes flex-shrink-0" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
-                                                        />
-                                                    </svg>
-                                                    <div class="d-flex w-100 justify-content-between gap-2">
-                                                        <div>
-                                                            <h6 class="mb-0">Charts</h6>
-                                                            <p class="mb-0 opacity-75">The dashboard uses multiple charts such as time series, tables, pivot tables, bar charts and pie charts.</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                    <!-- Modal Trigger -->
-                                                    <a class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#ecommerceModal"> <i class="bi-person-circle me-1"></i> Preview </a>
-                                                    <!-- End Modal Trigger -->
-
-                                                    <div class="modal fade" id="ecommerceModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                                                            <div class="modal-content">
-                                                                <!-- Header -->
-                                                                <div class="modal-close">
-                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                </div>
-                                                                <!-- End Header -->
-
-                                                                <div class="row justify-content-sm-between align-items-sm-center flex-grow-1">
-                                                                    <div class="col-9 col-sm-5 mb-sm-0 mb-5">
-                                                                        <img class="img-fluid smaller-size" src="/assets/images/oc-yelling.svg" alt="SVG Illustration" />
-                                                                    </div>
-                                                                    <!-- End Col -->
-
-                                                                    <div class="col-sm-6">
-                                                                        <!-- Heading -->
-                                                                        <div class="mb-4">
-                                                                            <h5 class="h5">COMING SOON!</h5>
-                                                                            <p>The template is being built. Please come back again or send a request to our team.</p>
-                                                                        </div>
-                                                                        <!-- End Heading -->
-                                                                    </div>
-                                                                    <!-- End Col -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col d-flex align-items-start w-100">
+                            <div
+                                class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="bi bi-2-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z" />
+                                    <path
+                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="fs-3" id="step2">Step Two</h3>
+                                <p>
+                                    If you didn't already, create a Looker Studio account. If you already have an
+                                    account, you should be taken to the template. Next, click on
+                                    <span class="highlight">⋮</span> then click on <span class="highlight">Make a
+                                        copy</span>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start w-100">
+                            <div
+                                class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="bi bi-3-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z" />
+                                    <path
+                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="fs-3" id="step3">Step Three</h3>
+                                <p>
+                                    The next step is data mapping. Once you click on Make a copy, you will be asked to
+                                    map the original data sources to the ones you will be using in your
+                                    dashboard. This is why it is important to take your time during step one <span
+                                        class="emoji">👆</span>. Once the mapping is done, click
+                                    <span class="highlight">Copy Report</span>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start w-100">
+                            <div
+                                class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="bi bi-4-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
+                                    <path
+                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="fs-3" id="step4">Step Four</h3>
+                                <p>
+                                    Last but not least, go over the dashbooard and make sure all reports are correctly
+                                    visualizing the data and that there are no broken charts. If you are happy
+                                    with what you are seeing then there is nothing to do. Mission accomplished!
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section id="how-it-works">
-                <div class="container px-4 py-5">
-                    <h2 class="border-bottom pb-2">How does it work?</h2>
-                    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-                        <div class="d-flex flex-column align-items-start gap-2">
-                            <h3 class="fw-bold">Visualize your data with Looker Studio <span class="emoji-h3">📊</span></h3>
-                            <p class="muted-text">
-                                Viusalize your data using Looker Studio in <span class="highlight">4 simple steps</span> using our templates. Whatever your business is, we have a temlate for it. All
-                                of our tempaltes work seamlessly and use the innate Google Analytics connector with Looker Studio, so there is no funny business there.
-                            </p>
-                            <p class="muted-text">
-                                If you have any questions, you might find an answer in our FAQ section below <span class="emoji">👇</span>. If you did not find what you were looking for, feel free to
-                                contact us.
-                            </p>
-                        </div>
-                        <div class="row row-cols-1 row-cols-sm-2 g-4">
-                            <div class="col d-flex align-items-start w-100">
-                                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi" viewBox="0 0 16 16">
-                                        <path d="M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="fs-3" id="step1">Step One</h3>
-                                    <p>
-                                        Select of the dashboard templates that you would like to use. You can test the template and discover its features by opening it in a seperate tab or window.
-                                        Next, click on the <span class="highlight">Replicate</span> button to create a copy of your own.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col d-flex align-items-start w-100">
-                                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-2-square" viewBox="0 0 16 16">
-                                        <path
-                                            d="M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"
-                                        />
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="fs-3" id="step2">Step Two</h3>
-                                    <p>
-                                        If you didn't already, create a Looker Studio account. If you already have an account, you should be taken to the template. Next, click on
-                                        <span class="highlight">⋮</span> then click on <span class="highlight">Make a copy</span>.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col d-flex align-items-start w-100">
-                                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-3-square" viewBox="0 0 16 16">
-                                        <path
-                                            d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"
-                                        />
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="fs-3" id="step3">Step Three</h3>
-                                    <p>
-                                        The next step is data mapping. Once you click on Make a copy, you will be asked to map the original data sources to the ones you will be using in your
-                                        dashboard. This is why it is important to take your time during step one <span class="emoji">👆</span>. Once the mapping is done, click
-                                        <span class="highlight">Copy Report</span>.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col d-flex align-items-start w-100">
-                                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 me-3 flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-4-square" viewBox="0 0 16 16">
-                                        <path
-                                            d="M7.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z"
-                                        />
-                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2Z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="fs-3" id="step4">Step Four</h3>
-                                    <p>
-                                        Last but not least, go over the dashbooard and make sure all reports are correctly visualizing the data and that there are no broken charts. If you are happy
-                                        with what you are seeing then there is nothing to do. Mission accomplished!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="faq">
-                <h2 class="border-bottom pb-2">Frequently Asked Questions</h2>
-                <div class="accordion" id="accordionPanelsFAQ">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button
-                                class="accordion-button"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne"
-                                aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseOne"
-                            >
-                                How do I create a Looker Studio account?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse show collapse" aria-labelledby="panelsStayOpen-headingOne">
-                            <div class="accordion-body">
-                                To create a Looker Studio account, go to the Looker Studio <a href="https://lookerstudio.google.com/overview">website</a>
-                                and sign in with your Google account.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo"
-                                aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo"
-                            >
-                                How do I map the origianal data sources?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                            <div class="accordion-body">
-                                Mapping the original data sources is very straightforward. Here's how can map them:
-                                <ul class="list-group list-group-numbered list-group-flush">
-                                    <li class="list-group-item">On the overview page of the dashboard, we mention what are the data sources were used to build the dashboard.</li>
-                                    <li class="list-group-item">Once you have the list, make sure to add equivalent data sources in order for the mapping to work.</li>
-                                    <li class="list-group-item">
-                                        Next, once you are asked to map the data source, map each data source to its equivalent. For instance map the original Google Analytics 4 source to your Google
-                                        Analytics 4 source.
-                                    </li>
-                                    <li class="list-group-item">Once the mapping is done, click on Make a copy to start using the dashboard</li>
-                                </ul>
-                                <span class="text-warning">If your mapping is incorrect, you will notice some broken charts. This is due to the data sources incompatibility</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree"
-                                aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree"
-                            >
-                                Are the reports customizable?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                            <div class="accordion-body">Yes, they are. Although, it is important to note that to customize the reports, you will need to be familiar with Looker Studio.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                            <button
-                                class="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseFour"
-                                aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseFour"
-                            >
-                                Can I add more data sources to the report?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                            <div class="accordion-body">
-                                Yes, you can. Once you have made a copy of the dashboard, you are free to use it as you would like including adding data sources and other charts.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="d-flex justify-content-between align-items-center border-top flex-wrap py-3">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-md-0 text-muted text-decoration-none lh-1 mb-3 me-2">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-                <span class="text-muted">© 2022 Datakyu Inc.</span>
             </div>
-        </footer>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP972DZ" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous"
-        ></script>
-        <script type="text/javascript">
-            const cardListItems = document.querySelectorAll("a.list-group-item");
-            cardListItems.forEach((listItem) => {
-                listItem.addEventListener("click", (event) => {
-                    event.preventDefault();
-                });
+        </section>
+
+        <section id="faq">
+            <h2 class="border-bottom pb-2">Frequently Asked Questions</h2>
+            <div class="accordion" id="accordionPanelsFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            How do I create a Looker Studio account?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse show collapse"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            To create a Looker Studio account, go to the Looker Studio <a
+                                href="https://lookerstudio.google.com/overview">website</a>
+                            and sign in with your Google account.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            How do I map the origianal data sources?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            Mapping the original data sources is very straightforward. Here's how can map them:
+                            <ul class="list-group list-group-numbered list-group-flush">
+                                <li class="list-group-item">On the overview page of the dashboard, we mention what are
+                                    the data sources were used to build the dashboard.</li>
+                                <li class="list-group-item">Once you have the list, make sure to add equivalent data
+                                    sources in order for the mapping to work.</li>
+                                <li class="list-group-item">
+                                    Next, once you are asked to map the data source, map each data source to its
+                                    equivalent. For instance map the original Google Analytics 4 source to your Google
+                                    Analytics 4 source.
+                                </li>
+                                <li class="list-group-item">Once the mapping is done, click on Make a copy to start
+                                    using the dashboard</li>
+                            </ul>
+                            <span class="text-warning">If your mapping is incorrect, you will notice some broken charts.
+                                This is due to the data sources incompatibility</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Are the reports customizable?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">Yes, they are. Although, it is important to note that to customize
+                            the reports, you will need to be familiar with Looker Studio.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            Can I add more data sources to the report?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <div class="accordion-body">
+                            Yes, you can. Once you have made a copy of the dashboard, you are free to use it as you
+                            would like including adding data sources and other charts.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="d-flex justify-content-start align-items-center border-top flex-wrap py-3">
+        <div class="col-md-3 d-flex align-items-center ms-3">
+            <span class="text-muted">© 2024 Datakyu Inc.</span>
+        </div>
+        <div class="col-md-3 d-flex align-items-center">
+            <a class="text-muted" href="/policies/cookie-policy.html">Our Cookies Policy</a>
+        </div>
+    </footer>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP972DZ" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        const cardListItems = document.querySelectorAll("a.list-group-item");
+        cardListItems.forEach((listItem) => {
+            listItem.addEventListener("click", (event) => {
+                event.preventDefault();
             });
-        </script>
-        <script type="text/javascript" src="/assets/js/tracking/lookerStudioTemplates.js"></script>
-    </body>
+        });
+    </script>
+    <script type="text/javascript" src="/assets/js/tracking/lookerStudioTemplates.js"></script>
+</body>
+
 </html>

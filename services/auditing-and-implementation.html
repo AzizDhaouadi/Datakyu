@@ -1,138 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <!-- Start cookieyes banner -->
-      <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5cd9002534c83870252a4773/script.js"></script>
-      <!-- End cookieyes banner -->
-      <script src="https://js.sentry-cdn.com/17dc7fee29c01933e3c3df799f1c804b.min.js" crossorigin="anonymous"></script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-MP972DZ");
-    </script>
-    <!-- End Google Tag Manager -->
 
-    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Analytics Services - Auditing & Implementation | Datakyu</title>
-    <meta
-      name="description"
-      content="Datakyu's mission is to help businesses measure what matters and find a source of truth to help decrease uncertainty and chaos" />
-    <link rel="canonical" href="https://www.datakyu.co/services/auditing-and-implementation.html" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/assets/css/custom-styles.css" />
-    <link rel="stylesheet" href="/assets/css/theme-styles.css" />
-    <link rel="stylesheet" href="/assets/css/auditing-and-implementation.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+<head>
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript"
+    src="https://cdn-cookieyes.com/client_data/5cd9002534c83870252a4773/script.js"></script>
+  <!-- End cookieyes banner -->
+  <script src="https://js.sentry-cdn.com/17dc7fee29c01933e3c3df799f1c804b.min.js" crossorigin="anonymous"></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-MP972DZ");
+  </script>
+  <!-- End Google Tag Manager -->
 
-      :root {
-        --bs-body-text-font: "Quicksand", sans-serif;
-        --bs-nav-link-font-size: 1.225rem;
-        --bs-body-background-color: #fef8f2;
-      }
+  <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.svg" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Analytics Services - Auditing & Implementation | Datakyu</title>
+  <meta name="description"
+    content="Datakyu's mission is to help businesses measure what matters and find a source of truth to help decrease uncertainty and chaos" />
+  <link rel="canonical" href="https://www.datakyu.co/services/auditing-and-implementation.html" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="/assets/css/custom-styles.css" />
+  <link rel="stylesheet" href="/assets/css/theme-styles.css" />
+  <link rel="stylesheet" href="/assets/css/auditing-and-implementation.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-      body {
-        font-family: var(--bs-body-text-font);
-        background-color: var(--bs-body-background-color);
-      }
+    :root {
+      --bs-body-text-font: "Quicksand", sans-serif;
+      --bs-nav-link-font-size: 1.225rem;
+      --bs-body-background-color: #fef8f2;
+    }
 
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: var(--bs-font-monospace);
-      }
+    body {
+      font-family: var(--bs-body-text-font);
+      background-color: var(--bs-body-background-color);
+    }
 
-      .text-green {
-        color: #008060;
-      }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--bs-font-monospace);
+    }
 
-      .text-black {
-        color: #000 !important;
-      }
+    .text-green {
+      color: #008060;
+    }
 
-      nav.home {
-        margin: 0 auto;
-        padding-top: 1rem;
-        background-color: inherit !important;
-      }
+    .text-black {
+      color: #000 !important;
+    }
 
-      .nav-link {
-        font-weight: bold;
-      }
+    nav.home {
+      margin: 0 auto;
+      padding-top: 1rem;
+      background-color: inherit !important;
+    }
 
-      div.navbar-nav {
-        justify-content: space-around;
-      }
+    .nav-link {
+      font-weight: bold;
+    }
 
-      .no-padding {
-        padding-top: 0 !important;
-      }
+    div.navbar-nav {
+      justify-content: space-around;
+    }
 
-      .emoji {
-        font-size: 2rem;
-      }
+    .no-padding {
+      padding-top: 0 !important;
+    }
 
-      .light {
-        background-color: inherit !important;
-      }
+    .emoji {
+      font-size: 2rem;
+    }
 
-      .text-full-width {
-        text-transform: full-width;
-      }
+    .light {
+      background-color: inherit !important;
+    }
 
-      .text-bold {
-        font-weight: bold;
-      }
+    .text-full-width {
+      text-transform: full-width;
+    }
 
-      a#navbarDropdown:hover {
-        color: var(--bs-nav-link-hover-color);
-      }
+    .text-bold {
+      font-weight: bold;
+    }
 
-      a.dropdown-item:hover {
-        background-color: #e5f8f3;
-      }
+    a#navbarDropdown:hover {
+      color: var(--bs-nav-link-hover-color);
+    }
 
-      #main {
-        position: relative;
-        top: 4rem;
-      }
-      dialog {
-        width: 50% !important;
-        border: none;
-        font-family: var(--bs-body-text-font);
-      }
+    a.dropdown-item:hover {
+      background-color: #e5f8f3;
+    }
 
-      [data-lead-capture-modal] [data-close-lead-capture-modal] {
-        width: 2rem;
-        height: 2rem;
-        background-image: url("/assets/images/ni-x.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        cursor: pointer;
-      }
-    </style>
-    <script type="application/ld+json">
+    #main {
+      position: relative;
+      top: 4rem;
+    }
+
+    dialog {
+      width: 50% !important;
+      border: none;
+      font-family: var(--bs-body-text-font);
+    }
+
+    [data-lead-capture-modal] [data-close-lead-capture-modal] {
+      width: 2rem;
+      height: 2rem;
+      background-image: url("/assets/images/ni-x.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+    }
+  </style>
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@graph": [
@@ -301,1342 +300,1219 @@
         ]
       }
     </script>
-  </head>
+</head>
 
-  <body id="body">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP972DZ" height="0" width="0" style="display: none; visibility: hidden"></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <script src="https://swetrix.org/swetrix.js" defer></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        swetrix.init("KT4Y783yoT2n");
-        swetrix.trackViews();
-      });
-    </script>
+<body id="body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP972DZ" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <script src="https://swetrix.org/swetrix.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      swetrix.init("KT4Y783yoT2n");
+      swetrix.trackViews();
+    });
+  </script>
 
-    <noscript>
-      <img src="https://api.swetrix.com/log/noscript?pid=KT4Y783yoT2n" alt="" referrerpolicy="no-referrer-when-downgrade" />
-    </noscript>
-    <header class="flex-menu navbar-absolute-top">
-      <nav class="navbar navbar-expand-lg bg-light home">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img src="/assets/logo/logo-transparent.svg" alt="Logo" class="d-inline-block align-text-top" />
-          </a>
-          <button
-            class="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarServicesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
-                  <li><a class="dropdown-item" href="/services/auditing-and-implementation.html">Auditing & Implementation</a></li>
-                  <li><a class="dropdown-item" href="/services/marketing-tech-stack-migration.html">Marketing Tech Stack Migration</a></li>
-                  <li><a class="dropdown-item" href="/services/a-la-carte.html">Consulting Services</a></li>
-                </ul>
-              </li>
-              <a class="nav-link" href="/pricing.html">Packages</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Resources
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="https://datajournal.datakyu.co/">Blog</a></li>
-                  <li>
-                    <a class="dropdown-item" href="/resources/sample-code-generator.html">Google Analytics 4 Sample Code Generator</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/resources/google-tag-manager-container-tempaltes.html">Google Tag Manager Container Templates</a>
-                  </li>
-                  <li style="padding-left: 1rem">
-                    <hr class="dropdown-divider" />
-                    Coming Soon
-                  </li>
-                  <li><a class="dropdown-item" href="/resources/looker-studio-templates.html">Looker Studio Dashboard Templates</a></li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main id="main">
-      <section id="hero">
-        <!-- Hero -->
-        <div>
-          <div class="container position-relative zi-2 content-space-b-1 content-space-t-2 content-space-md-3">
-            <!-- Heading -->
-            <div class="w-lg-75 text-center mx-lg-auto mb-7">
-              <h1 class="display-3 text-green mb-md-5">Web Analytics <span class="text-warning">Services</span></h1>
-              <p class="lead text-white-70 text-black">
-                You build it, we track it! Let us help you build a comprehensive understanding of your business' online visitors.
-              </p>
-            </div>
-            <!-- End Heading -->
-
-            <div class="text-center mx-auto mb-7" style="max-width: 32rem">
-              <button class="btn btn-primary cta" id="marketing_websites" data-lead-capture-modal-button>Contact us</button>
-            </div>
-
-            <!-- Code Editor -->
-            <div class="code-editor mx-auto" style="width: 46rem">
-              <div class="code-editor-container">
-                <!-- Line Numbers -->
-                <div class="code-editor-line-numbers">
-                  <span class="code-editor-line-numbers-item">1</span>
-                  <span class="code-editor-line-numbers-item">2</span>
-                  <span class="code-editor-line-numbers-item">3</span>
-                  <span class="code-editor-line-numbers-item">4</span>
-                  <span class="code-editor-line-numbers-item">5</span>
-                  <span class="code-editor-line-numbers-item">6</span>
-                  <span class="code-editor-line-numbers-item">7</span>
-                  <span class="code-editor-line-numbers-item">8</span>
-                  <span class="code-editor-line-numbers-item">9</span>
-                  <span class="code-editor-line-numbers-item">10</span>
-                  <span class="code-editor-line-numbers-item">11</span>
-                  <span class="code-editor-line-numbers-item">12</span>
-                  <span class="code-editor-line-numbers-item">13</span>
-                  <span class="code-editor-line-numbers-item">14</span>
-                  <span class="code-editor-line-numbers-item">15</span>
-                </div>
-                <!-- End Line Numbers -->
-                <!-- Typing Area -->
-                <div class="code-editor-typing-area">
-                  <div class="mb-4">
-                    <span class="text-muted">// gtag.js</span>
-                  </div>
-
-                  <div class="gtagtyped"></div>
-                  <div class="gtag2typed"></div>
-                </div>
-                <!-- End Typing Area -->
-
-                <!-- Typing Area -->
-                <div class="code-editor-typing-area">
-                  <div class="mb-4">
-                    <span class="text-muted">// Segment</span>
-                  </div>
-                  <div class="segmenttyped"></div>
-                  <div class="segment2typed"></div>
-                </div>
-                <!-- End Typing Area -->
-              </div>
-            </div>
-          </div>
-          <!-- End Code Editor -->
-        </div>
-        <!-- End Hero -->
-      </section>
-
-      <div class="border-top mx-auto" style="max-width: 25rem"></div>
-      <section id="what_we_do">
-        <div class="w-lg-65 text-center mx-lg-auto mb-7">
-          <h2 class="display-5 text-green mb-md-5">What we do</h2>
-          <p class="fs-6">We build and implement measurement plans that help you answer the right business questions.</p>
-        </div>
-
-        <!-- Features -->
-        <div class="container content-space-1">
-          <div class="w-lg-65 mb-7">
-            <h3 class="h4">Implementation Services</h3>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6 mb-3 mb-md-7">
-              <!-- Media -->
-              <div class="d-sm-flex">
-                <div class="flex-shrink-0 mb-3 mb-sm-0">
-                  <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-to-do.svg" alt="Image Description" />
-                </div>
-
-                <div class="flex-grow-1 ms-sm-5">
-                  <span class="text-cap">Understand what you are tracking</span>
-                  <h5>Measurement Plan</h5>
-                  <p>Which user actions if tracked can help us track our KPIs?</p>
-                </div>
-              </div>
-              <!-- End Media -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-md-6 mb-3 mb-md-7">
-              <!-- Media -->
-              <div class="d-sm-flex">
-                <div class="flex-shrink-0 mb-3 mb-sm-0">
-                  <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-project-development.svg" alt="Image Description" />
-                </div>
-
-                <div class="flex-grow-1 ms-sm-5">
-                  <span class="text-cap">Understand which tools to use</span>
-                  <h5>Implementation Roadmap</h5>
-                  <p>Which tools would be ideal for my tracking? How long would implementation take?</p>
-                </div>
-              </div>
-              <!-- End Media -->
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-
-          <div class="row">
-            <div class="col-md-6 mb-3 mb-md-7">
-              <!-- Media -->
-              <div class="d-sm-flex">
-                <div class="flex-shrink-0 mb-3 mb-sm-0">
-                  <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-collaboration.svg" alt="Image Description" />
-                </div>
-
-                <div class="flex-grow-1 ms-sm-5">
-                  <span class="text-cap">Understand the events being tracked</span>
-                  <h5>Implementation Phase</h5>
-                  <p>Do we need more context for the tracked events?</p>
-                </div>
-              </div>
-              <!-- End Media -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-md-6 mb-3 mb-md-7">
-              <!-- Media -->
-              <div class="d-sm-flex">
-                <div class="flex-shrink-0 mb-3 mb-sm-0">
-                  <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-work-balance.svg" alt="Image Description" />
-                </div>
-
-                <div class="flex-grow-1 ms-sm-5">
-                  <span class="text-cap">Understand which question can be answered</span>
-                  <h5>Delivery Phase</h5>
-                  <p>Are we generating clean data? Which questions can be answered?</p>
-                </div>
-              </div>
-              <!-- End Media -->
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-        </div>
-        <!-- End Features -->
-
-        <!-- Features Auditing -->
-        <div class="container content-space-1">
-          <!-- Heading -->
-          <div class="w-lg-65 mb-7">
-            <h3 class="h4">Auditing Services</h3>
-          </div>
-          <!-- End Heading -->
-
-          <div class="row align-items-md-center mb-5 mb-md-10">
-            <div class="col-md-6 mb-5 mb-md-0">
-              <div class="text-center">
-                <img class="img-fluid" src="/assets/images/oc-thinking.svg" alt="Image Description" style="max-width: 20rem" />
-              </div>
-            </div>
-            <!-- End Col -->
-
-            <div class="col-md-6">
-              <!-- Table -->
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col" class="table-text-end">Basic</th>
-                    <th scope="col" class="table-text-end">Full</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Google Analytics 4</th>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Other Analytics Tools</th>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-muted">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Tag Manager Container</th>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-muted">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Event Triggers</th>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Event Parameters</th>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">User Properties</th>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-muted">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Filters</th>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-muted">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                    <td class="table-text-end">
-                      <span class="svg-icon svg-icon-sm text-primary">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-check-all"
-                          viewBox="0 0 16 16">
-                          <path
-                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                        </svg>
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- End Table -->
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
-        </div>
-        <!-- End Features Auditing-->
-
-        <!-- Features -->
-        <div class="overflow-hidden">
-          <div class="container content-space-1">
-            <div class="row align-items-lg-center">
-              <div class="col-lg-6 mb-5 mb-lg-0">
-                <div class="pe-lg-5">
-                  <!-- Heading -->
-                  <div class="mb-7">
-                    <h3 class="h4">Our technology stack</h3>
-                    <p class="fs-6">Our technology stack is built to be modern and future-proof. If you can build it, we can track it!</p>
-                  </div>
-                  <!-- End Heading -->
-
-                  <div class="d-grid gap-3">
-                    <!-- Info Block -->
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <span class="svg-icon svg-icon-sm text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            class="bi bi-bar-chart-steps"
-                            viewBox="0 0 16 16">
-                            <path
-                              d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
-                          </svg>
-                        </span>
-                      </div>
-
-                      <div class="flex-grow-1 ms-4">
-                        <h5>Collect data from any platform</h5>
-                        <p>Whether you want to collect data from your website, mobile application or offline systems, we can get you there.</p>
-                      </div>
-                    </div>
-                    <!-- End Info Block -->
-
-                    <!-- Info Block -->
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <span class="svg-icon svg-icon-sm text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            class="bi bi-graph-up"
-                            viewBox="0 0 16 16">
-                            <path
-                              fill-rule="evenodd"
-                              d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
-                          </svg>
-                        </span>
-                      </div>
-
-                      <div class="flex-grow-1 ms-4">
-                        <h5>Visualization that matters</h5>
-                        <p>Everyone hates clutter, and so do we. That's why our dashboards are insightful and help you make descisions on the go.</p>
-                      </div>
-                    </div>
-                    <!-- End Info Block -->
-                  </div>
-                </div>
-              </div>
-              <!-- End Col -->
-
-              <div class="col-lg-6 mobile-column-reverse">
-                <!-- Tab Content -->
-                <div class="tab-content mb-7" id="codeEditorTabContent">
-                  <div class="tab-pane fade show active" id="codeEditorOne" role="tabpanel" aria-labelledby="codeEditorOne-tab">
-                    <!-- Code Editor -->
-                    <div class="code-editor overflow-hidden">
-                      <div class="code-editor-container">
-                        <!-- Line Numbers -->
-                        <div class="code-editor-line-numbers">
-                          <span class="code-editor-line-numbers-item">1</span>
-                          <span class="code-editor-line-numbers-item">2</span>
-                          <span class="code-editor-line-numbers-item">3</span>
-                          <span class="code-editor-line-numbers-item">4</span>
-                          <span class="code-editor-line-numbers-item">5</span>
-                          <span class="code-editor-line-numbers-item">6</span>
-                          <span class="code-editor-line-numbers-item">7</span>
-                          <span class="code-editor-line-numbers-item">8</span>
-                          <span class="code-editor-line-numbers-item">9</span>
-                          <span class="code-editor-line-numbers-item">10</span>
-                          <span class="code-editor-line-numbers-item">11</span>
-                          <span class="code-editor-line-numbers-item">12</span>
-                          <span class="code-editor-line-numbers-item">13</span>
-                          <span class="code-editor-line-numbers-item">14</span>
-                          <span class="code-editor-line-numbers-item">15</span>
-                        </div>
-                        <!-- End Line Numbers -->
-
-                        <!-- Typing Area -->
-                        <div class="code-editor-typing-area">
-                          <div class="mb-4">
-                            <span class="text-primary">//Tracking events with gtag</span>
-                          </div>
-
-                          <div class="mb-4">
-                            <span>gtag(</span>
-                            <div class="ps-3"><span class="text-primary">"event",</span></div>
-                            <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
-                            <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
-                            <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
-                            <div><span>});</span></div>
-                          </div>
-
-                          <div class="gtagNavTyped"></div>
-
-                          <div class="mb-4">
-                            <span>gtag(</span>
-                            <div class="ps-3"><span class="text-primary">"event",</span></div>
-                            <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
-                            <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
-                            <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer-Webinar"</span></div>
-                            <div><span>});</span></div>
-                          </div>
-                        </div>
-                        <!-- End Typing Area -->
-                      </div>
-                    </div>
-                    <!-- End Code Editor -->
-                  </div>
-
-                  <div class="tab-pane fade" id="codeEditorTwo" role="tabpanel" aria-labelledby="codeEditorTwo-tab">
-                    <!-- Code Editor -->
-                    <div class="code-editor overflow-hidden">
-                      <div class="code-editor-container">
-                        <!-- Line Numbers -->
-                        <div class="code-editor-line-numbers">
-                          <span class="code-editor-line-numbers-item">1</span>
-                          <span class="code-editor-line-numbers-item">2</span>
-                          <span class="code-editor-line-numbers-item">3</span>
-                          <span class="code-editor-line-numbers-item">4</span>
-                          <span class="code-editor-line-numbers-item">5</span>
-                          <span class="code-editor-line-numbers-item">6</span>
-                          <span class="code-editor-line-numbers-item">7</span>
-                          <span class="code-editor-line-numbers-item">8</span>
-                          <span class="code-editor-line-numbers-item">9</span>
-                          <span class="code-editor-line-numbers-item">10</span>
-                          <span class="code-editor-line-numbers-item">11</span>
-                          <span class="code-editor-line-numbers-item">12</span>
-                          <span class="code-editor-line-numbers-item">13</span>
-                          <span class="code-editor-line-numbers-item">14</span>
-                          <span class="code-editor-line-numbers-item">15</span>
-                        </div>
-                        <!-- End Line Numbers -->
-
-                        <!-- Typing Area -->
-                        <div class="code-editor-typing-area">
-                          <div class="mb-4">
-                            <span class="text-primary">window.dataLayer = window.dataLayer || [];</span>
-                          </div>
-
-                          <div class="mb-4">
-                            <span>window.dataLayer.push({</span>
-                            <div class="ps-3"><span class="text-primary">"event"</span><span>:"submitted_form",</span></div>
-                            <div class="ps-3"><span class="text-primary">"form_id"</span><span>:"contact_form",</span></div>
-                            <div class="ps-3"><span class="text-primary">"session_number"</span><span>:4</span></div>
-                            <div><span>});</span></div>
-                          </div>
-
-                          <div class="mb-4">
-                            <span>window.dataLayer.push({</span>
-                            <div class="ps-3"><span class="text-primary">"event"</span><span>:"generate_lead",</span></div>
-                            <div class="ps-3"><span class="text-primary">"page"</span><span>:"/contact-us/",</span></div>
-                            <div class="ps-3"><span class="text-primary">"campaign"</span><span>:"Summer Webinar"</span></div>
-                            <div><span>});</span></div>
-                          </div>
-                        </div>
-                        <!-- End Typing Area -->
-                      </div>
-                    </div>
-                    <!-- End Code Editor -->
-                  </div>
-
-                  <div class="tab-pane fade" id="codeEditorThree" role="tabpanel" aria-labelledby="codeEditorThree-tab">
-                    <!-- Code Editor -->
-                    <div class="code-editor overflow-hidden">
-                      <div class="code-editor-container">
-                        <!-- Line Numbers -->
-                        <div class="code-editor-line-numbers">
-                          <span class="code-editor-line-numbers-item">1</span>
-                          <span class="code-editor-line-numbers-item">2</span>
-                          <span class="code-editor-line-numbers-item">3</span>
-                          <span class="code-editor-line-numbers-item">4</span>
-                          <span class="code-editor-line-numbers-item">5</span>
-                          <span class="code-editor-line-numbers-item">6</span>
-                          <span class="code-editor-line-numbers-item">7</span>
-                          <span class="code-editor-line-numbers-item">8</span>
-                          <span class="code-editor-line-numbers-item">9</span>
-                          <span class="code-editor-line-numbers-item">10</span>
-                          <span class="code-editor-line-numbers-item">11</span>
-                          <span class="code-editor-line-numbers-item">12</span>
-                          <span class="code-editor-line-numbers-item">13</span>
-                          <span class="code-editor-line-numbers-item">14</span>
-                          <span class="code-editor-line-numbers-item">15</span>
-                        </div>
-                        <!-- End Line Numbers -->
-
-                        <!-- Typing Area -->
-                        <div class="code-editor-typing-area">
-                          <div class="mb-4">
-                            <span class="text-primary">// Tracking events with Segment</span>
-                          </div>
-
-                          <div class="mb-4">
-                            <span>analytics.track(</span>
-                            <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
-                            <div class="ps-3"><span class="text-primary">form_id</span>:<span>"contact_form",</span></div>
-                            <div class="ps-3"><span class="text-primary">session_number</span>:<span>4</span></div>
-                            <div><span>});</span></div>
-                          </div>
-
-                          <div class="mb-4">
-                            <span>analytics.track(</span>
-                            <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
-                            <div class="ps-3"><span class="text-primary">page</span>:<span>"/contact-us/",</span></div>
-                            <div class="ps-3"><span class="text-primary">campaign</span>:<span>"Summer Webinar"</span></div>
-                            <div><span>});</span></div>
-                          </div>
-                        </div>
-                        <!-- End Typing Area -->
-                      </div>
-                    </div>
-                    <!-- End Code Editor -->
-                  </div>
-
-                  <div class="tab-pane fade" id="codeEditorFour" role="tabpanel" aria-labelledby="codeEditorFour-tab">
-                    <!-- Code Editor -->
-                    <div class="code-editor overflow-hidden">
-                      <div class="code-editor-container">
-                        <!-- Line Numbers -->
-                        <div class="code-editor-line-numbers">
-                          <span class="code-editor-line-numbers-item">1</span>
-                          <span class="code-editor-line-numbers-item">2</span>
-                          <span class="code-editor-line-numbers-item">3</span>
-                          <span class="code-editor-line-numbers-item">4</span>
-                          <span class="code-editor-line-numbers-item">5</span>
-                          <span class="code-editor-line-numbers-item">6</span>
-                          <span class="code-editor-line-numbers-item">7</span>
-                          <span class="code-editor-line-numbers-item">8</span>
-                          <span class="code-editor-line-numbers-item">9</span>
-                          <span class="code-editor-line-numbers-item">10</span>
-                          <span class="code-editor-line-numbers-item">11</span>
-                          <span class="code-editor-line-numbers-item">12</span>
-                          <span class="code-editor-line-numbers-item">13</span>
-                          <span class="code-editor-line-numbers-item">14</span>
-                          <span class="code-editor-line-numbers-item">15</span>
-                        </div>
-                        <!-- End Line Numbers -->
-
-                        <!-- Typing Area -->
-                        <div class="code-editor-typing-area">
-                          <div class="mb-4">
-                            <span class="text-primary">// Tracking events with Mixpanel</span>
-                          </div>
-
-                          <div class="mb-4">
-                            <span>mixpanel.track(</span>
-                            <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
-                            <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span></div>
-                            <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
-                            <div><span>});</span></div>
-                          </div>
-                          <div class="mb-4">
-                            <span>mixpanel.track(</span>
-                            <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
-                            <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
-                            <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer Webinar"</span></div>
-                            <div><span>});</span></div>
-                          </div>
-                        </div>
-                        <!-- End Typing Area -->
-                      </div>
-                    </div>
-                    <!-- End Code Editor -->
-                  </div>
-
-                  <div class="tab-pane fade" id="codeEditorFive" role="tabpanel" aria-labelledby="codeEditorFive-tab">
-                    <!-- Code Editor -->
-                    <div class="code-editor overflow-hidden">
-                      <div class="code-editor-container">
-                        <!-- Typing Area -->
-                        <div class="code-editor-typing-area w-100 p-3">
-                          <div class="mb-4">
-                            <img src="/assets/images/looker_sutdio_sample.png" class="w-100 p-3" alt="" />
-                          </div>
-                        </div>
-                        <!-- End Typing Area -->
-                      </div>
-                    </div>
-                    <!-- End Code Editor -->
-                  </div>
-                </div>
-                <!-- End Tab Content -->
-
-                <!-- Nav Tabs -->
-                <ul class="nav nav-justified align-items-center" id="codeEditorTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link active"
-                      id="codeEditorOne-tab"
-                      href="#codeEditorOne"
-                      data-bs-toggle="tab"
-                      data-bs-target="#codeEditorOne"
-                      role="tab"
-                      aria-controls="codeEditorOne"
-                      aria-selected="true">
-                      <!-- SVG -->
-                      <img src="/assets/images/google-analytics-4.svg" width="38" height="39" alt="Google Analytics 4" />
-                      <!-- End SVG -->
-                    </a>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="codeEditorTwo-tab"
-                      href="#codeEditorTwo"
-                      data-bs-toggle="tab"
-                      data-bs-target="#codeEditorTwo"
-                      role="tab"
-                      aria-controls="codeEditorTwo"
-                      aria-selected="false">
-                      <!-- SVG -->
-                      <img src="/assets/images/google-tag-manager.svg" width="38" height="39" alt="Google Tag Manager" />
-                      <!-- End SVG -->
-                    </a>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="codeEditorThree-tab"
-                      href="#codeEditorThree"
-                      data-bs-toggle="tab"
-                      data-bs-target="#codeEditorThree"
-                      role="tab"
-                      aria-controls="codeEditorThree"
-                      aria-selected="false">
-                      <!-- SVG -->
-                      <img src="/assets/images/segment.svg" width="38" height="39" alt="Segment" />
-                      <!-- End SVG -->
-                    </a>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="codeEditorFour-tab"
-                      href="#codeEditorFour"
-                      data-bs-toggle="tab"
-                      data-bs-target="#codeEditorFour"
-                      role="tab"
-                      aria-controls="codeEditorFour"
-                      aria-selected="false">
-                      <!-- SVG -->
-                      <img src="/assets/images/mixpanel.svg" width="38" height="39" alt="Mixpanel" />
-                      <!-- End SVG -->
-                    </a>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <a
-                      class="nav-link"
-                      id="codeEditorFive-tab"
-                      href="#codeEditorFive"
-                      data-bs-toggle="tab"
-                      data-bs-target="#codeEditorFive"
-                      role="tab"
-                      aria-controls="codeEditorFive"
-                      aria-selected="false">
-                      <!-- SVG -->
-                      <img src="/assets/images/looker.svg" width="38" height="39" alt="Looker Studio" />
-                      <!-- End SVG -->
-                    </a>
-                  </li>
-                </ul>
-                <!-- End Nav Tabs -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-          </div>
-        </div>
-        <!-- End Features -->
-      </section>
-
-      <section id="why_work_with_us">
-        <!-- Step -->
-        <div class="container content-space-1">
-          <!-- Heading -->
-          <div class="w-lg-65 mb-7">
-            <span class="text-cap">Why work with us</span>
-            <h3 class="text-primary">You're only as strong as your analytics</h3>
-            <p class="fs-6">Let us help you build an analytics infrastucture that scales as your business does.</p>
-          </div>
-          <!-- End Heading -->
-
-          <!-- Step -->
-          <ul class="step step-md">
-            <li class="step-item">
-              <div class="step-content-wrapper">
-                <span class="step-icon step-icon-soft-primary">1</span>
-                <div class="step-content">
-                  <h6 class="step-title">Less hypothetical - more factual</h6>
-                  <p class="step-text">We work on building a measurement plan that built on answering curcial business questions.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="step-item">
-              <div class="step-content-wrapper">
-                <span class="step-icon step-icon-soft-primary">2</span>
-                <div class="step-content">
-                  <h6 class="step-title">Less talk - more tracking</h6>
-                  <p class="step-text">
-                    We prefer to let our work do the talking. We work on building a datastream that tracks all the business-crucial events with high
-                    reliability.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="step-item">
-              <div class="step-content-wrapper">
-                <span class="step-icon step-icon-soft-primary">3</span>
-                <div class="step-content">
-                  <h6 class="step-title">Scale-friendly infrastucture</h6>
-                  <p class="step-text">
-                    We help you estabilish a tracking infrastructure that scales with your business so growth is never an issue.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <!-- End Step -->
-        </div>
-        <!-- End Step -->
-      </section>
-
-      <section id="how_we_do_it">
-        <!-- Blog -->
-        <div class="container content-space-1">
-          <!-- Heading -->
-          <div class="w-lg-65 text-center mx-lg-auto mb-7">
-            <h3>The backbone for web analytics</h3>
-            <p class="fs-6">A data-driven approach for building products and scaling campaigns.</p>
-          </div>
-          <!-- End Heading -->
-
-          <div class="row">
-            <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
-              <!-- Card -->
-              <a class="card card-lg card-transition bg-soft-primary-light shadow-none h-100" href="#">
-                <div class="card-header">
-                  <h5 class="card-title text-inherit">Documentation</h5>
-                  <p class="card-text text-body">We help you build and maintain tracking systems.</p>
-                </div>
-                <div class="card-body">
-                  <img class="card-img" src="/assets/images/frame-docs.svg" alt="Image Description" />
-                </div>
+  <noscript>
+    <img src="https://api.swetrix.com/log/noscript?pid=KT4Y783yoT2n" alt=""
+      referrerpolicy="no-referrer-when-downgrade" />
+  </noscript>
+  <header class="flex-menu navbar-absolute-top">
+    <nav class="navbar navbar-expand-lg bg-light home">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/assets/logo/logo-transparent.svg" alt="Logo" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Services
               </a>
-              <!-- End Card -->
-            </div>
-            <!-- End Cole -->
-
-            <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
-              <!-- Card -->
-              <a class="card card-lg card-transition bg-soft-warning shadow-none h-100" href="#">
-                <div class="card-header">
-                  <h5 class="card-title text-inherit">Tracking Code</h5>
-                  <p class="card-text text-body">We build functioninng, high quality code for our traking systems.</p>
-                </div>
-                <div class="card-body">
-                  <img class="card-img" src="/assets/images/frame-snippets.svg" alt="Image Description" />
-                </div>
+              <ul class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+                <li><a class="dropdown-item" href="/services/auditing-and-implementation.html">Auditing &
+                    Implementation</a></li>
+                <li><a class="dropdown-item" href="/services/marketing-tech-stack-migration.html">Marketing Tech Stack
+                    Migration</a></li>
+                <li><a class="dropdown-item" href="/services/a-la-carte.html">Consulting Services</a></li>
+              </ul>
+            </li>
+            <a class="nav-link" href="/pricing.html">Packages</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Resources
               </a>
-              <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
-              <!-- Card -->
-              <a class="card card-lg card-transition bg-soft-success shadow-none h-100" href="#">
-                <div class="card-header">
-                  <div class="d-flex align-items-center">
-                    <h5 class="card-title text-inherit mb-0">Training</h5>
-                    <span class="badge bg-soft-secondary text-secondary rounded-pill ms-1">Coming soon</span>
-                  </div>
-                  <p class="card-text text-body">What's better than documentation? Training sessions for stakeholders.</p>
-                </div>
-                <div class="card-body">
-                  <img class="card-img" src="/assets/images/frame-layouts.svg" alt="Image Description" />
-                </div>
-              </a>
-              <!-- End Card -->
-            </div>
-            <!-- End Col -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://datajournal.datakyu.co/">Blog</a></li>
+                <li>
+                  <a class="dropdown-item" href="/resources/sample-code-generator.html">Google Analytics 4 Sample Code
+                    Generator</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/resources/google-tag-manager-container-tempaltes.html">Google Tag
+                    Manager Container Templates</a>
+                </li>
+                <li style="padding-left: 1rem">
+                  <hr class="dropdown-divider" />
+                  Coming Soon
+                </li>
+                <li><a class="dropdown-item" href="/resources/looker-studio-templates.html">Looker Studio Dashboard
+                    Templates</a></li>
+              </ul>
+            </li>
           </div>
-          <!-- End Row -->
-
-          <!-- Info -->
-          <div class="text-center">
-            <p class="mb-0">Have a question?</p>
-            <a class="link" href="#contact_sales">Contact our sales team <i class="bi-chevron-right small ms-1"></i></a>
-          </div>
-          <!-- End Info -->
         </div>
-        <!-- End Blog -->
-      </section>
-
-      <section id="pricing">
-        <!-- Pricing -->
-        <div class="container content-space-1">
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="hero">
+      <!-- Hero -->
+      <div>
+        <div class="container position-relative zi-2 content-space-b-1 content-space-t-2 content-space-md-3">
           <!-- Heading -->
-          <div class="w-lg-65 text-center mx-lg-auto mb-7">
-            <h3>There is something for everyone.</h3>
-            <p class="fs-6">Start building your business' data-driven future.</p>
+          <div class="w-lg-75 text-center mx-lg-auto mb-7">
+            <h1 class="display-3 text-green mb-md-5">Web Analytics <span class="text-warning">Services</span></h1>
+            <p class="lead text-white-70 text-black">
+              You build it, we track it! Let us help you build a comprehensive understanding of your business' online
+              visitors.
+            </p>
           </div>
           <!-- End Heading -->
 
-          <div class="row align-items-sm-center col-sm-divider mb-5 mb-sm-10">
-            <div class="col-sm-6 col-md-4 offset-md-2" data-aos="zoom-in">
-              <div class="text-center">
-                <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-money-profits.svg" alt="Image Description" />
+          <div class="text-center mx-auto mb-7" style="max-width: 32rem">
+            <button class="btn btn-primary cta" id="marketing_websites" data-lead-capture-modal-button>Contact
+              us</button>
+          </div>
 
-                <div class="text-primary fw-bold">
-                  <span class="fs-4 align-top">*$</span>
-                  <span class="display-1">2000</span>
-                  <span class="fs-6">.00</span>
-                </div>
-
-                <p class="text-muted">Starting from</p>
+          <!-- Code Editor -->
+          <div class="code-editor mx-auto" style="width: 46rem">
+            <div class="code-editor-container">
+              <!-- Line Numbers -->
+              <div class="code-editor-line-numbers">
+                <span class="code-editor-line-numbers-item">1</span>
+                <span class="code-editor-line-numbers-item">2</span>
+                <span class="code-editor-line-numbers-item">3</span>
+                <span class="code-editor-line-numbers-item">4</span>
+                <span class="code-editor-line-numbers-item">5</span>
+                <span class="code-editor-line-numbers-item">6</span>
+                <span class="code-editor-line-numbers-item">7</span>
+                <span class="code-editor-line-numbers-item">8</span>
+                <span class="code-editor-line-numbers-item">9</span>
+                <span class="code-editor-line-numbers-item">10</span>
+                <span class="code-editor-line-numbers-item">11</span>
+                <span class="code-editor-line-numbers-item">12</span>
+                <span class="code-editor-line-numbers-item">13</span>
+                <span class="code-editor-line-numbers-item">14</span>
+                <span class="code-editor-line-numbers-item">15</span>
               </div>
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm-6">
-              <div class="ps-sm-3 ps-md-5">
+              <!-- End Line Numbers -->
+              <!-- Typing Area -->
+              <div class="code-editor-typing-area">
                 <div class="mb-4">
-                  <h5>Our package includes:</h5>
+                  <span class="text-muted">// gtag.js</span>
                 </div>
 
-                <!-- List Checked -->
-                <ul class="list-checked list-checked-primary mb-0">
-                  <li class="list-checked-item">
-                    1 website
-                    <i
-                      class="bi-info-circle text-muted"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="The number of teammates that can access your Space workspace"></i>
-                  </li>
-                  <li class="list-checked-item">2 Landing Pages</li>
-                  <li class="list-checked-item">
-                    10 events
-                    <i
-                      class="bi-info-circle text-muted"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Track potential sales, such as a bid, deal or proposal."></i>
-                  </li>
-                  <li class="list-checked-item">
-                    Executive Dashboard
-                    <i
-                      class="bi-info-circle text-muted"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="top"
-                      title="Programmatically manage Segment workspaces, sources, destinations, and more"></i>
-                  </li>
-                </ul>
-                <!-- End List Checked -->
-                <p class="text-muted pt-3">
-                  Please note that the package's price as well as the included services change based on given requirements. Our services start from
-                  $2000.
+                <div class="gtagtyped"></div>
+                <div class="gtag2typed"></div>
+              </div>
+              <!-- End Typing Area -->
+
+              <!-- Typing Area -->
+              <div class="code-editor-typing-area">
+                <div class="mb-4">
+                  <span class="text-muted">// Segment</span>
+                </div>
+                <div class="segmenttyped"></div>
+                <div class="segment2typed"></div>
+              </div>
+              <!-- End Typing Area -->
+            </div>
+          </div>
+        </div>
+        <!-- End Code Editor -->
+      </div>
+      <!-- End Hero -->
+    </section>
+
+    <div class="border-top mx-auto" style="max-width: 25rem"></div>
+    <section id="what_we_do">
+      <div class="w-lg-65 text-center mx-lg-auto mb-7">
+        <h2 class="display-5 text-green mb-md-5">What we do</h2>
+        <p class="fs-6">We build and implement measurement plans that help you answer the right business questions.</p>
+      </div>
+
+      <!-- Features -->
+      <div class="container content-space-1">
+        <div class="w-lg-65 mb-7">
+          <h3 class="h4">Implementation Services</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-7">
+            <!-- Media -->
+            <div class="d-sm-flex">
+              <div class="flex-shrink-0 mb-3 mb-sm-0">
+                <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-to-do.svg" alt="Image Description" />
+              </div>
+
+              <div class="flex-grow-1 ms-sm-5">
+                <span class="text-cap">Understand what you are tracking</span>
+                <h5>Measurement Plan</h5>
+                <p>Which user actions if tracked can help us track our KPIs?</p>
+              </div>
+            </div>
+            <!-- End Media -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-md-6 mb-3 mb-md-7">
+            <!-- Media -->
+            <div class="d-sm-flex">
+              <div class="flex-shrink-0 mb-3 mb-sm-0">
+                <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-project-development.svg"
+                  alt="Image Description" />
+              </div>
+
+              <div class="flex-grow-1 ms-sm-5">
+                <span class="text-cap">Understand which tools to use</span>
+                <h5>Implementation Roadmap</h5>
+                <p>Which tools would be ideal for my tracking? How long would implementation take?</p>
+              </div>
+            </div>
+            <!-- End Media -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-7">
+            <!-- Media -->
+            <div class="d-sm-flex">
+              <div class="flex-shrink-0 mb-3 mb-sm-0">
+                <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-collaboration.svg"
+                  alt="Image Description" />
+              </div>
+
+              <div class="flex-grow-1 ms-sm-5">
+                <span class="text-cap">Understand the events being tracked</span>
+                <h5>Implementation Phase</h5>
+                <p>Do we need more context for the tracked events?</p>
+              </div>
+            </div>
+            <!-- End Media -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-md-6 mb-3 mb-md-7">
+            <!-- Media -->
+            <div class="d-sm-flex">
+              <div class="flex-shrink-0 mb-3 mb-sm-0">
+                <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-work-balance.svg"
+                  alt="Image Description" />
+              </div>
+
+              <div class="flex-grow-1 ms-sm-5">
+                <span class="text-cap">Understand which question can be answered</span>
+                <h5>Delivery Phase</h5>
+                <p>Are we generating clean data? Which questions can be answered?</p>
+              </div>
+            </div>
+            <!-- End Media -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+      <!-- End Features -->
+
+      <!-- Features Auditing -->
+      <div class="container content-space-1">
+        <!-- Heading -->
+        <div class="w-lg-65 mb-7">
+          <h3 class="h4">Auditing Services</h3>
+        </div>
+        <!-- End Heading -->
+
+        <div class="row align-items-md-center mb-5 mb-md-10">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <div class="text-center">
+              <img class="img-fluid" src="/assets/images/oc-thinking.svg" alt="Image Description"
+                style="max-width: 20rem" />
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-md-6">
+            <!-- Table -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="table-text-end">Basic</th>
+                  <th scope="col" class="table-text-end">Full</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Google Analytics 4</th>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Other Analytics Tools</th>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-muted">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Tag Manager Container</th>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-muted">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Event Triggers</th>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Event Parameters</th>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">User Properties</th>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-muted">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Filters</th>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-muted">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="table-text-end">
+                    <span class="svg-icon svg-icon-sm text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                          d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                      </svg>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- End Table -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+      <!-- End Features Auditing-->
+
+      <!-- Features -->
+      <div class="overflow-hidden">
+        <div class="container content-space-1">
+          <div class="row align-items-lg-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="pe-lg-5">
+                <!-- Heading -->
+                <div class="mb-7">
+                  <h3 class="h4">Our technology stack</h3>
+                  <p class="fs-6">Our technology stack is built to be modern and future-proof. If you can build it, we
+                    can track it!</p>
+                </div>
+                <!-- End Heading -->
+
+                <div class="d-grid gap-3">
+                  <!-- Info Block -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+                          <path
+                            d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-4">
+                      <h5>Collect data from any platform</h5>
+                      <p>Whether you want to collect data from your website, mobile application or offline systems, we
+                        can get you there.</p>
+                    </div>
+                  </div>
+                  <!-- End Info Block -->
+
+                  <!-- Info Block -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon svg-icon-sm text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-graph-up" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z" />
+                        </svg>
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-4">
+                      <h5>Visualization that matters</h5>
+                      <p>Everyone hates clutter, and so do we. That's why our dashboards are insightful and help you
+                        make descisions on the go.</p>
+                    </div>
+                  </div>
+                  <!-- End Info Block -->
+                </div>
+              </div>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-lg-6 mobile-column-reverse">
+              <!-- Tab Content -->
+              <div class="tab-content mb-7" id="codeEditorTabContent">
+                <div class="tab-pane fade show active" id="codeEditorOne" role="tabpanel"
+                  aria-labelledby="codeEditorOne-tab">
+                  <!-- Code Editor -->
+                  <div class="code-editor overflow-hidden">
+                    <div class="code-editor-container">
+                      <!-- Line Numbers -->
+                      <div class="code-editor-line-numbers">
+                        <span class="code-editor-line-numbers-item">1</span>
+                        <span class="code-editor-line-numbers-item">2</span>
+                        <span class="code-editor-line-numbers-item">3</span>
+                        <span class="code-editor-line-numbers-item">4</span>
+                        <span class="code-editor-line-numbers-item">5</span>
+                        <span class="code-editor-line-numbers-item">6</span>
+                        <span class="code-editor-line-numbers-item">7</span>
+                        <span class="code-editor-line-numbers-item">8</span>
+                        <span class="code-editor-line-numbers-item">9</span>
+                        <span class="code-editor-line-numbers-item">10</span>
+                        <span class="code-editor-line-numbers-item">11</span>
+                        <span class="code-editor-line-numbers-item">12</span>
+                        <span class="code-editor-line-numbers-item">13</span>
+                        <span class="code-editor-line-numbers-item">14</span>
+                        <span class="code-editor-line-numbers-item">15</span>
+                      </div>
+                      <!-- End Line Numbers -->
+
+                      <!-- Typing Area -->
+                      <div class="code-editor-typing-area">
+                        <div class="mb-4">
+                          <span class="text-primary">//Tracking events with gtag</span>
+                        </div>
+
+                        <div class="mb-4">
+                          <span>gtag(</span>
+                          <div class="ps-3"><span class="text-primary">"event",</span></div>
+                          <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                          <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span>
+                          </div>
+                          <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                          <div><span>});</span></div>
+                        </div>
+
+                        <div class="gtagNavTyped"></div>
+
+                        <div class="mb-4">
+                          <span>gtag(</span>
+                          <div class="ps-3"><span class="text-primary">"event",</span></div>
+                          <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                          <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
+                          <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer-Webinar"</span>
+                          </div>
+                          <div><span>});</span></div>
+                        </div>
+                      </div>
+                      <!-- End Typing Area -->
+                    </div>
+                  </div>
+                  <!-- End Code Editor -->
+                </div>
+
+                <div class="tab-pane fade" id="codeEditorTwo" role="tabpanel" aria-labelledby="codeEditorTwo-tab">
+                  <!-- Code Editor -->
+                  <div class="code-editor overflow-hidden">
+                    <div class="code-editor-container">
+                      <!-- Line Numbers -->
+                      <div class="code-editor-line-numbers">
+                        <span class="code-editor-line-numbers-item">1</span>
+                        <span class="code-editor-line-numbers-item">2</span>
+                        <span class="code-editor-line-numbers-item">3</span>
+                        <span class="code-editor-line-numbers-item">4</span>
+                        <span class="code-editor-line-numbers-item">5</span>
+                        <span class="code-editor-line-numbers-item">6</span>
+                        <span class="code-editor-line-numbers-item">7</span>
+                        <span class="code-editor-line-numbers-item">8</span>
+                        <span class="code-editor-line-numbers-item">9</span>
+                        <span class="code-editor-line-numbers-item">10</span>
+                        <span class="code-editor-line-numbers-item">11</span>
+                        <span class="code-editor-line-numbers-item">12</span>
+                        <span class="code-editor-line-numbers-item">13</span>
+                        <span class="code-editor-line-numbers-item">14</span>
+                        <span class="code-editor-line-numbers-item">15</span>
+                      </div>
+                      <!-- End Line Numbers -->
+
+                      <!-- Typing Area -->
+                      <div class="code-editor-typing-area">
+                        <div class="mb-4">
+                          <span class="text-primary">window.dataLayer = window.dataLayer || [];</span>
+                        </div>
+
+                        <div class="mb-4">
+                          <span>window.dataLayer.push({</span>
+                          <div class="ps-3"><span class="text-primary">"event"</span><span>:"submitted_form",</span>
+                          </div>
+                          <div class="ps-3"><span class="text-primary">"form_id"</span><span>:"contact_form",</span>
+                          </div>
+                          <div class="ps-3"><span class="text-primary">"session_number"</span><span>:4</span></div>
+                          <div><span>});</span></div>
+                        </div>
+
+                        <div class="mb-4">
+                          <span>window.dataLayer.push({</span>
+                          <div class="ps-3"><span class="text-primary">"event"</span><span>:"generate_lead",</span>
+                          </div>
+                          <div class="ps-3"><span class="text-primary">"page"</span><span>:"/contact-us/",</span></div>
+                          <div class="ps-3"><span class="text-primary">"campaign"</span><span>:"Summer Webinar"</span>
+                          </div>
+                          <div><span>});</span></div>
+                        </div>
+                      </div>
+                      <!-- End Typing Area -->
+                    </div>
+                  </div>
+                  <!-- End Code Editor -->
+                </div>
+
+                <div class="tab-pane fade" id="codeEditorThree" role="tabpanel" aria-labelledby="codeEditorThree-tab">
+                  <!-- Code Editor -->
+                  <div class="code-editor overflow-hidden">
+                    <div class="code-editor-container">
+                      <!-- Line Numbers -->
+                      <div class="code-editor-line-numbers">
+                        <span class="code-editor-line-numbers-item">1</span>
+                        <span class="code-editor-line-numbers-item">2</span>
+                        <span class="code-editor-line-numbers-item">3</span>
+                        <span class="code-editor-line-numbers-item">4</span>
+                        <span class="code-editor-line-numbers-item">5</span>
+                        <span class="code-editor-line-numbers-item">6</span>
+                        <span class="code-editor-line-numbers-item">7</span>
+                        <span class="code-editor-line-numbers-item">8</span>
+                        <span class="code-editor-line-numbers-item">9</span>
+                        <span class="code-editor-line-numbers-item">10</span>
+                        <span class="code-editor-line-numbers-item">11</span>
+                        <span class="code-editor-line-numbers-item">12</span>
+                        <span class="code-editor-line-numbers-item">13</span>
+                        <span class="code-editor-line-numbers-item">14</span>
+                        <span class="code-editor-line-numbers-item">15</span>
+                      </div>
+                      <!-- End Line Numbers -->
+
+                      <!-- Typing Area -->
+                      <div class="code-editor-typing-area">
+                        <div class="mb-4">
+                          <span class="text-primary">// Tracking events with Segment</span>
+                        </div>
+
+                        <div class="mb-4">
+                          <span>analytics.track(</span>
+                          <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                          <div class="ps-3"><span class="text-primary">form_id</span>:<span>"contact_form",</span></div>
+                          <div class="ps-3"><span class="text-primary">session_number</span>:<span>4</span></div>
+                          <div><span>});</span></div>
+                        </div>
+
+                        <div class="mb-4">
+                          <span>analytics.track(</span>
+                          <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                          <div class="ps-3"><span class="text-primary">page</span>:<span>"/contact-us/",</span></div>
+                          <div class="ps-3"><span class="text-primary">campaign</span>:<span>"Summer Webinar"</span>
+                          </div>
+                          <div><span>});</span></div>
+                        </div>
+                      </div>
+                      <!-- End Typing Area -->
+                    </div>
+                  </div>
+                  <!-- End Code Editor -->
+                </div>
+
+                <div class="tab-pane fade" id="codeEditorFour" role="tabpanel" aria-labelledby="codeEditorFour-tab">
+                  <!-- Code Editor -->
+                  <div class="code-editor overflow-hidden">
+                    <div class="code-editor-container">
+                      <!-- Line Numbers -->
+                      <div class="code-editor-line-numbers">
+                        <span class="code-editor-line-numbers-item">1</span>
+                        <span class="code-editor-line-numbers-item">2</span>
+                        <span class="code-editor-line-numbers-item">3</span>
+                        <span class="code-editor-line-numbers-item">4</span>
+                        <span class="code-editor-line-numbers-item">5</span>
+                        <span class="code-editor-line-numbers-item">6</span>
+                        <span class="code-editor-line-numbers-item">7</span>
+                        <span class="code-editor-line-numbers-item">8</span>
+                        <span class="code-editor-line-numbers-item">9</span>
+                        <span class="code-editor-line-numbers-item">10</span>
+                        <span class="code-editor-line-numbers-item">11</span>
+                        <span class="code-editor-line-numbers-item">12</span>
+                        <span class="code-editor-line-numbers-item">13</span>
+                        <span class="code-editor-line-numbers-item">14</span>
+                        <span class="code-editor-line-numbers-item">15</span>
+                      </div>
+                      <!-- End Line Numbers -->
+
+                      <!-- Typing Area -->
+                      <div class="code-editor-typing-area">
+                        <div class="mb-4">
+                          <span class="text-primary">// Tracking events with Mixpanel</span>
+                        </div>
+
+                        <div class="mb-4">
+                          <span>mixpanel.track(</span>
+                          <div class="ps-3"><span class="text-primary">"submitted_form"</span><span>,{</span></div>
+                          <div class="ps-3"><span class="text-primary">"form_id"</span>:<span>"contact_form",</span>
+                          </div>
+                          <div class="ps-3"><span class="text-primary">"session_number"</span>:<span>4</span></div>
+                          <div><span>});</span></div>
+                        </div>
+                        <div class="mb-4">
+                          <span>mixpanel.track(</span>
+                          <div class="ps-3"><span class="text-primary">"generate_lead"</span><span>,{</span></div>
+                          <div class="ps-3"><span class="text-primary">"page"</span>:<span>"/contact-us/",</span></div>
+                          <div class="ps-3"><span class="text-primary">"campaign"</span>:<span>"Summer Webinar"</span>
+                          </div>
+                          <div><span>});</span></div>
+                        </div>
+                      </div>
+                      <!-- End Typing Area -->
+                    </div>
+                  </div>
+                  <!-- End Code Editor -->
+                </div>
+
+                <div class="tab-pane fade" id="codeEditorFive" role="tabpanel" aria-labelledby="codeEditorFive-tab">
+                  <!-- Code Editor -->
+                  <div class="code-editor overflow-hidden">
+                    <div class="code-editor-container">
+                      <!-- Typing Area -->
+                      <div class="code-editor-typing-area w-100 p-3">
+                        <div class="mb-4">
+                          <img src="/assets/images/looker_sutdio_sample.png" class="w-100 p-3" alt="" />
+                        </div>
+                      </div>
+                      <!-- End Typing Area -->
+                    </div>
+                  </div>
+                  <!-- End Code Editor -->
+                </div>
+              </div>
+              <!-- End Tab Content -->
+
+              <!-- Nav Tabs -->
+              <ul class="nav nav-justified align-items-center" id="codeEditorTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="codeEditorOne-tab" href="#codeEditorOne" data-bs-toggle="tab"
+                    data-bs-target="#codeEditorOne" role="tab" aria-controls="codeEditorOne" aria-selected="true">
+                    <!-- SVG -->
+                    <img src="/assets/images/google-analytics-4.svg" width="38" height="39" alt="Google Analytics 4" />
+                    <!-- End SVG -->
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="codeEditorTwo-tab" href="#codeEditorTwo" data-bs-toggle="tab"
+                    data-bs-target="#codeEditorTwo" role="tab" aria-controls="codeEditorTwo" aria-selected="false">
+                    <!-- SVG -->
+                    <img src="/assets/images/google-tag-manager.svg" width="38" height="39" alt="Google Tag Manager" />
+                    <!-- End SVG -->
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="codeEditorThree-tab" href="#codeEditorThree" data-bs-toggle="tab"
+                    data-bs-target="#codeEditorThree" role="tab" aria-controls="codeEditorThree" aria-selected="false">
+                    <!-- SVG -->
+                    <img src="/assets/images/segment.svg" width="38" height="39" alt="Segment" />
+                    <!-- End SVG -->
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="codeEditorFour-tab" href="#codeEditorFour" data-bs-toggle="tab"
+                    data-bs-target="#codeEditorFour" role="tab" aria-controls="codeEditorFour" aria-selected="false">
+                    <!-- SVG -->
+                    <img src="/assets/images/mixpanel.svg" width="38" height="39" alt="Mixpanel" />
+                    <!-- End SVG -->
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="codeEditorFive-tab" href="#codeEditorFive" data-bs-toggle="tab"
+                    data-bs-target="#codeEditorFive" role="tab" aria-controls="codeEditorFive" aria-selected="false">
+                    <!-- SVG -->
+                    <img src="/assets/images/looker.svg" width="38" height="39" alt="Looker Studio" />
+                    <!-- End SVG -->
+                  </a>
+                </li>
+              </ul>
+              <!-- End Nav Tabs -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+      </div>
+      <!-- End Features -->
+    </section>
+
+    <section id="why_work_with_us">
+      <!-- Step -->
+      <div class="container content-space-1">
+        <!-- Heading -->
+        <div class="w-lg-65 mb-7">
+          <span class="text-cap">Why work with us</span>
+          <h3 class="text-primary">You're only as strong as your analytics</h3>
+          <p class="fs-6">Let us help you build an analytics infrastucture that scales as your business does.</p>
+        </div>
+        <!-- End Heading -->
+
+        <!-- Step -->
+        <ul class="step step-md">
+          <li class="step-item">
+            <div class="step-content-wrapper">
+              <span class="step-icon step-icon-soft-primary">1</span>
+              <div class="step-content">
+                <h6 class="step-title">Less hypothetical - more factual</h6>
+                <p class="step-text">We work on building a measurement plan that built on answering curcial business
+                  questions.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="step-item">
+            <div class="step-content-wrapper">
+              <span class="step-icon step-icon-soft-primary">2</span>
+              <div class="step-content">
+                <h6 class="step-title">Less talk - more tracking</h6>
+                <p class="step-text">
+                  We prefer to let our work do the talking. We work on building a datastream that tracks all the
+                  business-crucial events with high
+                  reliability.
                 </p>
               </div>
             </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
+          </li>
 
-          <div class="mx-auto" style="max-width: 31.25rem">
-            <!-- Alert -->
-            <div class="alert alert-soft-primary" role="alert" id="contact_sales">
-              <div class="d-sm-flex align-items-sm-center">
-                <div class="flex-shrink-0 mb-3 mb-sm-0">
-                  <span class="svg-icon text-primary mb-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-lightning-charge-fill"
-                      viewBox="0 0 16 16">
-                      <path
-                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
-                    </svg>
-                  </span>
-                </div>
-
-                <div class="flex-grow-1 text-dark ms-sm-3 mb-3 mb-sm-0">Do you have a question? Drop us a message!</div>
-
-                <div class="flex-shrink-0 ms-sm-3">
-                  <button class="btn btn-primary cta" id="marketing_websites" data-lead-capture-modal-button>Contact us</button>
-                </div>
+          <li class="step-item">
+            <div class="step-content-wrapper">
+              <span class="step-icon step-icon-soft-primary">3</span>
+              <div class="step-content">
+                <h6 class="step-title">Scale-friendly infrastucture</h6>
+                <p class="step-text">
+                  We help you estabilish a tracking infrastructure that scales with your business so growth is never an
+                  issue.
+                </p>
               </div>
             </div>
-            <!-- End Alert -->
-          </div>
-        </div>
-        <!-- End Pricing -->
-      </section>
-
-      <section id="FAQ">
-        <!-- FAQ -->
-        <div class="container content-space-1">
-          <div class="text-center">
-            <img class="mb-5" src="/assets/images/oc-looking-for-answers.svg" alt="Illustration" style="max-width: 15rem" />
-          </div>
-
-          <!-- Heading -->
-          <div class="w-lg-65 text-center mx-lg-auto mb-7">
-            <h3>Frequently Asked Questions</h3>
-          </div>
-          <!-- End Heading -->
-
-          <!-- Accordion -->
-          <div class="w-lg-85 mx-lg-auto mb-7">
-            <div class="accordion accordion-flush" id="accordionFAQEg1">
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingOneEg1">
-                  <a
-                    class="accordion-button"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOneEg1"
-                    aria-expanded="true"
-                    aria-controls="collapseOneEg1">
-                    How does the auditing and implementation package works?
-                  </a>
-                </div>
-                <div id="collapseOneEg1" class="accordion-collapse collapse show" aria-labelledby="headingOneEg1" data-bs-parent="#accordionFAQEg1">
-                  <div class="accordion-body">
-                    The auditing and implementation package starts at <span class="highlight">$2000</span>. This is the starting price for regular
-                    marketing websites. The prices changes based on the nature of business (SaaS or Ecommerce...) and the total number of pages to
-                    track as well as the total number of events to track. If you have any questions, please reach out to our sales team.
-                  </div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingTwoEg1">
-                  <a
-                    class="accordion-button collapsed"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwoEg1"
-                    aria-expanded="false"
-                    aria-controls="collapseTwoEg1">
-                    Do you offer ongoing support for implementation?
-                  </a>
-                </div>
-                <div id="collapseTwoEg1" class="accordion-collapse collapse" aria-labelledby="headingTwoEg1" data-bs-parent="#accordionFAQEg1">
-                  <div class="accordion-body">
-                    We don't necessarily offer any ongoing support after the implementation phase is done. However, if you do have a need for this,
-                    please reach out to our sales team and we can reach an understanding. Note that we do offer documentation for the work we conduct
-                    as well as offer help and support during the implementation phase.
-                  </div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingThreeEg1">
-                  <a
-                    class="accordion-button collapsed"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThreeEg1"
-                    aria-expanded="false"
-                    aria-controls="collapseThreeEg1">
-                    Do you offer audting and implementation services for mobile applications?
-                  </a>
-                </div>
-                <div id="collapseThreeEg1" class="accordion-collapse collapse" aria-labelledby="headingThreeEg1" data-bs-parent="#accordionFAQEg1">
-                  <div class="accordion-body">
-                    Yes, we do. If you have an Android application, an iOS application or a cross-plarform application, we can help you track your
-                    app's performance and build a solid data foundation.
-                  </div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingFourEg1">
-                  <a
-                    class="accordion-button collapsed"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFourEg1"
-                    aria-expanded="false"
-                    aria-controls="collapseFourEg1">
-                    Can I get only the auditing services without any implementation? Or vice versa?
-                  </a>
-                </div>
-                <div id="collapseFourEg1" class="accordion-collapse collapse" aria-labelledby="headingFourEg1" data-bs-parent="#accordionFAQEg1">
-                  <div class="accordion-body">
-                    If you are looking for help auditing your current analytics set up, our <span class="highlight">consulting services</span> are
-                    better suited for you. If you need help implementing web anaylicts on your website or website, please reach out to our sales team
-                    and they can help build a package most suited for your needs.
-                  </div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingFiveEg1">
-                  <a
-                    class="accordion-button collapsed"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFiveEg1"
-                    aria-expanded="false"
-                    aria-controls="collapseFiveEg1">
-                    Can I get a dashboard built without purchasing the auditing & implementation package?
-                  </a>
-                </div>
-                <div id="collapseFiveEg1" class="accordion-collapse collapse" aria-labelledby="headingFiveEg1" data-bs-parent="#accordionFAQEg1">
-                  <div class="accordion-body">Yes, you can. Please check our <span class="highlight">data visualization</span> services.</div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-
-              <!-- Accordion Item -->
-              <div class="accordion-item">
-                <div class="accordion-header" id="headingSixEg1">
-                  <a
-                    class="accordion-button collapsed"
-                    role="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSixEg1"
-                    aria-expanded="false"
-                    aria-controls="collapseSixEg1">
-                    How long does does it take to complete the audit and implementation?
-                  </a>
-                </div>
-                <div id="collapseSixEg1" class="accordion-collapse collapse" aria-labelledby="headingSixEg1" data-bs-parent="#accordionFAQEg1">
-                  <div class="accordion-body">
-                    The time it takes to deliver the audit and implementation varies based on the size and complexity of the work. After the initial
-                    call, our team will be able to provide you with a timeline for both phases. We will share with you the timeline and make sure to
-                    start working once we have a signoff.
-                  </div>
-                </div>
-              </div>
-              <!-- End Accordion Item -->
-            </div>
-          </div>
-          <!-- End Accordion -->
-
-          <!-- Info -->
-          <div class="text-center">
-            <p class="mb-0">Still have questions?</p>
-            <button class="btn btn-primary cta" id="marketing_websites" data-lead-capture-modal-button>Contact us</button>
-          </div>
-          <!-- End Info -->
-        </div>
-        <!-- End FAQ -->
-      </section>
-      <dialog data-lead-capture-modal>
-        <div class="container d-flex flex-column">
-          <div class="d-flex justify-content-end">
-            <span data-close-lead-capture-modal></span>
-          </div>
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-              region: "na1",
-              portalId: "44171646",
-              formId: "357a2ea7-c337-419e-b440-c454bb6608bd",
-            });
-          </script>
-        </div>
-      </dialog>
-    </main>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="text-muted">© 2022 Datakyu Inc.</span>
+          </li>
+        </ul>
+        <!-- End Step -->
       </div>
-    </footer>
-    <!-- ========== END FOOTER ========== -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="/assets/js/general_files/typed.js"></script>
-    <script src="/assets/js/tracking/auditing-and-implementation.js" type="module"></script>
-    <script>
-      "use strict";
-      let techStackDiv = document.querySelector("div.col-lg-6:nth-child(2)");
-      let techStackDivFlexMobileClass = techStackDiv.classList.contains("flex-mobile");
-      window.addEventListener("resize", () => {
-        // console.log("The window has been resized!");
-        let screenWidth = screen.width;
-        if (screenWidth < 820) {
-          switch (techStackDivFlexMobileClass) {
-            case true:
-              break;
-            case false:
-              techStackDiv.classList.add("flex-mobile");
-          }
-        }
-      });
+      <!-- End Step -->
+    </section>
 
-      const emptyHrefAttLinks = document.querySelectorAll('a[href="#"]');
-      emptyHrefAttLinks.forEach((emptyHrefAttLink) => {
-        emptyHrefAttLink.addEventListener("click", (event) => {
-          event.preventDefault();
-        });
+    <section id="how_we_do_it">
+      <!-- Blog -->
+      <div class="container content-space-1">
+        <!-- Heading -->
+        <div class="w-lg-65 text-center mx-lg-auto mb-7">
+          <h3>The backbone for web analytics</h3>
+          <p class="fs-6">A data-driven approach for building products and scaling campaigns.</p>
+        </div>
+        <!-- End Heading -->
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-soft-primary-light shadow-none h-100" href="#">
+              <div class="card-header">
+                <h5 class="card-title text-inherit">Documentation</h5>
+                <p class="card-text text-body">We help you build and maintain tracking systems.</p>
+              </div>
+              <div class="card-body">
+                <img class="card-img" src="/assets/images/frame-docs.svg" alt="Image Description" />
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Cole -->
+
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-soft-warning shadow-none h-100" href="#">
+              <div class="card-header">
+                <h5 class="card-title text-inherit">Tracking Code</h5>
+                <p class="card-text text-body">We build functioninng, high quality code for our traking systems.</p>
+              </div>
+              <div class="card-body">
+                <img class="card-img" src="/assets/images/frame-snippets.svg" alt="Image Description" />
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 mb-3 mb-sm-5 mb-md-7" data-aos="zoom-out">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-soft-success shadow-none h-100" href="#">
+              <div class="card-header">
+                <div class="d-flex align-items-center">
+                  <h5 class="card-title text-inherit mb-0">Training</h5>
+                  <span class="badge bg-soft-secondary text-secondary rounded-pill ms-1">Coming soon</span>
+                </div>
+                <p class="card-text text-body">What's better than documentation? Training sessions for stakeholders.</p>
+              </div>
+              <div class="card-body">
+                <img class="card-img" src="/assets/images/frame-layouts.svg" alt="Image Description" />
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+
+        <!-- Info -->
+        <div class="text-center">
+          <p class="mb-0">Have a question?</p>
+          <a class="link" href="#contact_sales">Contact our sales team <i class="bi-chevron-right small ms-1"></i></a>
+        </div>
+        <!-- End Info -->
+      </div>
+      <!-- End Blog -->
+    </section>
+
+    <section id="pricing">
+      <!-- Pricing -->
+      <div class="container content-space-1">
+        <!-- Heading -->
+        <div class="w-lg-65 text-center mx-lg-auto mb-7">
+          <h3>There is something for everyone.</h3>
+          <p class="fs-6">Start building your business' data-driven future.</p>
+        </div>
+        <!-- End Heading -->
+
+        <div class="row align-items-sm-center col-sm-divider mb-5 mb-sm-10">
+          <div class="col-sm-6 col-md-4 offset-md-2" data-aos="zoom-in">
+            <div class="text-center">
+              <img class="avatar avatar-xxl avatar-4x3" src="/assets/images/oc-money-profits.svg"
+                alt="Image Description" />
+
+              <div class="text-primary fw-bold">
+                <span class="fs-4 align-top">*$</span>
+                <span class="display-1">2000</span>
+                <span class="fs-6">.00</span>
+              </div>
+
+              <p class="text-muted">Starting from</p>
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6">
+            <div class="ps-sm-3 ps-md-5">
+              <div class="mb-4">
+                <h5>Our package includes:</h5>
+              </div>
+
+              <!-- List Checked -->
+              <ul class="list-checked list-checked-primary mb-0">
+                <li class="list-checked-item">
+                  1 website
+                  <i class="bi-info-circle text-muted" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="The number of teammates that can access your Space workspace"></i>
+                </li>
+                <li class="list-checked-item">2 Landing Pages</li>
+                <li class="list-checked-item">
+                  10 events
+                  <i class="bi-info-circle text-muted" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Track potential sales, such as a bid, deal or proposal."></i>
+                </li>
+                <li class="list-checked-item">
+                  Executive Dashboard
+                  <i class="bi-info-circle text-muted" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Programmatically manage Segment workspaces, sources, destinations, and more"></i>
+                </li>
+              </ul>
+              <!-- End List Checked -->
+              <p class="text-muted pt-3">
+                Please note that the package's price as well as the included services change based on given
+                requirements. Our services start from
+                $2000.
+              </p>
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+
+        <div class="mx-auto" style="max-width: 31.25rem">
+          <!-- Alert -->
+          <div class="alert alert-soft-primary" role="alert" id="contact_sales">
+            <div class="d-sm-flex align-items-sm-center">
+              <div class="flex-shrink-0 mb-3 mb-sm-0">
+                <span class="svg-icon text-primary mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="flex-grow-1 text-dark ms-sm-3 mb-3 mb-sm-0">Do you have a question? Drop us a message!</div>
+
+              <div class="flex-shrink-0 ms-sm-3">
+                <button class="btn btn-primary cta" id="marketing_websites" data-lead-capture-modal-button>Contact
+                  us</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Alert -->
+        </div>
+      </div>
+      <!-- End Pricing -->
+    </section>
+
+    <section id="FAQ">
+      <!-- FAQ -->
+      <div class="container content-space-1">
+        <div class="text-center">
+          <img class="mb-5" src="/assets/images/oc-looking-for-answers.svg" alt="Illustration"
+            style="max-width: 15rem" />
+        </div>
+
+        <!-- Heading -->
+        <div class="w-lg-65 text-center mx-lg-auto mb-7">
+          <h3>Frequently Asked Questions</h3>
+        </div>
+        <!-- End Heading -->
+
+        <!-- Accordion -->
+        <div class="w-lg-85 mx-lg-auto mb-7">
+          <div class="accordion accordion-flush" id="accordionFAQEg1">
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingOneEg1">
+                <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOneEg1"
+                  aria-expanded="true" aria-controls="collapseOneEg1">
+                  How does the auditing and implementation package works?
+                </a>
+              </div>
+              <div id="collapseOneEg1" class="accordion-collapse collapse show" aria-labelledby="headingOneEg1"
+                data-bs-parent="#accordionFAQEg1">
+                <div class="accordion-body">
+                  The auditing and implementation package starts at <span class="highlight">$2000</span>. This is the
+                  starting price for regular
+                  marketing websites. The prices changes based on the nature of business (SaaS or Ecommerce...) and the
+                  total number of pages to
+                  track as well as the total number of events to track. If you have any questions, please reach out to
+                  our sales team.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingTwoEg1">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwoEg1" aria-expanded="false" aria-controls="collapseTwoEg1">
+                  Do you offer ongoing support for implementation?
+                </a>
+              </div>
+              <div id="collapseTwoEg1" class="accordion-collapse collapse" aria-labelledby="headingTwoEg1"
+                data-bs-parent="#accordionFAQEg1">
+                <div class="accordion-body">
+                  We don't necessarily offer any ongoing support after the implementation phase is done. However, if you
+                  do have a need for this,
+                  please reach out to our sales team and we can reach an understanding. Note that we do offer
+                  documentation for the work we conduct
+                  as well as offer help and support during the implementation phase.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingThreeEg1">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThreeEg1" aria-expanded="false" aria-controls="collapseThreeEg1">
+                  Do you offer audting and implementation services for mobile applications?
+                </a>
+              </div>
+              <div id="collapseThreeEg1" class="accordion-collapse collapse" aria-labelledby="headingThreeEg1"
+                data-bs-parent="#accordionFAQEg1">
+                <div class="accordion-body">
+                  Yes, we do. If you have an Android application, an iOS application or a cross-plarform application, we
+                  can help you track your
+                  app's performance and build a solid data foundation.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFourEg1">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFourEg1" aria-expanded="false" aria-controls="collapseFourEg1">
+                  Can I get only the auditing services without any implementation? Or vice versa?
+                </a>
+              </div>
+              <div id="collapseFourEg1" class="accordion-collapse collapse" aria-labelledby="headingFourEg1"
+                data-bs-parent="#accordionFAQEg1">
+                <div class="accordion-body">
+                  If you are looking for help auditing your current analytics set up, our <span
+                    class="highlight">consulting services</span> are
+                  better suited for you. If you need help implementing web anaylicts on your website or website, please
+                  reach out to our sales team
+                  and they can help build a package most suited for your needs.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingFiveEg1">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFiveEg1" aria-expanded="false" aria-controls="collapseFiveEg1">
+                  Can I get a dashboard built without purchasing the auditing & implementation package?
+                </a>
+              </div>
+              <div id="collapseFiveEg1" class="accordion-collapse collapse" aria-labelledby="headingFiveEg1"
+                data-bs-parent="#accordionFAQEg1">
+                <div class="accordion-body">Yes, you can. Please check our <span class="highlight">data
+                    visualization</span> services.</div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+
+            <!-- Accordion Item -->
+            <div class="accordion-item">
+              <div class="accordion-header" id="headingSixEg1">
+                <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSixEg1" aria-expanded="false" aria-controls="collapseSixEg1">
+                  How long does does it take to complete the audit and implementation?
+                </a>
+              </div>
+              <div id="collapseSixEg1" class="accordion-collapse collapse" aria-labelledby="headingSixEg1"
+                data-bs-parent="#accordionFAQEg1">
+                <div class="accordion-body">
+                  The time it takes to deliver the audit and implementation varies based on the size and complexity of
+                  the work. After the initial
+                  call, our team will be able to provide you with a timeline for both phases. We will share with you the
+                  timeline and make sure to
+                  start working once we have a signoff.
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion Item -->
+          </div>
+        </div>
+        <!-- End Accordion -->
+
+        <!-- Info -->
+        <div class="text-center">
+          <p class="mb-0">Still have questions?</p>
+          <button class="btn btn-primary cta" id="marketing_websites" data-lead-capture-modal-button>Contact us</button>
+        </div>
+        <!-- End Info -->
+      </div>
+      <!-- End FAQ -->
+    </section>
+    <dialog data-lead-capture-modal>
+      <div class="container d-flex flex-column">
+        <div class="d-flex justify-content-end">
+          <span data-close-lead-capture-modal></span>
+        </div>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "44171646",
+            formId: "357a2ea7-c337-419e-b440-c454bb6608bd",
+          });
+        </script>
+      </div>
+    </dialog>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="d-flex flex-wrap justify-content-start align-items-center py-3 my-4 border-top">
+    <div class="col-md-3 d-flex align-items-center ms-3">
+      <span class="text-muted">© 2024 Datakyu Inc.</span>
+    </div>
+    <div class="col-md-3 d-flex align-items-center">
+      <a class="text-muted" href="/policies/cookie-policy.html">Our Cookies Policy</a>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="/assets/js/general_files/typed.js"></script>
+  <script src="/assets/js/tracking/auditing-and-implementation.js" type="module"></script>
+  <script>
+    "use strict";
+    let techStackDiv = document.querySelector("div.col-lg-6:nth-child(2)");
+    let techStackDivFlexMobileClass = techStackDiv.classList.contains("flex-mobile");
+    window.addEventListener("resize", () => {
+      // console.log("The window has been resized!");
+      let screenWidth = screen.width;
+      if (screenWidth < 820) {
+        switch (techStackDivFlexMobileClass) {
+          case true:
+            break;
+          case false:
+            techStackDiv.classList.add("flex-mobile");
+        }
+      }
+    });
+
+    const emptyHrefAttLinks = document.querySelectorAll('a[href="#"]');
+    emptyHrefAttLinks.forEach((emptyHrefAttLink) => {
+      emptyHrefAttLink.addEventListener("click", (event) => {
+        event.preventDefault();
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
