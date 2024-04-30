@@ -1,8 +1,10 @@
 function enhanceUserProfile(identification) {
     if (identification && identification.type !== "isp") {
-        var reveal = identification.company;
+        const reveal = identification.company;
 
         window.dataLayer = window.dataLayer || [];
+
+        console.log("Entered the enhanceUserProfile function");
 
         dataLayer.push({
             event: 'snitcher_data_ready',
@@ -22,6 +24,8 @@ function enhanceUserProfile(identification) {
                 number_of_employees: reveal.employee_range || undefined,
             }
         });
+
+        console.log("Executed after the dataLayer");
     }
 
 
