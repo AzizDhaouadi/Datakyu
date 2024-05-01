@@ -36,3 +36,5 @@ window.SpotterSettings = {
     token: "1447|QbGVdI2HTR0eo2XXXQuHeUYqfvxS5ORuAjn98u3zcf0bb21a",
     callback: enhanceUserProfile,
 };
+
+console.log("Script loaded");
