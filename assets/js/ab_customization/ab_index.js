@@ -1,4 +1,5 @@
 function enhanceUserProfile(identification) {
+    console.log("Ennetered the function before the identification check")
     if (identification && identification.type !== "isp") {
         const reveal = identification.company;
 
