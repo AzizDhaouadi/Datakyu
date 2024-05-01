@@ -1,3 +1,13 @@
+!function (s, n, i, t, c, h) {
+    s.SnitchObject = i; s[i] || (s[i] = function () {
+        (s[i].q = s[i].q || []).push(arguments)
+    }); s[i].l = +new Date; c = n.createElement(t);
+    h = n.getElementsByTagName(t)[0]; c.src = '//snid.snitcher.com/8426066.js';
+    h.parentNode.insertBefore(c, h)
+}(window, document, 'snid', 'script');
+
+snid('verify', '8426066');
+
 function enhanceUserProfile(identification) {
 
     if (identification && identification.type !== "isp") {
@@ -35,13 +45,3 @@ window.SpotterSettings = {
     token: "1447|QbGVdI2HTR0eo2XXXQuHeUYqfvxS5ORuAjn98u3zcf0bb21a",
     callback: enhanceUserProfile,
 };
-
-!function (s, n, i, t, c, h) {
-    s.SnitchObject = i; s[i] || (s[i] = function () {
-        (s[i].q = s[i].q || []).push(arguments)
-    }); s[i].l = +new Date; c = n.createElement(t);
-    h = n.getElementsByTagName(t)[0]; c.src = '//snid.snitcher.com/8426066.js';
-    h.parentNode.insertBefore(c, h)
-}(window, document, 'snid', 'script');
-
-snid('verify', '8426066');
