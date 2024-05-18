@@ -26,7 +26,7 @@ nav.navbar {
     padding-top: 8rem;
 }
 
-#generatorSection{
+#generatorSection {
     width: 45%;
     max-width: max-content;
     padding-bottom: 1rem !important;
@@ -40,6 +40,7 @@ nav.navbar {
 
 #codeSection {
     font-weight: bold;
+    line-height: 2;
 }
 
 .upper_window {
@@ -69,44 +70,46 @@ nav.navbar {
     padding-left: 1rem;
 }
 
-.indent{
-    margin-left: 0.5rem;
+.indent {
+    margin-left: 1.5rem;
 }
 
 .indent-nested {
     margin-left: 1.5rem;
 }
 
-.flex_row{
+.flex_row {
     display: flex;
     justify-content: space-between;
 }
 
-.radio_align{
+.radio_align {
     display: table-cell;
     vertical-align: middle;
 }
 
-#custom_event_name_parameters_div{
+#custom_event_name_parameters_div {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.remove{
+.remove {
     display: block;
     position: relative;
     top: 0.3rem;
 }
 
-.lower_window{
+.lower_window {
     word-wrap: break-word;
 }
 
 /* Begin responsiveness */
 
 @media only screen and (max-width: 810px) {
-    #generatorSection, #codeSectionContainer {
+
+    #generatorSection,
+    #codeSectionContainer {
         width: 80%;
     }
 
@@ -121,28 +124,28 @@ nav.navbar {
         justify-content: center;
     }
 
-    .flex_row{
+    .flex_row {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: max-content;
     }
 
-    div.d-grid.mb-2 button{
+    div.d-grid.mb-2 button {
         max-width: 100% !important;
     }
 
-    div.content-space-1{
+    div.content-space-1 {
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
     }
 
-    div.content-space-1.code_window{
+    div.content-space-1.code_window {
         padding-bottom: 4rem !important;
     }
 }
 
-@media only screen and (min-width: 1080px) and (max-width: 1112px){
+@media only screen and (min-width: 1080px) and (max-width: 1112px) {
     .code_window {
         position: relative;
         right: 1rem;
