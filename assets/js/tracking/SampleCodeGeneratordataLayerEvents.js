@@ -14,6 +14,12 @@ navLinks.forEach((navLink) => {
         nav_item: navLink.textContent.trim(),
       },
     });
+    // Appending #how-it-works to the URL if a user clicks on the how it works nav link
+    if (navLink.textContent.trim().toLowerCase() === "how it works") {
+      if (!location.href.includes("how-it-works")) {
+        window.history.replaceState(null, null, `${location.href}/#how-it-works`);
+      }
+    }
   });
 });
 
@@ -35,3 +41,4 @@ accordionButtons.forEach((accordionButton) => {
     });
   });
 });
+
