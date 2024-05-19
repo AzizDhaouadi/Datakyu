@@ -89,7 +89,7 @@ const typeSampleCode = (sampleCodeContainer, sampleCode) => {
             generateButton.removeAttribute('disabled');
         }
     }
-   const eventSampleCodeTyped = new Typed(sampleCodeContainer, eventSampleCode);
+    const eventSampleCodeTyped = new Typed(sampleCodeContainer, eventSampleCode);
 }
 
 codeGeneratorForm.addEventListener("submit", (event) => {
@@ -146,10 +146,10 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                             break
                         case "gtag":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection, SeachEvents.gtagSearchEvent);    
+                            typeSampleCode(codeContainerSection, SeachEvents.gtagSearchEvent);
                             break
                         case "API":
-                            codeContainerSection.innerHTML = '';    
+                            codeContainerSection.innerHTML = '';
                             typeSampleCode(codeContainerSection, SeachEvents.apiSearchEvent);
                             break
                     }
@@ -214,15 +214,15 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     switch (chosenTrackingMedium) {
                         case "dataLayer":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasTutorialBeginEvents.dataLayerTutorialBeginEvent);
+                            typeSampleCode(codeContainerSection, saasTutorialBeginEvents.dataLayerTutorialBeginEvent);
                             break
                         case "gtag":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasTutorialBeginEvents.gtagTutorialBeginEvent);
+                            typeSampleCode(codeContainerSection, saasTutorialBeginEvents.gtagTutorialBeginEvent);
                             break
                         case "API":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasTutorialBeginEvents.apiTutorialBeginEvent);
+                            typeSampleCode(codeContainerSection, saasTutorialBeginEvents.apiTutorialBeginEvent);
                     }
                     break
 
@@ -230,14 +230,14 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     switch (chosenTrackingMedium) {
                         case "dataLayer":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasTutorialCompleteEvents.dataLayerTutorialCompleteEvent);
+                            typeSampleCode(codeContainerSection, saasTutorialCompleteEvents.dataLayerTutorialCompleteEvent);
                         case "gtag":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasTutorialCompleteEvents.dataLayerTutorialCompleteEvent);
+                            typeSampleCode(codeContainerSection, saasTutorialCompleteEvents.dataLayerTutorialCompleteEvent);
                             break
                         case "API":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasTutorialCompleteEvents.dataLayerTutorialCompleteEvent);
+                            typeSampleCode(codeContainerSection, saasTutorialCompleteEvents.dataLayerTutorialCompleteEvent);
                     }
                     break
 
@@ -245,15 +245,15 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     switch (chosenTrackingMedium) {
                         case "dataLayer":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasAddPaymentInfoEvents.dataLayerAddPaymentInfoEvent);
+                            typeSampleCode(codeContainerSection, saasAddPaymentInfoEvents.dataLayerAddPaymentInfoEvent);
                             break
                         case "gtag":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasAddPaymentInfoEvents.gtagAddPaymentInfoEvent);
+                            typeSampleCode(codeContainerSection, saasAddPaymentInfoEvents.gtagAddPaymentInfoEvent);
                             break
                         case "API":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasAddPaymentInfoEvents.apiAddPaymentInfoEvent);
+                            typeSampleCode(codeContainerSection, saasAddPaymentInfoEvents.apiAddPaymentInfoEvent);
                             break
                     }
                     break
@@ -262,15 +262,15 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     switch (chosenTrackingMedium) {
                         case "dataLayer":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasBeginCheckoutEvents.dataLayerBeginCheckoutEvent);
+                            typeSampleCode(codeContainerSection, saasBeginCheckoutEvents.dataLayerBeginCheckoutEvent);
                             break
                         case "gtag":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasBeginCheckoutEvents.gtagBeginCheckoutEvent);
+                            typeSampleCode(codeContainerSection, saasBeginCheckoutEvents.gtagBeginCheckoutEvent);
                             break
                         case "API":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasBeginCheckoutEvents.apiBeginCheckoutEvent);
+                            typeSampleCode(codeContainerSection, saasBeginCheckoutEvents.apiBeginCheckoutEvent);
                             break
                     }
                     break
@@ -279,15 +279,15 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     switch (chosenTrackingMedium) {
                         case "dataLayer":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasGenerateLeadEvents.dataLayerGenerateLeadEvent);
+                            typeSampleCode(codeContainerSection, saasGenerateLeadEvents.dataLayerGenerateLeadEvent);
                             break
                         case "gtag":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasGenerateLeadEvents.gtagGenerateLeadEvent);
+                            typeSampleCode(codeContainerSection, saasGenerateLeadEvents.gtagGenerateLeadEvent);
                             break
                         case "API":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection,saasGenerateLeadEvents.apiGenerateLeadEvent);
+                            typeSampleCode(codeContainerSection, saasGenerateLeadEvents.apiGenerateLeadEvent);
                             break
                     }
                     break
@@ -435,11 +435,11 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                             break
                         case "gtag":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection, saasCancelSubscriptionEvents.gtagCancelSubscriptionEvent); 
+                            typeSampleCode(codeContainerSection, saasCancelSubscriptionEvents.gtagCancelSubscriptionEvent);
                             break
                         case "API":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection, saasCancelSubscriptionEvents.apiCancelSubscriptionEvent); 
+                            typeSampleCode(codeContainerSection, saasCancelSubscriptionEvents.apiCancelSubscriptionEvent);
                             break
                     }
                     break
@@ -448,7 +448,7 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                     switch (chosenTrackingMedium) {
                         case "dataLayer":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection, saasRenewSubscriptionEvents.dataLayerRenewSubscriptionEvent); 
+                            typeSampleCode(codeContainerSection, saasRenewSubscriptionEvents.dataLayerRenewSubscriptionEvent);
                             break
                         case "gtag":
                             codeContainerSection.innerHTML = '';
@@ -456,7 +456,7 @@ codeGeneratorForm.addEventListener("submit", (event) => {
                             break
                         case "API":
                             codeContainerSection.innerHTML = '';
-                            typeSampleCode(codeContainerSection, saasRenewSubscriptionEvents.apiRenewSubscriptionEvent); 
+                            typeSampleCode(codeContainerSection, saasRenewSubscriptionEvents.apiRenewSubscriptionEvent);
                             break
                     }
                     break
@@ -909,4 +909,8 @@ codeGeneratorForm.addEventListener("submit", (event) => {
             custom_event_parameters: document.querySelectorAll("input.added.name").length,
         })
     }
+
+    //Change the upper window text to match the name of the requested event
+    const upperWindowText = document.querySelector('.upper_window > p');
+    upperWindowText.innerText = `${chosenEventName} Event Tracking Code`.toUpperCase();
 })
