@@ -7,13 +7,6 @@ headerCTAButtons.forEach((headerCTAButton) => {
       event: "clicked_header_cta",
       cta_text: `${e.target.textContent}`,
     });
-    swetrix.track({
-      ev: "clicked_header_cta",
-      unique: false,
-      meta: {
-        cta_text: `${e.target.textContent}`,
-      },
-    });
   });
 });
 
@@ -26,13 +19,6 @@ viewConfigurationButtons.forEach((viewConfigurationButton) => {
       event: "clicked_view_configuration_button",
       container_type: `${e.target.getAttribute("data-bs-target")}`,
     });
-    swetrix.track({
-      ev: "clicked_view_configuration_button",
-      unique: false,
-      meta: {
-        container_type: `${e.target.getAttribute("data-bs-target")}`,
-      },
-    });
   });
 });
 
@@ -44,13 +30,6 @@ replicateButtons.forEach((viewReplicatedButton) => {
     window.dataLayer.push({
       event: "clicked_replicate_button",
       template_name: `${e.target.getAttribute("href")}`,
-    });
-    swetrix.track({
-      ev: "clicked_replicate_button",
-      unique: false,
-      meta: {
-        template_name: `${e.target.getAttribute("href")}`,
-      },
     });
   });
 });
@@ -65,14 +44,6 @@ accordionItems.forEach((accordionItem) => {
       accordion_title: `${accordionItem.querySelector("h2").textContent.trim()}`,
       accordion_content: `${accordionItem.querySelector("div.accordion-body").textContent.trim()}`,
     });
-    swetrix.track({
-      ev: "clicked_accordion_item",
-      unique: false,
-      meta: {
-        accordion_title: `${accordionItem.querySelector("h2").textContent.trim()}`,
-        accordion_content: `${accordionItem.querySelector("div.accordion-body").textContent.trim()}`,
-      },
-    });
   });
 });
 
@@ -84,13 +55,6 @@ navLinks.forEach((navLink) => {
     window.dataLayer.push({
       event: "clicked_nav_link",
       nav_item: `${e.target.textContent}`,
-    });
-    swetrix.track({
-      ev: "clicked_nav_link",
-      unique: false,
-      meta: {
-        nav_item: `${e.target.textContent}`,
-      },
     });
   });
 });

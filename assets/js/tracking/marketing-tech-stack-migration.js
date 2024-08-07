@@ -9,13 +9,6 @@ navLinks.forEach((navLink) => {
       event: "clicked_nav_link",
       nav_item: navLink.textContent.trim(),
     });
-    swetrix.track({
-      ev: "clicked_nav_click",
-      unique: false,
-      meta: {
-        nav_item: navLink.textContent.trim(),
-      },
-    });
   });
 });
 
@@ -28,13 +21,6 @@ typeformElements.forEach((typeformElement) => {
       event: "initiated_contact_form",
       cta_text: e.target.textContent,
     });
-    swetrix.track({
-      ev: "initiated_contact_form",
-      unique: false,
-      meta: {
-        cta_text: e.target.textContent,
-      },
-    });
   });
 });
 
@@ -46,13 +32,6 @@ accordionElements.forEach((accordionElement) => {
     window.dataLayer.push({
       event: "clicked_accordion_button",
       accordion_title: accordionElement.textContent.trim(),
-    });
-    swetrix.track({
-      ev: "clicked_accordion_button",
-      unique: false,
-      meta: {
-        accordion_title: accordionElement.textContent.trim(),
-      },
     });
   });
 });
@@ -67,13 +46,6 @@ pricingPackages.forEach((pricingPackage) => {
         event: "revealed_price",
         service_package: event.target.closest(".form-check-row-select").querySelector("label").textContent.trim(),
       });
-      swetrix.track({
-        ev: "revealed_price",
-        unique: false,
-        meta: {
-          service_package: event.target.closest(".form-check-row-select").querySelector("label").textContent.trim(),
-        },
-      });
     }
   });
 });
@@ -83,13 +55,6 @@ window.addEventListener("message", function (event) {
     window.dataLayer.push({
       event: "captured_lead",
       form_id: event.data.id,
-    });
-    swetrix.track({
-      ev: "captured_lead",
-      unique: false,
-      meta: {
-        form_id: event.data.id,
-      },
     });
   }
 });

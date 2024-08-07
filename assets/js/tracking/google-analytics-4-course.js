@@ -4,12 +4,5 @@ window.addEventListener("message", function (event) {
       event: "course_registration",
       form_id: event.data.id,
     });
-    swetrix.track({
-      ev: "course_registration",
-      unique: false,
-      meta: {
-        form_id: event.data.id,
-      },
-    });
   }
 });

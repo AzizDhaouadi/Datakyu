@@ -64,13 +64,6 @@ window.addEventListener("message", function (event) {
       event: "captured_lead",
       form_id: event.data.id,
     });
-    swetrix.track({
-      ev: "captured_lead",
-      unique: false,
-      meta: {
-        form_id: event.data.id,
-      },
-    });
   }
 });
 

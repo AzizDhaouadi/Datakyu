@@ -9,13 +9,6 @@ navLinks.forEach((navLink) => {
       event: "clicked_nav_link",
       nav_item: navLink.textContent.trim(),
     });
-    swetrix.track({
-      ev: "clicked_nav_link",
-      unique: false,
-      meta: {
-        nav_item: navLink.textContent.trim(),
-      },
-    });
   });
 });
 
@@ -27,13 +20,6 @@ typeformElements.forEach((typeformElement) => {
     window.dataLayer.push({
       event: "initiated_contact_form",
       cta_text: e.target.textContent,
-    });
-    swetrix.track({
-      ev: "initiated_contact_form",
-      unique: false,
-      meta: {
-        cta_text: e.target.textContent,
-      },
     });
   });
 });

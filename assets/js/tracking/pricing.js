@@ -13,14 +13,6 @@ const logPackageButtonClick = (button) => {
     event: "clicked_package_button",
     package_type: button?.id,
   });
-  swetrix.track({
-    ev: "clicked_package_button",
-    unique: false,
-    meta: {
-      package_type: button?.id,
-      event_session_number: current_session_number,
-    },
-  });
 };
 
 packageButtons.forEach((packageButton) => {
@@ -42,10 +34,6 @@ contactButtons.forEach((contactButton) => {
       event: "initiated_contact_form",
       event_session_number: current_session_number,
     });
-    swetrix.track({
-      ev: "initiated_contact_form",
-      unique: false,
-    });
   });
 });
 
@@ -54,13 +42,6 @@ window.addEventListener("message", function (event) {
     window.dataLayer.push({
       event: "captured_lead",
       form_id: event.data.id,
-    });
-    swetrix.track({
-      ev: "captured_lead",
-      unique: false,
-      meta: {
-        form_id: event.data.id,
-      },
     });
   }
 });

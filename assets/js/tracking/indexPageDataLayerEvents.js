@@ -7,13 +7,6 @@ navLinks.forEach((navLink) => {
       event: "clicked_nav_link",
       nav_item: navLink.textContent.trim(),
     });
-    swetrix.track({
-      ev: "clicked_nav_link",
-      unique: false,
-      meta: {
-        nav_item: navLink.textContent.trim(),
-      },
-    });
   });
 });
 
@@ -25,13 +18,6 @@ navDropdownLinks.forEach((navDropdownLink) => {
     window.dataLayer.push({
       event: "clicked_nav_dropdown_link",
       nav_item: e.target.textContent,
-    });
-    swetrix.track({
-      ev: "clicked_nav_dropdown_link",
-      unique: false,
-      meta: {
-        nav_itemn: e.target.textContent,
-      },
     });
   });
 });
@@ -62,13 +48,6 @@ window.addEventListener("message", function (event) {
     window.dataLayer.push({
       event: "captured_lead",
       form_id: event.data.id,
-    });
-    swetrix.track({
-      ev: "captured_lead",
-      unique: false,
-      meta: {
-        form_id: event.data.id,
-      },
     });
   }
 });

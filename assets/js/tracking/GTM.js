@@ -85,12 +85,5 @@ navLinks.forEach((navLink) => {
       event: "clicked_nav_link",
       nav_item: `${e.target.textContent}`,
     });
-    swetrix.track({
-      ev: "clicked_nav_link",
-      unique: false,
-      meta: {
-        nav_item: `${e.target.textContent}`,
-      },
-    });
   });
 });

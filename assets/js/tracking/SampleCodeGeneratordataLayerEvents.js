@@ -7,13 +7,6 @@ navLinks.forEach((navLink) => {
       event: "clicked_nav_link",
       nav_item: navLink.textContent.trim(),
     });
-    swetrix.track({
-      ev: "clicked_nav_link",
-      unique: false,
-      meta: {
-        nav_item: navLink.textContent.trim(),
-      },
-    });
     // Appending #how-it-works to the URL if a user clicks on the how it works nav link
     if (navLink.textContent.trim().toLowerCase() === "how it works") {
       if (!location.href.includes("how-it-works")) {
@@ -31,13 +24,6 @@ accordionButtons.forEach((accordionButton) => {
     window.dataLayer.push({
       event: "clicked_accordion_button",
       accordion_title: accordionButton.textContent.trim(),
-    });
-    swetrix.track({
-      ev: "clicked_accordion_button",
-      unique: false,
-      meta: {
-        accordion_title: accordionButton.textContent.trim(),
-      },
     });
   });
 });
