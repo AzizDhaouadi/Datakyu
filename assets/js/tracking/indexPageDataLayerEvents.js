@@ -24,14 +24,17 @@ navDropdownLinks.forEach((navDropdownLink) => {
 
 //Fire event when user clicks on the drop a message button
 const dropMessageButton = document.querySelector("a.btn-primary[data-lead-capture-modal-button]");
-dropMessageButton.addEventListener("click", () => {
+dropMessageButton.addEventListener("click", (e) => {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "initiated_contact_form",
   });
+  analytics.track("Initiated Contact Form", {
+    cta_text: e.target.textContent,
+  });
 });
 
-//Fire event when user clicks on the different process steps
+//Fire event when user click on the different process steps
 const processSteps = document.querySelectorAll("a.step-content-wrapper");
 processSteps.forEach((processStep) => {
   processStep.addEventListener("click", (e) => {
@@ -47,6 +50,9 @@ window.addEventListener("message", function (event) {
   if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
     window.dataLayer.push({
       event: "captured_lead",
+      form_id: event.data.id,
+    });
+    analytics.track("Captured Lead", {
       form_id: event.data.id,
     });
   }

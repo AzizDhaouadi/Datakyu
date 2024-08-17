@@ -21,6 +21,9 @@ typeformElements.forEach((typeformElement) => {
       event: "initiated_contact_form",
       cta_text: e.target.textContent,
     });
+    analytics.track("Initiated Contact Form", {
+      cta_text: e.target.textContent,
+    });
   });
 });
 
@@ -54,6 +57,9 @@ window.addEventListener("message", function (event) {
   if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
     window.dataLayer.push({
       event: "captured_lead",
+      form_id: event.data.id,
+    });
+    analytics.track("Captured Lead", {
       form_id: event.data.id,
     });
   }

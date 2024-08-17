@@ -21,6 +21,9 @@ typeformElements.forEach((typeformElement) => {
       event: "initiated_contact_form",
       cta_text: e.target.textContent,
     });
+    analytics.track("Initiated Contact Form", {
+      cta_text: e.target.textContent,
+    });
   });
 });
 
@@ -33,13 +36,6 @@ accordionElements.forEach((accordionElement) => {
       event: "clicked_accordion_button",
       accordion_title: accordionElement.textContent.trim(),
     });
-    swetrix.track({
-      ev: "clicked_accordion_button",
-      unique: false,
-      meta: {
-        accordion_title: accordionElement.textContent.trim(),
-      },
-    });
   });
 });
 
@@ -49,12 +45,8 @@ window.addEventListener("message", function (event) {
       event: "captured_lead",
       form_id: event.data.id,
     });
-    swetrix.track({
-      ev: "captured_lead",
-      unique: false,
-      meta: {
-        form_id: event.data.id,
-      },
+    analytics.track("Captured Lead", {
+      form_id: event.data.id,
     });
   }
 });

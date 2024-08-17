@@ -28,11 +28,13 @@ if (contactButtons == "undefined") {
 }
 
 contactButtons.forEach((contactButton) => {
-  contactButton.addEventListener("click", () => {
+  contactButton.addEventListener("click", (e) => {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "initiated_contact_form",
-      event_session_number: current_session_number,
+    });
+    analytics.track("Initiated Contact Form", {
+      cta_text: e.target.textContent,
     });
   });
 });
@@ -41,6 +43,9 @@ window.addEventListener("message", function (event) {
   if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmitted") {
     window.dataLayer.push({
       event: "captured_lead",
+      form_id: event.data.id,
+    });
+    analytics.track("Captured Lead", {
       form_id: event.data.id,
     });
   }

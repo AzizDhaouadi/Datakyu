@@ -898,7 +898,12 @@ codeGeneratorForm.addEventListener("submit", (event) => {
             custom_code_type: chosentEventType,
             custom_code_name: chosenEventName,
             tracking_medium: chosenTrackingMedium,
-        })
+        });
+        analytics.track("Generated Code Sample", {
+            category: chosentEventType,
+            name: chosenEventName,
+            medium: chosenTrackingMedium
+        });
     } else {
         window.dataLayer = window.dataLayer || []
         window.dataLayer.push({
@@ -907,7 +912,13 @@ codeGeneratorForm.addEventListener("submit", (event) => {
             custom_code_name: codeGeneratorForm.elements["custom_event_name"].value,
             tracking_medium: chosenTrackingMedium,
             custom_event_parameters: document.querySelectorAll("input.added.name").length,
-        })
+        });
+        analytics.track("Generated Code Sample", {
+          category: chosentEventType,
+          name: codeGeneratorForm.elements["custom_event_name"].value,,
+          medium: chosenTrackingMedium,
+          generated_paramerters: document.querySelectorAll("input.added.name").length
+        });
     }
 
     //Change the upper window text to match the name of the requested event
