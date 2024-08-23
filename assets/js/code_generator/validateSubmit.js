@@ -911,7 +911,7 @@ codeGeneratorForm.addEventListener("submit", (event) => {
             custom_code_type: chosentEventType,
             custom_code_name: codeGeneratorForm.elements["custom_event_name"].value,
             tracking_medium: chosenTrackingMedium,
-            custom_event_parameters: document.querySelectorAll("input.added.name").length,
+            custom_event_parameters: document.querySelectorAll("input.added.name").length
         });
         analytics.track("Generated Code Sample", {
             category: chosentEventType,
