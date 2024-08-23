@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="/assets/css/custom-styles.css" />
     <link rel="stylesheet" href="/assets/css/theme-styles.css" />
     <link rel="stylesheet" href="/assets/css/GTM.css" />
+    <script src="../assets/js/general_files/gtmModule.js" type="module" defer></script>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
@@ -111,6 +112,21 @@
 
         a svg {
             color: #7fbca9;
+        }
+
+        dialog {
+            width: 50% !important;
+            border: none;
+            font-family: var(--bs-body-text-font);
+        }
+
+        [data-lead-capture-modal] [data-close-lead-capture-modal] {
+            width: 2rem;
+            height: 2rem;
+            background-image: url("../assets/images/ni-x.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
         }
     </style>
 
@@ -434,8 +450,8 @@
                                                 aria-expanded="false" aria-controls="collapseAllType">
                                                 View configuration
                                             </button>
-                                            <a href="/assets/download/All Properties Container.json"
-                                                class="btn btn-sm btn-outline-secondary" download>Download</a>
+                                            <a class="btn btn-sm btn-outline-secondary"
+                                                data-lead-capture-modal-button>Download</a>
                                         </div>
                                         <small class="text-muted text-bold">7 tags</small>
                                     </div>
@@ -530,8 +546,8 @@
                                                 aria-expanded="false" aria-controls="collapseSaaSType">
                                                 View configuration
                                             </button>
-                                            <a href="/assets/download/SaaS Container.json"
-                                                class="btn btn-sm btn-outline-secondary" download>Download</a>
+                                            <a class="btn btn-sm btn-outline-secondary"
+                                                data-lead-capture-modal-button>Download</a>
                                         </div>
                                         <small class="text-muted text-bold">21 tags</small>
                                     </div>
@@ -626,8 +642,8 @@
                                                 aria-expanded="false" aria-controls="collapseEcommerceType">
                                                 View configuration
                                             </button>
-                                            <a href="/assets/download/E-commerce Container.json"
-                                                class="btn btn-sm btn-outline-secondary" download>Download</a>
+                                            <a class="btn btn-sm btn-outline-secondary"
+                                                data-lead-capture-modal-button>Download</a>
                                         </div>
                                         <small class="text-muted text-bold">7 tags</small>
                                     </div>
@@ -963,6 +979,21 @@
                 </div>
             </div>
         </section>
+        <dialog data-lead-capture-modal>
+            <div class="d-flex flex-column container">
+                <div class="d-flex justify-content-end">
+                    <span data-close-lead-capture-modal></span>
+                </div>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "44171646",
+                        formId: "3f6bbb2d-7e52-4afa-9e3e-bbbca27cf24d"
+                    });
+                </script>
+            </div>
+        </dialog>
     </main>
     <footer class="d-flex justify-content-start align-items-start border-top flex-wrap py-3">
         <div class="col-md-3 d-flex align-items-center ms-3">
@@ -988,6 +1019,27 @@
             listItem.addEventListener("click", (event) => {
                 event.preventDefault();
             });
+        });
+        window.addEventListener('message', event => {
+            if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmitted') {
+                const googleTagManagerTemplate = event?.data?.data?.submissionValues?.google_tag_manager_template;
+                const redirectUrl = event?.data?.data?.redirectUrl; // Retrieve the redirectUrl from the form settings
+                if (redirectUrl) {
+                    // Check if redirectUrl already has query parameters
+                    const separator = redirectUrl.includes('?') ? '&' : '?';
+
+                    if (googleTagManagerTemplate) {
+                        const finalUrl = `${redirectUrl}${separator}tag_manager_template=${googleTagManagerTemplate}`;
+                        console.log("Redirecting to: ", finalUrl);
+                        window.location.replace(finalUrl);
+                    } else {
+                        console.log("Navigating to: ", redirectUrl);
+                        window.location.replace(redirectUrl);
+                    }
+                } else {
+                    console.error("Redirect URL is missing or undefined.");
+                }
+            }
         });
     </script>
     <script type="text/javascript" src="/assets/js/tracking/GTM.js"></script>
