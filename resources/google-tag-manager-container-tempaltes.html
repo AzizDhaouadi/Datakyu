@@ -1056,11 +1056,11 @@
 
                 const submittedEmailValue = event?.data?.data?.submissionValues?.email;
 
-                segment.identify(submittedEmailValue, {
+                analytics.identify(submittedEmailValue, {
                     email: submittedEmailValue
                 });
 
-                segment.track('submitted_tag_manager_template', {
+                analytics.track('submitted_tag_manager_template', {
                     template_name: function () {
                         if (googleTagManagerTemplate.includes(' ')) {
                             let downloadedTemplate = googleTagManagerTemplate.replace(' ', '-').toLowerCase();
