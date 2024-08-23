@@ -914,10 +914,10 @@ codeGeneratorForm.addEventListener("submit", (event) => {
             custom_event_parameters: document.querySelectorAll("input.added.name").length,
         });
         analytics.track("Generated Code Sample", {
-          category: chosentEventType,
-          name: codeGeneratorForm.elements["custom_event_name"].value,,
-          medium: chosenTrackingMedium,
-          generated_paramerters: document.querySelectorAll("input.added.name").length
+            category: chosentEventType,
+            name: codeGeneratorForm.elements["custom_event_name"].value,
+            medium: chosenTrackingMedium,
+            generated_paramerters: document.querySelectorAll("input.added.name").length
         });
     }
 
