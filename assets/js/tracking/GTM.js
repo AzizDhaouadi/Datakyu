@@ -7,13 +7,6 @@ headerCTAButtons.forEach((headerCTAButton) => {
       event: "clicked_header_cta",
       cta_text: `${e.target.textContent}`,
     });
-    swetrix.track({
-      ev: "clicked_header_cta",
-      unique: false,
-      meta: {
-        cta_text: `${e.target.textContent}`,
-      },
-    });
   });
 });
 
@@ -25,13 +18,6 @@ viewConfigurationButtons.forEach((viewConfigurationButton) => {
     window.dataLayer.push({
       event: "clicked_view_configuration_button",
       container_type: `${e.target.getAttribute("data-bs-target")}`,
-    });
-    swetrix.track({
-      ev: "clicked_view_configuration_button",
-      unique: false,
-      meta: {
-        container_type: `${e.target.getAttribute("data-bs-target")}`,
-      },
     });
   });
 });
@@ -45,13 +31,6 @@ DownloadButtons.forEach((viewDownloadButton) => {
       event: "clicked_download_button",
       file_name: `${e.target.getAttribute("href")}`,
     });
-    swetrix.track({
-      ev: "clicked_download_button",
-      unique: false,
-      meta: {
-        file_name: `${e.target.getAttribute("href")}`,
-      },
-    });
   });
 });
 
@@ -64,14 +43,6 @@ accordionItems.forEach((accordionItem) => {
       event: "clicked_accordion_item",
       accordion_title: `${accordionItem.querySelector("h2").textContent.trim()}`,
       accordion_content: `${accordionItem.querySelector("div.accordion-body").textContent.trim()}`,
-    });
-    swetrix.track({
-      ev: "clicked_accordion_item",
-      unqiue: false,
-      meta: {
-        accordion_title: `${accordionItem.querySelector("h2").textContent.trim()}`,
-        accordion_content: `${accordionItem.querySelector("div.accordion-body").textContent.trim()}`,
-      },
     });
   });
 });
