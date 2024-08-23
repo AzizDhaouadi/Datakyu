@@ -1039,39 +1039,39 @@
                 } else {
                     console.error("Redirect URL is missing or undefined.");
                 }
+                window.dataLayer = window.dataLayer || [];
+
+                window.dataLayer.push({
+                    event: 'submitted_tag_manager_template_form',
+                    template_name: function () {
+                        if (googleTagManagerTemplate.includes(' ')) {
+                            let downloadedTemplate = googleTagManagerTemplate.replace(' ', '-').toLowerCase();
+                            return downloadedTemplate;
+                        } else {
+                            let downloadedTemplate = googleTagManagerTemplate.toLowerCase();
+                            return downloadedTemplate;
+                        }
+                    }()
+                });
+
+                const submittedEmailValue = event?.data?.data?.submissionValues?.email;
+
+                segment.identify(submittedEmailValue, {
+                    email: submittedEmailValue
+                });
+
+                segment.track('submitted_tag_manager_template', {
+                    template_name: function () {
+                        if (googleTagManagerTemplate.includes(' ')) {
+                            let downloadedTemplate = googleTagManagerTemplate.replace(' ', '-').toLowerCase();
+                            return downloadedTemplate;
+                        } else {
+                            let downloadedTemplate = googleTagManagerTemplate.toLowerCase();
+                            return downloadedTemplate;
+                        }
+                    }()
+                });
             }
-            window.dataLayer = window.dataLayer || [];
-
-            window.dataLayer.push({
-                event: 'submitted_tag_manager_template_form',
-                template_name: function () {
-                    if (googleTagManagerTemplate.includes(' ')) {
-                        let downloadedTemplate = googleTagManagerTemplate.replace(' ', '-').toLowerCase();
-                        return downloadedTemplate;
-                    } else {
-                        let downloadedTemplate = googleTagManagerTemplate.toLowerCase();
-                        return downloadedTemplate;
-                    }
-                }()
-            });
-
-            const submittedEmailValue = event?.data?.data?.submissionValues?.email;
-
-            segment.identify(submittedEmailValue, {
-                email: submittedEmailValue
-            });
-
-            segment.track('submitted_tag_manager_template', {
-                template_name: function () {
-                    if (googleTagManagerTemplate.includes(' ')) {
-                        let downloadedTemplate = googleTagManagerTemplate.replace(' ', '-').toLowerCase();
-                        return downloadedTemplate;
-                    } else {
-                        let downloadedTemplate = googleTagManagerTemplate.toLowerCase();
-                        return downloadedTemplate;
-                    }
-                }()
-            });
         });
     </script>
     <script type="text/javascript" src="/assets/js/tracking/GTM.js"></script>
