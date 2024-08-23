@@ -22,18 +22,6 @@ viewConfigurationButtons.forEach((viewConfigurationButton) => {
   });
 });
 
-// Getting the download buttons and sending a dataLayer event
-const DownloadButtons = document.querySelectorAll("div.btn-group a");
-DownloadButtons.forEach((viewDownloadButton) => {
-  viewDownloadButton.addEventListener("click", (e) => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "clicked_download_button",
-      file_name: `${e.target.getAttribute("href")}`,
-    });
-  });
-});
-
 // Getting the accordion items and sending a dataLayer event
 const accordionItems = document.querySelectorAll("div.accordion-item");
 accordionItems.forEach((accordionItem) => {
