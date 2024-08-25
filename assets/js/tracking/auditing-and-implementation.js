@@ -45,6 +45,13 @@ window.addEventListener("message", function (event) {
       event: "captured_lead",
       form_id: event.data.id,
     });
+
+    const ue = event?.data?.data?.submissionValues?.email;
+
+    analytics.identify(ue, {
+      email: ue
+    });
+
     analytics.track("Captured Lead", {
       form_id: event.data.id,
     });
